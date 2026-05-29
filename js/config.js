@@ -51,9 +51,22 @@ const SITE = {
     heroSub:     "Sacred choral works & solo classical guitar",
     heroCTA:     { label: "Explore the Catalog", href: "shop.html" },
 
-    // Up to 3 featured pieces — comment out to show placeholders
+    // Up to 3 featured pieces shown on homepage. href links to shop.
     featuredPieces: [
-      // { title: "Piece Title", voicing: "SATB", season: "Advent", href: "shop.html#piece-slug" },
+      { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "shop.html" },
+      { title: "Holy God, We Praise Your Name",     voicing: "SATB · A Cappella", season: "General",  href: "shop.html" },
+      { title: "It is Well With My Soul",           voicing: "Solo Guitar",       season: "General",  href: "shop.html" },
+    ],
+
+    // Publisher/partner highlights on homepage.
+    publishers: [
+      {
+        name:  "Mel Bay Publications",
+        title: "Fingerpicking Hymns",
+        desc:  "Solo guitar arrangements of beloved hymns",
+        url:   "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
+        note:  "In print",
+      },
     ],
 
     spotifyEmbedUri: "", // e.g. "spotify:artist:XXXX" — leave blank until ready

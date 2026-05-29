@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCatalog();
   if (typeof initReveal === 'function') initReveal();
   initFilters();
+  applyDefaultFilter('choral');
 });
 
 function renderCatalog() {
@@ -63,6 +64,11 @@ function initFilters() {
       });
     });
   });
+}
+
+function applyDefaultFilter(value) {
+  const btn = document.querySelector(`.filter-btn[data-filter="${value}"]`);
+  if (btn) btn.click();
 }
 
 function cap(str) {

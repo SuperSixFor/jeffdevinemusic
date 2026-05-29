@@ -63,24 +63,8 @@
         </p>
       </div>
 
-      <!-- Populated by main.js from config · shown as placeholders until pieces are added -->
-      <div class="featured__grid">
-        <div class="featured__card reveal reveal-delay-1">
-          <div class="label featured__card-label">Choral · SATB</div>
-          <div class="featured__card-title">Featured works coming soon</div>
-          <div class="featured__card-meta">Add pieces in js/config.js</div>
-        </div>
-        <div class="featured__card reveal reveal-delay-2">
-          <div class="label featured__card-label">Solo Guitar</div>
-          <div class="featured__card-title">Sheet music &amp; scores</div>
-          <div class="featured__card-meta">Available in the shop</div>
-        </div>
-        <div class="featured__card reveal reveal-delay-3">
-          <div class="label featured__card-label">Seasonal</div>
-          <div class="featured__card-title">Advent · Lent · Easter</div>
-          <div class="featured__card-meta">Browse by liturgical season</div>
-        </div>
-      </div>
+      <!-- Populated by main.js from config.js → home.featuredPieces -->
+      <div class="featured__grid"></div>
 
       <div style="margin-top:3rem;" class="reveal">
         <a href="shop.html" class="btn btn--ghost">View All Works</a>
@@ -111,6 +95,19 @@
       <div id="spotify-embed" style="margin-top:2.5rem;max-width:480px;" class="reveal reveal-delay-2">
         <!-- Embed injected here by main.js when spotifyEmbed is set in config -->
       </div>
+    </div>
+  </section>
+
+  <!-- ── PUBLISHERS ───────────────────────────────────────────────── -->
+  <section class="publishers-section">
+    <div class="container">
+      <div class="reveal">
+        <div class="label">In Print</div>
+        <div class="rule"></div>
+        <h2>Published Works</h2>
+      </div>
+      <!-- Populated by main.js from config.js → home.publishers -->
+      <div class="publishers-grid reveal reveal-delay-1" id="publishers-grid"></div>
     </div>
   </section>
 

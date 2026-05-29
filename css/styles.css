@@ -410,6 +410,85 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   font-size: 0.75rem;
 }
 
+/* ── PUBLICATIONS (about page) ───────────────────────────────── */
+.publications {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.publications__list {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+
+.publications__list li {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.publications__list li::before {
+  content: '—';
+  position: absolute; left: 0;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+.publications__list a {
+  color: var(--color-accent);
+}
+
+/* ── PUBLISHERS SECTION (homepage) ───────────────────────────── */
+.publishers-section { padding-block: clamp(3rem, 6vw, 5rem); background: var(--color-surface, var(--color-bg)); }
+
+.publishers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.publisher-card {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--color-border);
+  flex: 1 1 260px;
+  max-width: 400px;
+  transition: border-color 0.2s;
+}
+
+.publisher-card:hover { border-color: var(--color-accent); }
+
+.publisher-card__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.publisher-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+}
+
+.publisher-card__desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.publisher-card__note {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+}
+
 /* ── MUSIC PAGE ──────────────────────────────────────────────── */
 .music-section  { padding-block: clamp(4rem, 8vw, 7rem); }
 .music-block    { max-width: 640px; }
