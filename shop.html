@@ -39,9 +39,12 @@
   <div class="shop-filters">
     <div class="container">
       <div class="filter-bar reveal">
+        <!-- Repopulated by js/main.js from SITE.shop.filters in config.js -->
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="choral">Choral</button>
-        <button class="filter-btn" data-filter="guitar">Solo Guitar</button>
+        <button class="filter-btn" data-filter="guitar">Guitar</button>
+        <button class="filter-btn" data-filter="congregational">Congregational</button>
+        <button class="filter-btn" data-filter="vocal">Vocal</button>
         <button class="filter-btn" data-filter="advent">Advent</button>
         <button class="filter-btn" data-filter="christmas">Christmas</button>
         <button class="filter-btn" data-filter="lent">Lent</button>
@@ -56,56 +59,7 @@
     <div class="container">
 
       <div class="catalog-grid" id="catalog-grid">
-        <!-- Shopify Buy Button embeds drop in here per piece -->
-        <!-- Placeholder cards shown until products are added -->
-
-        <div class="catalog-card reveal" data-category="choral advent">
-          <div class="catalog-card__meta">
-            <span class="label">Choral · SATB</span>
-            <span class="catalog-card__season">Advent</span>
-          </div>
-          <div class="catalog-card__title">Title Placeholder</div>
-          <div class="catalog-card__detail">A cappella · Intermediate · 3 min</div>
-          <div class="catalog-card__price">$6.99</div>
-          <div class="catalog-card__cta">
-            <!-- Shopify Buy Button embed here -->
-            <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
-          </div>
-          <div class="catalog-card__license">
-            Purchase includes a performance license for one ensemble for one performance season.
-          </div>
-        </div>
-
-        <div class="catalog-card reveal reveal-delay-1" data-category="choral general">
-          <div class="catalog-card__meta">
-            <span class="label">Choral · SSA</span>
-            <span class="catalog-card__season">General</span>
-          </div>
-          <div class="catalog-card__title">Title Placeholder</div>
-          <div class="catalog-card__detail">Piano · Accessible · 2.5 min</div>
-          <div class="catalog-card__price">$5.99</div>
-          <div class="catalog-card__cta">
-            <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
-          </div>
-          <div class="catalog-card__license">
-            Purchase includes a performance license for one ensemble for one performance season.
-          </div>
-        </div>
-
-        <div class="catalog-card reveal reveal-delay-2" data-category="guitar">
-          <div class="catalog-card__meta">
-            <span class="label">Solo Guitar</span>
-            <span class="catalog-card__season">—</span>
-          </div>
-          <div class="catalog-card__title">Title Placeholder</div>
-          <div class="catalog-card__detail">Standard · Intermediate · 4 min</div>
-          <div class="catalog-card__price">$4.99</div>
-          <div class="catalog-card__cta">
-            <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
-          </div>
-          <div class="catalog-card__license"></div>
-        </div>
-
+        <!-- Populated by js/catalog.js + js/shop.js -->
       </div>
 
       <p class="shop-note reveal">
@@ -136,6 +90,7 @@
   </footer>
 
   <script src="js/config.js"></script>
+  <script src="js/catalog.js"></script>
   <script src="js/main.js"></script>
   <script src="js/shop.js"></script>
 </body>

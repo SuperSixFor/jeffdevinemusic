@@ -41,9 +41,8 @@ const SITE = {
 
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
   links: {
-    spotify:    "",   // paste artist URI when ready
-    appleMusic: "",   // paste link when ready
-    bandcamp:   "https://devinemusic.bandcamp.com",
+    spotify:    "https://open.spotify.com/artist/0Ug2TS3EwRh4DOZtF55IQQ",   // paste artist URI when ready
+    appleMusic: "https://music.apple.com/us/artist/jeff-devine/413666593",   // paste link when ready
     ascap:      "",
   },
 
@@ -69,7 +68,7 @@ const SITE = {
 
   // ── ABOUT PAGE ────────────────────────────────────────────────
   about: {
-    headshotSrc: "assets/images/headshot.jpg",   // drop file here when ready
+    headshotSrc: "assets/images/headshot.png",   // swap filename here to change headshot
     headshotAlt: "Jeff Devine",
 
     // Bio paragraphs — each string is one <p>. Edit freely.
@@ -128,16 +127,19 @@ const SITE = {
                   a performance license for one ensemble for one performance season.
                   For bulk or institutional licensing, <a href="contact.html">get in touch</a>.`,
 
-    // Filter categories shown in filter bar
+    // Filter categories — edit label/value pairs to add/remove filters.
+    // value must match category or season fields in js/catalog.js
     filters: [
-      { label: "All",       value: "all" },
-      { label: "Choral",    value: "choral" },
-      { label: "Guitar",    value: "guitar" },
-      { label: "Advent",    value: "advent" },
-      { label: "Christmas", value: "christmas" },
-      { label: "Lent",      value: "lent" },
-      { label: "Easter",    value: "easter" },
-      { label: "General",   value: "general" },
+      { label: "All",           value: "all" },
+      { label: "Choral",        value: "choral" },
+      { label: "Guitar",        value: "guitar" },
+      { label: "Congregational",value: "congregational" },
+      { label: "Vocal",         value: "vocal" },
+      { label: "Advent",        value: "advent" },
+      { label: "Christmas",     value: "christmas" },
+      { label: "Lent",          value: "lent" },
+      { label: "Easter",        value: "easter" },
+      { label: "General",       value: "general" },
     ],
   },
 
