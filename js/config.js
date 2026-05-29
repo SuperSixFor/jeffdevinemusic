@@ -76,7 +76,7 @@ const SITE = {
     aboutExcerpt: `Guitarist, arranger, and composer of sacred choral works.
     Published by the Royal College of Church Music and Mel Bay Publications.
     ASCAP member.`,
-    aboutExcerptNote: "Bio in progress. Full story on the About page.",
+    aboutExcerptNote: "",
   },
 
   // ── ABOUT PAGE ────────────────────────────────────────────────
