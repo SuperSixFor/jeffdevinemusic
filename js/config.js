@@ -41,9 +41,8 @@ const SITE = {
 
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
   links: {
-    spotify:    "https://open.spotify.com/artist/0Ug2TS3EwRh4DOZtF55IQQ",   // paste artist URI when ready
-    appleMusic: "https://music.apple.com/us/artist/jeff-devine/413666593",   // paste link when ready
-    ascap:      "",
+    spotify:    "",   // paste Spotify artist URL when ready
+    appleMusic: "",   // paste Apple Music artist URL when ready
   },
 
   // ── HOMEPAGE ──────────────────────────────────────────────────
@@ -92,6 +91,23 @@ const SITE = {
 
       `His recordings include “Simple Gifts” (2007) and “Softly + Tenderly: Hymns for Guitar” (2001),
        both available on major streaming platforms.`,
+    ],
+
+    // Published works — shown in a dedicated section on the About page.
+    // Set url to "" to show the title without a link.
+    publications: [
+      {
+        publisher: "Mel Bay Publications",
+        title:     "Fingerpicking Hymns",
+        url:       "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
+        note:      "In print",
+      },
+      {
+        publisher: "Royal College of Church Music",
+        title:     "",   // confirm titles with Jeff
+        url:       "",
+        note:      "",
+      },
     ],
 
     // Credentials list — edit, reorder, add as needed

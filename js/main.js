@@ -154,6 +154,23 @@ function populateAbout() {
     img.src = a.headshotSrc;
     img.alt = a.headshotAlt;
   }
+
+  // Publications
+  const pubList = document.querySelector('.publications__list');
+  if (pubList && a.publications) {
+    pubList.innerHTML = a.publications
+      .filter(p => p.publisher)
+      .map(p => {
+        const titlePart = p.title
+          ? (p.url
+              ? ` — <a href="${p.url}" target="_blank" rel="noopener noreferrer"><em>${p.title}</em></a>`
+              : ` — <em>${p.title}</em>`)
+          : '';
+        const notePart = p.note ? ` <span style="opacity:.6;">(${p.note})</span>` : '';
+        return `<li>${p.publisher}${titlePart}${notePart}</li>`;
+      })
+      .join('');
+  }
 }
 
 // ── MUSIC ────────────────────────────────────────────────────────
@@ -223,7 +240,6 @@ function populateStreamingLinks(selector) {
   const defs = [
     { key: 'spotify',    label: 'Spotify' },
     { key: 'appleMusic', label: 'Apple Music' },
-    { key: 'bandcamp',   label: 'Bandcamp' },
   ];
 
   // Clear placeholder links first
