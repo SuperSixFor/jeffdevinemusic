@@ -7,6 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof CATALOG === 'undefined') return;
   renderCatalog();
+  if (typeof initReveal === 'function') initReveal();
   initFilters();
 });
 
