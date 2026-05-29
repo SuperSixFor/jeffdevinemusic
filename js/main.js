@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── SCROLL BEHAVIORS ─────────────────────────────────────────
   initNav();
+  initMobileNav();
   initReveal();
 
 });
@@ -60,6 +61,32 @@ function initNav() {
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+}
+
+function initMobileNav() {
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
+
+  const btn = document.createElement('button');
+  btn.className = 'nav__toggle';
+  btn.setAttribute('aria-label', 'Toggle menu');
+  btn.setAttribute('aria-expanded', 'false');
+  btn.innerHTML = '<span></span><span></span><span></span>';
+  nav.appendChild(btn);
+
+  const close = () => {
+    nav.classList.remove('nav--open');
+    document.body.style.overflow = '';
+    btn.setAttribute('aria-expanded', 'false');
+  };
+
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav--open');
+    document.body.style.overflow = open ? 'hidden' : '';
+    btn.setAttribute('aria-expanded', String(open));
+  });
+
+  nav.querySelectorAll('.nav__links a').forEach(a => a.addEventListener('click', close));
 }
 
 // ── FOOTER ───────────────────────────────────────────────────────
