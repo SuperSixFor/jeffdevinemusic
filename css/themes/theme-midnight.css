@@ -1,0 +1,57 @@
+/* ================================================================
+   THEME: Midnight — True Black / Warm White / Electric Blue
+   High contrast. Dramatic. Score-on-a-stand energy.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  --font-display:         'Bodoni Moda', Georgia, serif;
+  --font-body:            'Inter', system-ui, sans-serif;
+  --font-label:           'Inter', system-ui, sans-serif;
+  --font-display-weight:  400;
+  --font-body-weight:     300;
+  --font-size-body:       0.9375rem;
+  --font-size-label:      0.625rem;
+  --font-size-nav:        0.75rem;
+  --font-size-btn:        0.75rem;
+  --heading-tracking:     -0.02em;
+  --hero-name-weight:     400;
+  --hero-name-tracking:   -0.03em;
+  --nav-logo-size:        1.2rem;
+
+  --color-bg:             #080808;
+  --color-bg-raised:      #121212;
+  --color-text:           #F0EDE8;
+  --color-text-muted:     #888480;
+  --color-text-subtle:    #444240;
+  --color-accent:         #4A90D9;
+  --color-accent-light:   #6AAEF0;
+  --color-border:         #222220;
+
+  --color-inverse-bg:     #F0EDE8;
+  --color-inverse-text:   #080808;
+  --color-inverse-muted:  rgba(8,8,8,0.5);
+  --color-inverse-subtle: rgba(8,8,8,0.3);
+
+  --nav-scrolled-bg:      rgba(8, 8, 8, 0.96);
+  --shop-filter-bg:       rgba(8, 8, 8, 0.97);
+  --input-bg:             rgba(255,255,255,0.03);
+  --rule-width:           40px;
+  --image-filter:         grayscale(80%) brightness(0.7) contrast(1.1);
+  --image-filter-hover:   grayscale(30%) brightness(0.9);
+
+  --max-w:    1100px;
+  --max-w-sm: 680px;
+  --gutter:   clamp(1.5rem, 5vw, 4rem);
+  --btn-padding: 0.85rem 2rem;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 9999;
+}

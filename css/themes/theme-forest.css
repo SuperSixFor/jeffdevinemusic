@@ -1,0 +1,48 @@
+/* ================================================================
+   THEME: Forest — Deep Green / Linen / Warm Ochre
+   Grounded, organic. Quiet like a chapel in the woods.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  --font-display:         'Cormorant Garant', Georgia, serif;
+  --font-body:            'Jost', system-ui, sans-serif;
+  --font-label:           'Jost', system-ui, sans-serif;
+  --font-display-weight:  400;
+  --font-body-weight:     300;
+  --font-size-body:       0.9375rem;
+  --font-size-label:      0.6875rem;
+  --font-size-nav:        0.8rem;
+  --font-size-btn:        0.8rem;
+  --heading-tracking:     -0.01em;
+  --hero-name-weight:     300;
+  --hero-name-tracking:   -0.02em;
+  --nav-logo-size:        1.2rem;
+
+  --color-bg:             #F2F0EB;
+  --color-bg-raised:      #E8E5DE;
+  --color-text:           #1C2B1E;
+  --color-text-muted:     #4A5E4C;
+  --color-text-subtle:    #8A9E8C;
+  --color-accent:         #C17F24;
+  --color-accent-light:   #D4963A;
+  --color-border:         #D8D4CB;
+
+  --color-inverse-bg:     #1C2B1E;
+  --color-inverse-text:   #F2F0EB;
+  --color-inverse-muted:  rgba(242,240,235,0.5);
+  --color-inverse-subtle: rgba(242,240,235,0.3);
+
+  --nav-scrolled-bg:      rgba(242, 240, 235, 0.93);
+  --shop-filter-bg:       rgba(242, 240, 235, 0.96);
+  --input-bg:             transparent;
+  --rule-width:           40px;
+  --image-filter:         grayscale(100%) brightness(0.95);
+  --image-filter-hover:   grayscale(40%) brightness(1);
+
+  --max-w:    1100px;
+  --max-w-sm: 680px;
+  --gutter:   clamp(1.5rem, 5vw, 4rem);
+  --btn-padding: 0.85rem 2rem;
+}

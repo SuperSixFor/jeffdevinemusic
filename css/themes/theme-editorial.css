@@ -1,0 +1,48 @@
+/* ================================================================
+   THEME: Editorial — Pure White / Ink Black / No Accent
+   Clean. Magazine-editorial. Type-forward. Minimal decoration.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --font-display:         'Playfair Display', Georgia, serif;
+  --font-body:            'DM Sans', system-ui, sans-serif;
+  --font-label:           'DM Sans', system-ui, sans-serif;
+  --font-display-weight:  400;
+  --font-body-weight:     300;
+  --font-size-body:       0.9375rem;
+  --font-size-label:      0.625rem;
+  --font-size-nav:        0.75rem;
+  --font-size-btn:        0.75rem;
+  --heading-tracking:     -0.02em;
+  --hero-name-weight:     400;
+  --hero-name-tracking:   -0.03em;
+  --nav-logo-size:        1.1rem;
+
+  --color-bg:             #FFFFFF;
+  --color-bg-raised:      #F7F7F7;
+  --color-text:           #0A0A0A;
+  --color-text-muted:     #555555;
+  --color-text-subtle:    #AAAAAA;
+  --color-accent:         #0A0A0A;   /* no color accent — ink only */
+  --color-accent-light:   #444444;
+  --color-border:         #E8E8E8;
+
+  --color-inverse-bg:     #0A0A0A;
+  --color-inverse-text:   #FFFFFF;
+  --color-inverse-muted:  rgba(255,255,255,0.5);
+  --color-inverse-subtle: rgba(255,255,255,0.3);
+
+  --nav-scrolled-bg:      rgba(255, 255, 255, 0.95);
+  --shop-filter-bg:       rgba(255, 255, 255, 0.97);
+  --input-bg:             transparent;
+  --rule-width:           60px;
+  --image-filter:         grayscale(100%) contrast(1.05);
+  --image-filter-hover:   grayscale(50%) contrast(1.02);
+
+  --max-w:    1100px;
+  --max-w-sm: 680px;
+  --gutter:   clamp(1.5rem, 5vw, 4rem);
+  --btn-padding: 0.8rem 2rem;
+}
