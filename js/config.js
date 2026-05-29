@@ -39,6 +39,18 @@ const SITE = {
     { label: "Contact", href: "contact.html" },
   ],
 
+  // ── PUBLISHERS ────────────────────────────────────────────────
+  // Shown on homepage and music page. Add entries here to update both at once.
+  publishers: [
+    {
+      name:  "Mel Bay Publications",
+      title: "Fingerpicking Hymns",
+      desc:  "Solo guitar arrangements of beloved hymns",
+      url:   "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
+      note:  "In print",
+    },
+  ],
+
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
   links: {
     spotify:    "https://open.spotify.com/artist/0Ug2TS3EwRh4DOZtF55IQQ",   // paste Spotify artist URL when ready
@@ -56,17 +68,6 @@ const SITE = {
       { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "shop.html" },
       { title: "Holy God, We Praise Your Name",     voicing: "SATB · A Cappella", season: "General",  href: "shop.html" },
       { title: "It is Well With My Soul",           voicing: "Solo Guitar",       season: "General",  href: "shop.html" },
-    ],
-
-    // Publisher/partner highlights on homepage.
-    publishers: [
-      {
-        name:  "Mel Bay Publications",
-        title: "Fingerpicking Hymns",
-        desc:  "Solo guitar arrangements of beloved hymns",
-        url:   "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
-        note:  "In print",
-      },
     ],
 
     spotifyEmbedUri: "", // e.g. "spotify:artist:XXXX" — leave blank until ready

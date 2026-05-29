@@ -126,19 +126,7 @@ function populateHome() {
 
   // Streaming links (index)
   populateStreamingLinks('.streaming__links');
-
-  // Publishers
-  const publishersGrid = document.getElementById('publishers-grid');
-  if (publishersGrid && h.publishers && h.publishers.length) {
-    publishersGrid.innerHTML = h.publishers.map(pub =>
-      `<a href="${pub.url}" class="publisher-card" target="_blank" rel="noopener noreferrer">
-        <div class="publisher-card__label">${pub.name}</div>
-        <div class="publisher-card__title">${pub.title}</div>
-        ${pub.desc ? `<div class="publisher-card__desc">${pub.desc}</div>` : ''}
-        ${pub.note ? `<div class="publisher-card__note">${pub.note}</div>` : ''}
-      </a>`
-    ).join('');
-  }
+  populatePublishers();
 }
 
 // ── ABOUT ────────────────────────────────────────────────────────
@@ -196,6 +184,21 @@ function populateMusic() {
   setText('.music-choral-subhead', m.choralSubhead);
   setText('.music-choral-body', m.choralBody);
   populateStreamingLinks('.streaming__links');
+  populatePublishers();
+}
+
+// ── PUBLISHERS (shared — home + music) ───────────────────────────
+function populatePublishers() {
+  const grid = document.getElementById('publishers-grid');
+  if (!grid || !SITE.publishers || !SITE.publishers.length) return;
+  grid.innerHTML = SITE.publishers.map(pub =>
+    `<a href="${pub.url}" class="publisher-card" target="_blank" rel="noopener noreferrer">
+      <div class="publisher-card__label">${pub.name}</div>
+      <div class="publisher-card__title">${pub.title}</div>
+      ${pub.desc ? `<div class="publisher-card__desc">${pub.desc}</div>` : ''}
+      ${pub.note ? `<div class="publisher-card__note">${pub.note}</div>` : ''}
+    </a>`
+  ).join('');
 }
 
 // ── SHOP ─────────────────────────────────────────────────────────
