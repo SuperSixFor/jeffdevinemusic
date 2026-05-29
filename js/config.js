@@ -41,8 +41,8 @@ const SITE = {
 
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
   links: {
-    spotify:    "",   // paste Spotify artist URL when ready
-    appleMusic: "",   // paste Apple Music artist URL when ready
+    spotify:    "https://open.spotify.com/artist/0Ug2TS3EwRh4DOZtF55IQQ",   // paste Spotify artist URL when ready
+    appleMusic: "https://music.apple.com/us/artist/jeff-devine/413666593",   // paste Apple Music artist URL when ready
   },
 
   // ── HOMEPAGE ──────────────────────────────────────────────────
