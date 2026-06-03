@@ -44,7 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // ── NAV ─────────────────────────────────────────────────────────
 function populateNav(currentPage) {
   // Logo
-  document.querySelectorAll('.nav__logo').forEach(el => el.textContent = SITE.name);
+  document.querySelectorAll('.nav__logo').forEach(el => {
+    const [first, ...rest] = SITE.name.split(' ');
+    el.innerHTML = `<span class="logo-first">${first}</span> <span class="logo-last">${rest.join(' ')}</span>`;
+  });
 
   // Active link highlight (already set in HTML via class, this is a safeguard)
   document.querySelectorAll('.nav__links a').forEach(a => {

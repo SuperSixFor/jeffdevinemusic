@@ -20,7 +20,7 @@ const SITE = {
   // Swap filename to change the visual theme. Drop any .css file
   // into css/themes/ and reference it here.
   // Included: theme-default.css · theme-dark.css · theme-editorial.css
-  theme: "theme-default.css",
+  theme: "theme-ember-light.css",
 
   // ── META (SEO) ────────────────────────────────────────────────
   meta: {
