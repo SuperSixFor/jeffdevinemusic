@@ -39,18 +39,6 @@ const SITE = {
     { label: "Contact", href: "contact.html" },
   ],
 
-  // ── PUBLISHERS ────────────────────────────────────────────────
-  // Shown on homepage and music page. Add entries here to update both at once.
-  publishers: [
-    {
-      name:  "Mel Bay Publications",
-      title: "Fingerpicking Hymns",
-      desc:  "Solo guitar arrangements of beloved hymns",
-      url:   "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
-      note:  "In print",
-    },
-  ],
-
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
   links: {
     spotify:    "https://open.spotify.com/artist/0Ug2TS3EwRh4DOZtF55IQQ",   // paste Spotify artist URL when ready
@@ -74,8 +62,7 @@ const SITE = {
 
     // About strip (homepage excerpt — keep short)
     aboutExcerpt: `Guitarist, arranger, and composer of sacred choral works.
-    Published by the Royal College of Church Music and Mel Bay Publications.
-    ASCAP member.`,
+    Published by the Royal College of Church Music and Mel Bay Publications.`,
     aboutExcerptNote: "",
   },
 
@@ -86,28 +73,11 @@ const SITE = {
 
     // Bio paragraphs — each string is one <p>. Edit freely.
     bio: [
-      `Jeff Devine, a graduate of Biola University and California State University
-       at Fullerton, is an accomplished guitarist, arranger, and composer.`,
-
-      `He especially enjoys setting quality hymn texts to original music, and is
-       currently in print with the Royal College of Church Music (RSCM) and
-       Mel Bay Publications.`,
-
-      `Devine served for many years as Worship & Music Pastor at Calvary Baptist
-       Church in Vandenberg Village, CA, where his compositions were written for
-       and shaped by an active choral program. He has also taught guitar as
-       adjunct faculty at Allan Hancock College and held a faculty position at
-       Westmont College.`,
-
-      `His choral catalog — ranging from accessible congregational settings to
-       extended SATB works — is distributed directly through this site and
-       through JW Pepper and Sheet Music Plus.`,
-
-      `His recordings include “Simple Gifts” (2007) and “Softly + Tenderly: Hymns for Guitar” (2001),
-       both available on major streaming platforms.`,
+      'Devine served for many years as Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
     ],
 
-    // Published works — shown in a dedicated section on the About page.
+    // Published works — shown on About, Home, and Music pages.
+    // song: individual piece within a collection (renders as "Song" in *Book*)
     // Set url to "" to show the title without a link.
     publications: [
       {
@@ -118,22 +88,27 @@ const SITE = {
       },
       {
         publisher: "Royal College of Church Music",
-        title:     "",   // confirm titles with Jeff
+        song:      "Humble Hold Your Kingdom's Key",
+        title:     "Light on the Way",
+        url:       "https://www.rscmshop.com/books/9780854022892/light-on-the-way",
+        note:      "In Print",
+      },
+      {
+        publisher: "Maranatha! Music",
+        song:      "In a Time of Praise",
+        title:     "Songs for the Congregation",
         url:       "",
-        note:      "",
+        note:      "1988",
       },
     ],
 
     // Credentials list — edit, reorder, add as needed
     credentials: [
-      "ASCAP Member",
-      "Published by the Royal College of Church Music (RSCM)",
-      "Published by Mel Bay Publications (“Fingerpicking Hymns”)",
-      "Biola University — B.A.",
-      "California State University, Fullerton — M.A.",
-      "Worship & Music Pastor, Calvary Baptist Church (ret.)",
-      "Adjunct Faculty, Allan Hancock College",
-      "Faculty, Westmont College",
+      "Biola University - Bachelor of Music",
+      "Cal State Fullerton- Master of Music",
+      "Worship and Music Pastor, Retired",
+      "Adjunct College/University Faculty Member, Retired",
+      "CCLI Member",
     ],
   },
 
@@ -141,35 +116,34 @@ const SITE = {
   music: {
     guitarHeading:  "Recordings",
     guitarSubhead:  "Solo Classical Guitar",
-    guitarBody:     "Solo guitar works available on major streaming platforms. Published by Mel Bay Publications.",
+    guitarBody:     "Solo guitar works available on major streaming platforms.",
 
-    choralHeading:  "Sheet Music & Scores",
+    choralHeading:  "Sheet Music",
     choralSubhead:  "Choral Works",
-    choralBody:     `Choral compositions are available as PDF scores through the shop —
-                     SATB, SSA, and additional voicings for sacred and liturgical settings.
-                     Streaming recordings coming soon.`,
+    choralBody:     `Choral compositions are available as PDF scores through the shop.
+                     SATB and additional voicings for sacred/liturgical settings.
+                     Some studio recordings available.`,
+    choralCTA:      { label: "Browse Scores", href: "shop.html" },
   },
 
   // ── SHOP PAGE ─────────────────────────────────────────────────
   shop: {
-    licenseNote: "Purchase includes a performance license for one ensemble for one performance season.",
+    licenseNote: "Purchase includes a performance license for one ensemble for one performance season. TBD",
     footerNote:  `All purchases are PDF downloads delivered instantly. Choral scores include
-                  a performance license for one ensemble for one performance season.
-                  For bulk or institutional licensing, <a href="contact.html">get in touch</a>.`,
+                  a performance license for one ensemble for one performance season. TBD
+                  For bulk or institutional licensing, TBD <a href="contact.html">get in touch</a>.`,
 
     // Filter categories — edit label/value pairs to add/remove filters.
     // value must match category or season fields in js/catalog.js
     filters: [
-      { label: "All",           value: "all" },
-      { label: "Choral",        value: "choral" },
-      { label: "Guitar",        value: "guitar" },
-      { label: "Congregational",value: "congregational" },
-      { label: "Vocal",         value: "vocal" },
-      { label: "Advent",        value: "advent" },
-      { label: "Christmas",     value: "christmas" },
-      { label: "Lent",          value: "lent" },
-      { label: "Easter",        value: "easter" },
-      { label: "General",       value: "general" },
+      { label: "All",               value: "all" },
+      { label: "Choral",            value: "choral" },
+      { label: "Guitar",            value: "guitar" },
+      { label: "Congregational",    value: "congregational" },
+      { label: "Vocal",             value: "vocal" },
+      { label: "Advent/Christmas",  value: "adventChristmas" },
+      { label: "Lent/Easter",       value: "lentEaster" },
+      { label: "Children's",        value: "childrens" },
     ],
   },
 
@@ -187,8 +161,9 @@ const SITE = {
 
   // ── FOOTER ────────────────────────────────────────────────────
   footer: {
-    ascapNote:  "All compositions registered with ASCAP.",
+    ascapNote:  "All compositions registered with ASCAP, CCLI.",
     melBayNote: "Select solo guitar works published by Mel Bay Publications.",
+    futureNote: "",
   },
 
 };

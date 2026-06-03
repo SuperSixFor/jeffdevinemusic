@@ -188,15 +188,7 @@ function populateAbout() {
   if (pubList && a.publications) {
     pubList.innerHTML = a.publications
       .filter(p => p.publisher)
-      .map(p => {
-        const titlePart = p.title
-          ? (p.url
-              ? ` — <a href="${p.url}" target="_blank" rel="noopener noreferrer"><em>${p.title}</em></a>`
-              : ` — <em>${p.title}</em>`)
-          : '';
-        const notePart = p.note ? ` <span style="opacity:.6;">(${p.note})</span>` : '';
-        return `<li>${p.publisher}${titlePart}${notePart}</li>`;
-      })
+      .map(renderPublication)
       .join('');
   }
 }
@@ -210,22 +202,32 @@ function populateMusic() {
   setText('.music-choral-heading', m.choralHeading);
   setText('.music-choral-subhead', m.choralSubhead);
   setText('.music-choral-body', m.choralBody);
+  const choralBtn = document.querySelector('.music-choral-cta');
+  if (choralBtn && m.choralCTA) { choralBtn.textContent = m.choralCTA.label; choralBtn.href = m.choralCTA.href; }
   populateStreamingLinks('.streaming__links');
   populatePublishers();
 }
 
-// ── PUBLISHERS (shared — home + music) ───────────────────────────
+// ── PUBLICATIONS RENDERING (shared — home, music, about) ─────────
+function renderPublication(p) {
+  const songPart  = p.song  ? `"${p.song}" in ` : '';
+  const innerText = p.song ? `${songPart}<em>${p.title}</em>` : `<em>${p.title}</em>`;
+  const titlePart = p.title
+    ? ` — ` + (p.url
+        ? `<a href="${p.url}" target="_blank" rel="noopener noreferrer">${innerText}</a>`
+        : innerText)
+    : '';
+  const notePart  = p.note ? ` <span style="opacity:.6;">(${p.note})</span>` : '';
+  return `<li>${p.publisher}${titlePart}${notePart}</li>`;
+}
+
 function populatePublishers() {
   const grid = document.getElementById('publishers-grid');
-  if (!grid || !SITE.publishers || !SITE.publishers.length) return;
-  grid.innerHTML = SITE.publishers.map(pub =>
-    `<a href="${pub.url}" class="publisher-card" target="_blank" rel="noopener noreferrer">
-      <div class="publisher-card__label">${pub.name}</div>
-      <div class="publisher-card__title">${pub.title}</div>
-      ${pub.desc ? `<div class="publisher-card__desc">${pub.desc}</div>` : ''}
-      ${pub.note ? `<div class="publisher-card__note">${pub.note}</div>` : ''}
-    </a>`
-  ).join('');
+  const pubs = SITE.about && SITE.about.publications;
+  if (!grid || !pubs || !pubs.length) return;
+  grid.innerHTML = '<ul class="publications__list">' +
+    pubs.filter(p => p.publisher).map(renderPublication).join('') +
+  '</ul>';
 }
 
 // ── SHOP ─────────────────────────────────────────────────────────
