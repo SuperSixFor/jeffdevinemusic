@@ -47,34 +47,13 @@
   --btn-padding: 0.85rem 2rem;
 }
 
-/* ── LOGO / NAME TREATMENT ───────────────────────────────────────
-   EB Garamond throughout — italic first name, upright surname, tight tracking */
-.logo-first {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-.logo-last {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-}
-
-.hero__name,
-.page-header__inner h1 {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0em;
-}
+/* Devine surname: EB Garamond italic in accent gold */
 .hero__name em,
 .page-header__inner h1 em {
   font-family: 'EB Garamond', Georgia, serif;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0em;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
 }
 
 body::before {

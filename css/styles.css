@@ -94,11 +94,17 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 }
 
 .nav__logo {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--nav-logo-size, 1.25rem);
-  font-weight: var(--font-display-weight, 500);
+  font-weight: 500;
+  font-style: normal;
   color: var(--color-text);
   transition: opacity 0.2s;
+}
+.nav__logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
 }
 .nav__logo:hover { opacity: 0.6; }
 
@@ -634,8 +640,14 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 }
 
 .footer__logo {
-  font-family: var(--font-display);
-  font-size: 1.1rem; color: var(--color-text); margin-bottom: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 1.1rem; font-weight: 500; font-style: normal;
+  color: var(--color-text); margin-bottom: 0.5rem;
+}
+.footer__logo em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
 }
 
 .footer__notes { font-size: 0.75rem; color: var(--color-text-subtle); line-height: 1.8; }
