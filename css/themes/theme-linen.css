@@ -1,0 +1,48 @@
+/* ================================================================
+   THEME: Linen — Soft White / Warm Taupe / Sage Green
+   Airy, gentle. Like a quiet Sunday morning.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Nunito:wght@300;400;500&display=swap');
+
+:root {
+  --font-display:         'Cormorant', Georgia, serif;
+  --font-body:            'Nunito', system-ui, sans-serif;
+  --font-label:           'Nunito', system-ui, sans-serif;
+  --font-display-weight:  300;
+  --font-body-weight:     300;
+  --font-size-body:       0.9375rem;
+  --font-size-label:      0.6875rem;
+  --font-size-nav:        0.8rem;
+  --font-size-btn:        0.8rem;
+  --heading-tracking:     -0.01em;
+  --hero-name-weight:     300;
+  --hero-name-tracking:   -0.01em;
+  --nav-logo-size:        1.2rem;
+
+  --color-bg:             #FAFAF8;
+  --color-bg-raised:      #F2F2EE;
+  --color-text:           #2D2D2A;
+  --color-text-muted:     #7A7A72;
+  --color-text-subtle:    #B0B0A8;
+  --color-accent:         #6B8F71;
+  --color-accent-light:   #88A88E;
+  --color-border:         #E4E4DE;
+
+  --color-inverse-bg:     #2D2D2A;
+  --color-inverse-text:   #FAFAF8;
+  --color-inverse-muted:  rgba(250,250,248,0.5);
+  --color-inverse-subtle: rgba(250,250,248,0.3);
+
+  --nav-scrolled-bg:      rgba(250, 250, 248, 0.93);
+  --shop-filter-bg:       rgba(250, 250, 248, 0.96);
+  --input-bg:             transparent;
+  --rule-width:           45px;
+  --image-filter:         grayscale(100%) brightness(1.02);
+  --image-filter-hover:   grayscale(50%) brightness(1.01);
+
+  --max-w:    1100px;
+  --max-w-sm: 680px;
+  --gutter:   clamp(1.5rem, 5vw, 4rem);
+  --btn-padding: 0.9rem 2.2rem;
+}

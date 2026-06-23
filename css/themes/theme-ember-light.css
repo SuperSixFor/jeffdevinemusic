@@ -1,0 +1,87 @@
+/* ================================================================
+   THEME: Ember Light — Warm Ivory / Deep Charcoal / Amber Gold
+   Same design language as theme-ember, light background variant.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+  --font-display:         'Cormorant SC', Georgia, serif;
+  --font-body:            'EB Garamond', Georgia, serif;
+  --font-label:           'Cormorant SC', Georgia, serif;
+  --font-display-weight:  500;
+  --font-body-weight:     400;
+  --font-size-body:       1.0625rem;
+  --font-size-label:      0.7rem;
+  --font-size-nav:        0.8125rem;
+  --font-size-btn:        0.8rem;
+  --heading-tracking:     0.03em;
+  --hero-name-weight:     500;
+  --hero-name-tracking:   0.04em;
+  --nav-logo-size:        0.9375rem;
+
+  --color-bg:             #F7F2EA;
+  --color-bg-raised:      #EFE8DC;
+  --color-text:           #1E1008;
+  --color-text-muted:     #6B5040;
+  --color-text-subtle:    #B09880;
+  --color-accent:         #9E6418;
+  --color-accent-light:   #C07E28;
+  --color-border:         #DDD0BC;
+
+  --color-inverse-bg:     #1E1008;
+  --color-inverse-text:   #F7F2EA;
+  --color-inverse-muted:  rgba(247, 242, 234, 0.55);
+  --color-inverse-subtle: rgba(247, 242, 234, 0.35);
+
+  --nav-scrolled-bg:      rgba(247, 242, 234, 0.94);
+  --shop-filter-bg:       rgba(247, 242, 234, 0.96);
+  --input-bg:             transparent;
+  --rule-width:           40px;
+  --image-filter:         sepia(20%) saturate(0.85) brightness(0.95);
+  --image-filter-hover:   sepia(5%) saturate(1) brightness(1);
+
+  --max-w:    1100px;
+  --max-w-sm: 680px;
+  --gutter:   clamp(1.5rem, 5vw, 4rem);
+  --btn-padding: 0.85rem 2rem;
+}
+
+/* ── LOGO / NAME TREATMENT ───────────────────────────────────────
+   EB Garamond throughout — italic first name, upright surname, tight tracking */
+.logo-first {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.logo-last {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.hero__name,
+.page-header__inner h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.hero__name em,
+.page-header__inner h1 em {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.022;
+  pointer-events: none;
+  z-index: 9999;
+}

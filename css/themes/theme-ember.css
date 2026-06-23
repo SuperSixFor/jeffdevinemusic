@@ -1,0 +1,87 @@
+/* ================================================================
+   THEME: Ember — Deep Crimson / Warm Amber / Cream
+   Drawn from the "Simple Gifts" album art. Sacred, warm, timeless.
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+  --font-display:         'Cormorant SC', Georgia, serif;
+  --font-body:            'EB Garamond', Georgia, serif;
+  --font-label:           'Cormorant SC', Georgia, serif;
+  --font-display-weight:  400;
+  --font-body-weight:     400;
+  --font-size-body:       1.0625rem;
+  --font-size-label:      0.6rem;
+  --font-size-nav:        0.7rem;
+  --font-size-btn:        0.7rem;
+  --heading-tracking:     0.04em;
+  --hero-name-weight:     400;
+  --hero-name-tracking:   0.06em;
+  --nav-logo-size:        1.05rem;
+
+  --color-bg:             #0D0505;
+  --color-bg-raised:      #180A08;
+  --color-text:           #EDE0C8;
+  --color-text-muted:     #A88870;
+  --color-text-subtle:    #4A2E22;
+  --color-accent:         #B87830;
+  --color-accent-light:   #D49840;
+  --color-border:         #2C1410;
+
+  --color-inverse-bg:     #EDE0C8;
+  --color-inverse-text:   #0D0505;
+  --color-inverse-muted:  rgba(13, 5, 5, 0.55);
+  --color-inverse-subtle: rgba(13, 5, 5, 0.35);
+
+  --nav-scrolled-bg:      rgba(13, 5, 5, 0.96);
+  --shop-filter-bg:       rgba(13, 5, 5, 0.97);
+  --input-bg:             rgba(255, 255, 255, 0.025);
+  --rule-width:           40px;
+  --image-filter:         sepia(40%) saturate(0.7) brightness(0.75);
+  --image-filter-hover:   sepia(15%) saturate(0.9) brightness(0.9);
+
+  --max-w:    1100px;
+  --max-w-sm: 680px;
+  --gutter:   clamp(1.5rem, 5vw, 4rem);
+  --btn-padding: 0.85rem 2rem;
+}
+
+/* ── LOGO / NAME TREATMENT ─────────────────────────────────────── */
+.logo-first {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.logo-last {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.hero__name,
+.page-header__inner h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.hero__name em,
+.page-header__inner h1 em {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+/* Warm noise texture — slightly more present to echo the painterly album bg */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 9999;
+}
