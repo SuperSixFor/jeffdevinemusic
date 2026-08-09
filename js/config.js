@@ -73,13 +73,19 @@ const SITE = {
 
     // Bio paragraphs — each string is one <p>. Edit freely.
     bio: [
-      'Devine served for many years as Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
+      'Jeff served for many years as Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
     ],
 
     // Published works — shown on About, Home, and Music pages.
     // song: individual piece within a collection (renders as "Song" in *Book*)
     // Set url to "" to show the title without a link.
     publications: [
+      {
+        publisher: "Hinshaw Music",
+        title:     "Cross of Jesus, Cross of Sorrow",
+        url:       "TBD",
+        note:      "October 2026",
+      },
       {
         publisher: "Mel Bay Publications",
         title:     "Fingerpicking Hymns",
