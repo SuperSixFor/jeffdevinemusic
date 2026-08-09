@@ -83,7 +83,7 @@ const SITE = {
       {
         publisher: "Hinshaw Music",
         title:     "Cross of Jesus, Cross of Sorrow",
-        url:       "TBD",
+        url:       "",
         note:      "October 2026",
       },
       {
