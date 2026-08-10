@@ -33,9 +33,9 @@ const SITE = {
 
   // ── NAVIGATION ────────────────────────────────────────────────
   nav: [
+    { label: "About",   href: "about.html" },    
     { label: "Music",   href: "music.html" },
     { label: "Shop",    href: "shop.html" },
-    { label: "About",   href: "about.html" },
     { label: "Contact", href: "contact.html" },
   ],
 
@@ -93,8 +93,8 @@ const SITE = {
         note:      "In print",
       },
       {
-        publisher: "Royal College of Church Music",
-        song:      "Humble Hold Your Kingdom's Key",
+        publisher: "Royal School of Church Music",
+        song:      "The Humble Hold Your Kingdom's Key",
         title:     "Light on the Way",
         url:       "https://www.rscmshop.com/books/9780854022892/light-on-the-way",
         note:      "In Print",
@@ -136,8 +136,8 @@ const SITE = {
   shop: {
     licenseNote: "Purchase includes a performance license for one ensemble for one performance season. TBD",
     footerNote:  `All purchases are PDF downloads delivered instantly. Choral scores include
-                  a performance license for one ensemble for one performance season. TBD
-                  For bulk or institutional licensing, TBD <a href="contact.html">get in touch</a>.`,
+                  a performance license for one ensemble for one performance season.
+                  For bulk or institutional licensing, <a href="contact.html">get in touch</a>.`,
 
     // Filter categories — edit label/value pairs to add/remove filters.
     // value must match category or season fields in js/catalog.js
