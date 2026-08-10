@@ -8,7 +8,6 @@
 const CATALOG = [
   { title: "A City Radiant as a Bride", category: "tds", categoryLabel: "Timothy Dudley-Smith", group: "vocal", season: "general", year: 2012, voicing: "SATB", detail: "SATB · Piano" },
   { title: "A Glory Fills the Midnight Sky", category: "tds", categoryLabel: "Timothy Dudley-Smith", group: "vocal", season: "advent", year: 2010, voicing: "SATB", detail: "SATB · A cappella" },
-  { title: "All Glory be to God on High", category: "tds", categoryLabel: "Timothy Dudley-Smith", group: "vocal", season: "general", year: 1997, voicing: "SATB", detail: "SATB · Piano, Organ" },
   { title: "All Glory Be to God on High", category: "tds", categoryLabel: "Timothy Dudley-Smith", group: "vocal", season: "general", year: 1997, voicing: "SATB", detail: "SATB · Piano, Organ" },
   { title: "Almighty God, Our Prayer is Still", category: "tds", categoryLabel: "Timothy Dudley-Smith", group: "vocal", season: "general", year: 2013, voicing: "SATB", detail: "SATB · Piano" },
   { title: "A Purple Robe", category: "tds", categoryLabel: "Timothy Dudley-Smith", group: "vocal", season: "lent", year: 2009, voicing: "SATB", detail: "SATB · Piano", payhipKey: "CgKRZ", price: 10, pageUrl: "shop/a-purple-robe.html" },
@@ -83,7 +82,6 @@ const CATALOG = [
   { title: "I Know That My Redeemer Lives", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "lent", year: 1991, voicing: "Piano", detail: "Piano" },
   { title: "Interlude", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "general", year: 1997, voicing: "Piano", detail: "Piano" },
   { title: "May Jesus Christ Be Praised", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "general", year: 2022, voicing: "Piano", detail: "Piano" },
-  { title: "May the Mind of Christ, My Saviour (Piano)", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "general", year: 2021, voicing: "Guitar", detail: "Guitar" },
   { title: "May the Mind of Christ, My Saviour (Piano)", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "general", year: 2018, voicing: "Piano", detail: "Piano · Piano, Organ" },
   { title: "O Worship the King", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "general", year: 2018, voicing: "Piano", detail: "Piano" },
   { title: "Rondeau", category: "pha", categoryLabel: "Piano Hymns and Arrangements", group: "instrumental", season: "general", year: 1997, voicing: "Piano", detail: "Piano" },
