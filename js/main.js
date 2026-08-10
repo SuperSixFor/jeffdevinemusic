@@ -8,7 +8,12 @@
   if (typeof SITE === 'undefined' || !SITE.theme) return;
   const link = document.createElement('link');
   link.rel  = 'stylesheet';
-  link.href = 'css/themes/' + SITE.theme;
+  // Root-relative — must resolve correctly from subdirectory pages
+  // (shop/*.html) too, not just top-level pages. A page-relative path
+  // here 404s on any page not at the site root, silently leaving every
+  // --color-* custom property undefined (transparent panels, invisible
+  // badge colors, etc. — exactly the bugs this was tracked down from).
+  link.href = '/css/themes/' + SITE.theme;
   document.head.appendChild(link);
 })();
 
@@ -75,7 +80,10 @@ function initMobileNav() {
   btn.setAttribute('aria-label', 'Toggle menu');
   btn.setAttribute('aria-expanded', 'false');
   btn.innerHTML = '<span></span><span></span><span></span>';
-  nav.appendChild(btn);
+  // Lives in .nav__right (not directly in .nav) so .nav keeps exactly
+  // 2 top-level children (logo, nav__right) for justify-content:space-between,
+  // regardless of what else nav__right ends up holding (cart link, etc).
+  (document.querySelector('.nav__right') || nav).appendChild(btn);
 
   const close = () => {
     nav.classList.remove('nav--open');

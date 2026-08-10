@@ -9,28 +9,39 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCatalog();
   if (typeof initReveal === 'function') initReveal();
   initFilters();
-  applyDefaultFilter('choral');
+  applyDefaultFilter('all');
 });
+
+// "Add to Cart" clicks are handled globally by cart.js's document-level
+// delegation (any [data-cart-add] button works, on this page or any other).
 
 function renderCatalog() {
   const grid = document.getElementById('catalog-grid');
   if (!grid) return;
 
   grid.innerHTML = CATALOG.map((piece, i) => {
-    const dataCats = [piece.category, piece.season].filter(Boolean).join(' ');
+    const dataCats = [piece.category, piece.group, piece.season].filter(Boolean).join(' ');
     const label    = piece.voicing
-      ? `${cap(piece.category)} · ${piece.voicing}`
-      : cap(piece.category);
+      ? `${piece.categoryLabel} · ${piece.voicing}`
+      : piece.categoryLabel || '';
     const delay    = i % 3 === 1 ? ' reveal-delay-1' : i % 3 === 2 ? ' reveal-delay-2' : '';
     const detail   = piece.detail
       ? `<div class="catalog-card__detail">${piece.detail}</div>`
       : '';
-    const license  = piece.category === 'choral'
+    const license  = piece.group === 'vocal'
       ? `<div class="catalog-card__license">Purchase includes a performance license for one ensemble for one performance season.</div>`
       : '';
-    const cta = piece.shopifyEmbed
-      ? piece.shopifyEmbed
-      : `<a href="contact.html" class="btn btn--primary btn--sm">Inquire</a>`;
+    const price = piece.price != null
+      ? `<div class="catalog-card__price">$${piece.price}</div>`
+      : '';
+    const cta = piece.payhipKey
+      ? `<div class="catalog-card__actions">
+    <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
+    <button type="button" class="btn btn--primary btn--sm" data-cart-add data-key="${piece.payhipKey}" data-title="${piece.title.replace(/"/g, '&quot;')}" data-price="${piece.price}">Add to Cart</button>
+  </div>`
+      : piece.shopifyEmbed
+      ? `<div class="catalog-card__cta">${piece.shopifyEmbed}</div>`
+      : `<div class="catalog-card__cta"><a href="contact.html" class="btn btn--primary btn--sm">Inquire</a></div>`;
 
     return `<div class="catalog-card reveal${delay}" data-category="${dataCats}">
   <div class="catalog-card__meta">
@@ -39,8 +50,8 @@ function renderCatalog() {
   </div>
   <div class="catalog-card__title">${piece.title}</div>
   ${detail}
-  <div class="catalog-card__price">$${piece.price}</div>
-  <div class="catalog-card__cta">${cta}</div>
+  ${price}
+  ${cta}
   ${license}
 </div>`;
   }).join('\n');

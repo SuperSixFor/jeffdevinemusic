@@ -32,10 +32,16 @@ const SITE = {
   },
 
   // ── NAVIGATION ────────────────────────────────────────────────
+  // NOTE: not currently wired up — main.js never reads SITE.nav.
+  // The real nav/footer links are hand-duplicated in every HTML page's
+  // <ul class="nav__links">/<ul class="footer__links"> markup (and in
+  // catalog-tool/10_site_sync/sync_catalog.py's piece-page template).
+  // Kept in sync here for documentation; edit order in all of those
+  // places, not just here, until this is made the actual source of truth.
   nav: [
+    { label: "About",   href: "about.html" },
     { label: "Music",   href: "music.html" },
     { label: "Shop",    href: "shop.html" },
-    { label: "About",   href: "about.html" },
     { label: "Contact", href: "contact.html" },
   ],
 
@@ -140,16 +146,16 @@ const SITE = {
                   For bulk or institutional licensing, TBD <a href="contact.html">get in touch</a>.`,
 
     // Filter categories — edit label/value pairs to add/remove filters.
-    // value must match category or season fields in js/catalog.js
+    // value must match the category field in js/catalog.js (one of the
+    // 6 canon_archive directories: tds/cha/vco/he/pha/goa).
     filters: [
-      { label: "All",               value: "all" },
-      { label: "Choral",            value: "choral" },
-      { label: "Guitar",            value: "guitar" },
-      { label: "Congregational",    value: "congregational" },
-      { label: "Vocal",             value: "vocal" },
-      { label: "Advent/Christmas",  value: "adventChristmas" },
-      { label: "Lent/Easter",       value: "lentEaster" },
-      { label: "Children's",        value: "childrens" },
+      { label: "All",                                value: "all" },
+      { label: "Timothy Dudley-Smith",                value: "tds" },
+      { label: "Choral Hymns and Arrangements",       value: "cha" },
+      { label: "Vocal and Choral Originals",          value: "vco" },
+      { label: "Hymn Ensembles",                      value: "he" },
+      { label: "Piano Hymns and Arrangements",         value: "pha" },
+      { label: "Guitar Originals and Arrangements",    value: "goa" },
     ],
   },
 

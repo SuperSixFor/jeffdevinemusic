@@ -19,12 +19,14 @@
 
   <nav class="nav">
     <a href="index.html" class="nav__logo">Jeff <em>Devine</em></a>
-    <ul class="nav__links">
-      <li><a href="music.html">Music</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="about.html" class="nav__link--active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav__right">
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link--active">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <section class="page-header">
@@ -50,7 +52,7 @@
           <div class="bio-paragraphs reveal"></div>
 
           <div class="credentials reveal reveal-delay-1">
-            <div class="label" style="margin-bottom:1rem;">Credentials</div>
+            <div class="label" style="margin-bottom:1rem;">Background</div>
             <!-- Injected from config.js → about.credentials -->
             <ul class="credentials__list"></ul>
           </div>
@@ -74,9 +76,9 @@
           <div class="footer__notes"></div>
         </div>
         <ul class="footer__links">
+          <li><a href="about.html">About</a></li>
           <li><a href="music.html">Music</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -85,5 +87,6 @@
 
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
