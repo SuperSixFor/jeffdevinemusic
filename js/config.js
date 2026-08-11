@@ -106,6 +106,14 @@ const SITE = {
         note:      "In Print",
       },
       {
+        publisher: "The Hymn Society",
+        song:      "A Mynistry for the Word, An interview with Timothy Dudley-Smith, FHS",
+        title:     "The Hymn, Volume 61",
+        url:       "https://hdl.handle.net/2027/mdp.39015080918306?urlappend=%3Bseq=173%3Bownerid=13510798903470523-177",
+        note:      "2010",
+      },      
+
+      {
         publisher: "Maranatha! Music",
         song:      "In a Time of Praise",
         title:     "Songs for the Congregation",
