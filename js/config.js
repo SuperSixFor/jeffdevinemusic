@@ -93,18 +93,26 @@ const SITE = {
         note:      "October 2026",
       },
       {
-        publisher: "Mel Bay Publications",
-        title:     "Fingerpicking Hymns",
-        url:       "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
-        note:      "In print",
-      },
-      {
         publisher: "Royal School of Church Music",
         song:      "The Humble Hold Your Kingdom's Key",
         title:     "Light on the Way",
         url:       "https://www.rscmshop.com/books/9780854022892/light-on-the-way",
         note:      "In Print",
       },
+      {
+        publisher: "Mel Bay Publications",
+        title:     "Fingerpicking Hymns",
+        url:       "https://www.melbay.com/Products/99969BCDEB/fingerpicking-hymns.aspx",
+        note:      "In print",
+      },
+      {
+        publisher: "The Hymn Society",
+        song:      "A Ministry for the Word, An interview with Timothy Dudley-Smith, FHS",
+        title:     "The Hymn, Volume 61",
+        url:       "https://hdl.handle.net/2027/mdp.39015080918306?urlappend=%3Bseq=173%3Bownerid=13510798903470523-177",
+        note:      "2010",
+      },      
+
       {
         publisher: "Maranatha! Music",
         song:      "In a Time of Praise",
