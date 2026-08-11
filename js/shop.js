@@ -19,7 +19,13 @@ function renderCatalog() {
   const grid = document.getElementById('catalog-grid');
   if (!grid) return;
 
-  grid.innerHTML = CATALOG.map((piece, i) => {
+  // For sale first, then alphabetical within each group.
+  const sorted = [...CATALOG].sort((a, b) => {
+    const forSale = (b.payhipKey ? 1 : 0) - (a.payhipKey ? 1 : 0);
+    return forSale || a.title.localeCompare(b.title);
+  });
+
+  grid.innerHTML = sorted.map((piece, i) => {
     const dataCats = [piece.category, piece.group, piece.season].filter(Boolean).join(' ');
     const label    = piece.voicing
       ? `${piece.categoryLabel} · ${piece.voicing}`
