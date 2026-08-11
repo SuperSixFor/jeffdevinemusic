@@ -1007,6 +1007,8 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 }
 .piece-details__row:last-child { border-bottom: none; }
 .piece-details__row span:first-child { color: var(--color-text-muted); }
+.piece-details__row a { color: var(--color-accent); text-decoration: none; }
+.piece-details__row a:hover { text-decoration: underline; }
 
 .piece-page__sidebar { position: sticky; top: 6rem; }
 
