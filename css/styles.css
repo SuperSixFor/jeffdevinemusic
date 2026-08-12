@@ -14,6 +14,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Offsets in-page anchor jumps (#about/#audio/#contact) so the fixed
+   nav doesn't cover the section heading. */
+#about, #audio, #contact { scroll-margin-top: 90px; }
+
 body {
   background: var(--color-bg);
   color: var(--color-text);
@@ -475,60 +479,6 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   color: var(--color-accent);
 }
 
-/* ── PUBLISHERS SECTION (homepage) ───────────────────────────── */
-.publishers-section { padding-block: clamp(3rem, 6vw, 5rem); background: var(--color-surface, var(--color-bg)); }
-
-.publishers-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.publisher-card {
-  display: block;
-  text-decoration: none;
-  padding: 1.5rem 2rem;
-  border: 1px solid var(--color-border);
-  flex: 1 1 260px;
-  max-width: 400px;
-  transition: border-color 0.2s;
-}
-
-.publisher-card:hover { border-color: var(--color-accent); }
-
-.publisher-card__label {
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  margin-bottom: 0.4rem;
-}
-
-.publisher-card__title {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  color: var(--color-text);
-  margin-bottom: 0.35rem;
-}
-
-.publisher-card__desc {
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  margin-bottom: 0.5rem;
-}
-
-.publisher-card__note {
-  font-size: 0.75rem;
-  color: var(--color-accent);
-  letter-spacing: 0.04em;
-}
-
-/* ── MUSIC PAGE ──────────────────────────────────────────────── */
-.music-section  { padding-block: clamp(4rem, 8vw, 7rem); }
-.music-block    { max-width: 640px; }
-.music-divider  { width: 100%; height: 1px; background: var(--color-border); margin-block: 5rem; }
-
 /* ── SHOP PAGE ───────────────────────────────────────────────── */
 .shop-filters {
   border-bottom: 1px solid var(--color-border);
@@ -592,16 +542,17 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 .catalog-card__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
 .catalog-card__actions .payhip-buy-button { text-decoration: none; }
 
-.catalog-card__license {
-  font-size: 0.7rem; color: var(--color-text-subtle);
-  line-height: 1.5;
-  border-top: 1px solid var(--color-border);
-  padding-top: 0.75rem; margin-top: 0.25rem;
+.shop-note {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  max-width: 68ch;
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-bg-raised);
+  border-left: 3px solid var(--color-accent);
 }
-.catalog-card__license:empty { display: none; }
-
-.shop-note { font-size: 0.85rem; color: var(--color-text-subtle); max-width: 60ch; }
-.shop-note a { color: var(--color-text); text-decoration: underline; text-underline-offset: 2px; }
+.shop-note a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── CONTACT PAGE ────────────────────────────────────────────── */
 .contact-section { padding-block: clamp(4rem, 8vw, 7rem); }

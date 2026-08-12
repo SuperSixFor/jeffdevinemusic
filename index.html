@@ -23,10 +23,10 @@
     <a href="index.html" class="nav__logo">Jeff <em>Devine</em></a>
     <div class="nav__right">
       <ul class="nav__links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="shop.html">Catalog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -71,17 +71,14 @@
     </div>
   </section>
 
-  <!-- ── STREAMING ─────────────────────────────────────────────── -->
-  <section class="streaming">
+  <!-- ── AUDIO ────────────────────────────────────────────────── -->
+  <section class="streaming" id="audio">
     <div class="container">
       <div class="reveal">
-        <div class="label">Listen</div>
+        <div class="label music-guitar-subhead"></div>
         <div class="rule"></div>
-        <h2>Solo Guitar — Now Streaming</h2>
-        <p>
-          Recordings available on Spotify and Apple Music.
-          Choral works distributed directly through the shop.
-        </p>
+        <h2 class="music-guitar-heading"></h2>
+        <p class="music-guitar-body"></p>
       </div>
 
       <div class="streaming__links reveal reveal-delay-1">
@@ -97,40 +94,87 @@
     </div>
   </section>
 
-  <!-- ── PUBLISHERS ───────────────────────────────────────────────── -->
-  <section class="publishers-section">
+  <!-- ── ABOUT ────────────────────────────────────────────────── -->
+  <section class="bio-section" id="about">
     <div class="container">
       <div class="reveal">
-        <div class="label">In Print</div>
+        <div class="label">About</div>
         <div class="rule"></div>
-        <h2>Published Works</h2>
       </div>
-      <!-- Populated by main.js from config.js → home.publishers -->
-      <div class="publishers-grid reveal reveal-delay-1" id="publishers-grid"></div>
-    </div>
-  </section>
 
-  <!-- ── ABOUT STRIP ────────────────────────────────────────────── -->
-  <section class="about-strip">
-    <div class="container">
-      <div class="about-strip__inner">
+      <div class="bio-section__inner" style="margin-top:2.5rem;">
 
-        <div class="about-strip__image reveal">
-          <img src="assets/images/headshot.png" alt="Jeff Devine">
-        </div>
-
-        <div class="reveal reveal-delay-1">
-          <div class="label">About</div>
-          <div class="rule"></div>
-          <h2>Jeff Devine</h2>
-          <!-- Populated from js/config.js → home.aboutExcerpt -->
-          <p class="bio-excerpt" style="margin-top:1.25rem;"></p>
-          <p class="bio-excerpt-note" style="margin-top:1rem;"></p>
-          <div style="margin-top:2rem;">
-            <a href="about.html" class="btn btn--primary">Full Biography</a>
+        <div class="bio-section__image reveal">
+          <div class="about-strip__image">
+            <img src="assets/images/headshot.png" alt="Jeff Devine">
           </div>
         </div>
 
+        <div class="bio-section__text">
+          <!-- Bio paragraphs injected from config.js → about.bio -->
+          <div class="bio-paragraphs reveal"></div>
+
+          <div class="credentials reveal reveal-delay-1">
+            <div class="label" style="margin-bottom:1rem;">Background</div>
+            <!-- Injected from config.js → about.credentials -->
+            <ul class="credentials__list"></ul>
+          </div>
+
+          <div class="publications reveal reveal-delay-1">
+            <div class="label" style="margin-bottom:1rem;">Publications</div>
+            <!-- Injected from config.js → about.publications -->
+            <ul class="publications__list"></ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────────── -->
+  <section class="contact-section" id="contact">
+    <div class="container container--sm">
+      <div class="reveal">
+        <div class="label">Get in Touch</div>
+        <div class="rule"></div>
+        <h2>Contact</h2>
+      </div>
+
+      <p class="contact-intro reveal" style="margin-top:1.5rem;"></p>
+
+      <div class="contact-form reveal reveal-delay-1">
+        <form method="POST"><!-- action set from config -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-direct reveal reveal-delay-2">
+        <div class="label">Direct</div>
+        <div class="rule"></div>
+        <p>Prefer email? <a href="#" class="contact-email"></a></p>
       </div>
     </div>
   </section>
@@ -149,10 +193,10 @@
           </div>
         </div>
         <ul class="footer__links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="music.html">Music</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="shop.html">Catalog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>

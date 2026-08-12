@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
   populateFooter();
 
   // ── PER-PAGE ─────────────────────────────────────────────────
+  // index.html is the single-page site (hero/featured/audio/about/contact,
+  // all merged in one document) -- only shop.html + shop/*.html are
+  // separate pages, so they're the only other entries here.
   const handlers = {
-    'index':   populateHome,
-    '':        populateHome,
-    'about':   populateAbout,
-    'music':   populateMusic,
-    'shop':    populateShop,
-    'contact': populateContact,
+    'index': populateIndex,
+    '':      populateIndex,
+    'shop':  populateShop,
   };
   (handlers[page] || (() => {}))();
 
@@ -43,8 +43,31 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initMobileNav();
   initReveal();
+  if (page === 'index' || page === '') initScrollSpy();
+
+  // Re-jump to the URL hash (#about/#audio/#contact) now that the
+  // sections above have been populated -- the browser's own initial
+  // anchor-scroll runs against the pre-population (mostly empty)
+  // layout, so without this a direct link like index.html#contact
+  // lands short of the actual section once content pushes it down.
+  scrollToHash();
+  // Fonts/images finishing after DOMContentLoaded can still reflow
+  // section positions (e.g. the About headshot), leaving the jump
+  // above short -- window.load fires once everything has settled,
+  // so re-apply it there too.
+  window.addEventListener('load', scrollToHash);
 
 });
+
+function scrollToHash() {
+  if (!location.hash) return;
+  const target = document.querySelector(location.hash);
+  // Instant, not smooth: this is a corrective snap to where the section
+  // ended up after content/images loaded, not a user-initiated scroll --
+  // animating it would just be a second, jarring scroll on top of
+  // whatever (if anything) the browser's own initial jump already did.
+  if (target) target.scrollIntoView({ behavior: 'auto', block: 'start' });
+}
 
 // ── NAV ─────────────────────────────────────────────────────────
 function populateNav(currentPage) {
@@ -69,6 +92,27 @@ function initNav() {
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+}
+
+// Highlights the nav link for whichever section (#about/#audio/#contact)
+// is currently in view, since index.html is a single scrolling page.
+function initScrollSpy() {
+  const links = [...document.querySelectorAll('.nav__links a[href^="#"]')];
+  if (!links.length) return;
+  const sections = links
+    .map(a => document.querySelector(a.getAttribute('href')))
+    .filter(Boolean);
+  if (!sections.length) return;
+
+  const setActive = (id) => {
+    links.forEach(a => a.classList.toggle('nav__link--active', a.getAttribute('href') === `#${id}`));
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+
+  sections.forEach(s => observer.observe(s));
 }
 
 function initMobileNav() {
@@ -128,8 +172,8 @@ function initReveal() {
   reveals.forEach(el => observer.observe(el));
 }
 
-// ── HOME ─────────────────────────────────────────────────────────
-function populateHome() {
+// ── INDEX (single-page site: hero + featured + audio + about + contact) ──
+function populateIndex() {
   const h = SITE.home;
 
   // Hero
@@ -140,10 +184,6 @@ function populateHome() {
 
   const cta = document.querySelector('.hero__cta .btn');
   if (cta) { cta.textContent = h.heroCTA.label; cta.href = h.heroCTA.href; }
-
-  // About strip
-  setText('.about-strip .bio-excerpt', h.aboutExcerpt);
-  setText('.about-strip .bio-excerpt-note', h.aboutExcerptNote);
 
   // Featured pieces
   const grid = document.querySelector('.featured__grid');
@@ -162,9 +202,9 @@ function populateHome() {
     });
   }
 
-  // Streaming links (index)
-  populateStreamingLinks('.streaming__links');
-  populatePublishers();
+  populateMusic();
+  populateAbout();
+  populateContact();
 }
 
 // ── ABOUT ────────────────────────────────────────────────────────
@@ -204,22 +244,16 @@ function populateAbout() {
   }
 }
 
-// ── MUSIC ────────────────────────────────────────────────────────
+// ── AUDIO (guitar recordings section) ─────────────────────────────
 function populateMusic() {
   const m = SITE.music;
   setText('.music-guitar-heading', m.guitarHeading);
   setText('.music-guitar-subhead', m.guitarSubhead);
   setText('.music-guitar-body', m.guitarBody);
-  setText('.music-choral-heading', m.choralHeading);
-  setText('.music-choral-subhead', m.choralSubhead);
-  setText('.music-choral-body', m.choralBody);
-  const choralBtn = document.querySelector('.music-choral-cta');
-  if (choralBtn && m.choralCTA) { choralBtn.textContent = m.choralCTA.label; choralBtn.href = m.choralCTA.href; }
   populateStreamingLinks('.streaming__links');
-  populatePublishers();
 }
 
-// ── PUBLICATIONS RENDERING (shared — home, music, about) ─────────
+// ── PUBLICATIONS RENDERING (shared — about) ───────────────────────
 function renderPublication(p) {
   const songPart  = p.song  ? `"${p.song}" in ` : '';
   const innerText = p.song ? `${songPart}<em>${p.title}</em>` : `<em>${p.title}</em>`;
@@ -230,15 +264,6 @@ function renderPublication(p) {
     : '';
   const notePart  = p.note ? ` <span style="opacity:.6;">(${p.note})</span>` : '';
   return `<li>${p.publisher}${titlePart}${notePart}</li>`;
-}
-
-function populatePublishers() {
-  const grid = document.getElementById('publishers-grid');
-  const pubs = SITE.about && SITE.about.publications;
-  if (!grid || !pubs || !pubs.length) return;
-  grid.innerHTML = '<ul class="publications__list">' +
-    pubs.filter(p => p.publisher).map(renderPublication).join('') +
-  '</ul>';
 }
 
 // ── SHOP ─────────────────────────────────────────────────────────

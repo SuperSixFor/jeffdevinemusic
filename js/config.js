@@ -33,16 +33,18 @@ const SITE = {
 
   // ── NAVIGATION ────────────────────────────────────────────────
   // NOTE: not currently wired up — main.js never reads SITE.nav.
+  // index.html is a single scrolling page (About/Audio/Contact are
+  // sections, not separate pages) -- only Catalog is its own page.
   // The real nav/footer links are hand-duplicated in every HTML page's
   // <ul class="nav__links">/<ul class="footer__links"> markup (and in
   // catalog-tool/10_site_sync/sync_catalog.py's piece-page template).
   // Kept in sync here for documentation; edit order in all of those
   // places, not just here, until this is made the actual source of truth.
   nav: [
-    { label: "About",   href: "about.html" },
-    { label: "Music",   href: "music.html" },
-    { label: "Shop",    href: "shop.html" },
-    { label: "Contact", href: "contact.html" },
+    { label: "About",   href: "index.html#about" },
+    { label: "Audio",   href: "index.html#audio" },
+    { label: "Catalog", href: "shop.html" },
+    { label: "Contact", href: "index.html#contact" },
   ],
 
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
@@ -132,18 +134,11 @@ const SITE = {
     ],
   },
 
-  // ── MUSIC PAGE ────────────────────────────────────────────────
+  // ── AUDIO SECTION (on index.html, id="audio") ──────────────────
   music: {
     guitarHeading:  "Recordings",
     guitarSubhead:  "Solo Classical Guitar",
     guitarBody:     "Solo guitar works available on major streaming platforms.",
-
-    choralHeading:  "Sheet Music",
-    choralSubhead:  "Choral Works",
-    choralBody:     `Choral compositions are available as PDF scores through the shop.
-                     SATB and additional voicings for sacred/liturgical settings.
-                     Some studio recordings available.`,
-    choralCTA:      { label: "Browse Scores", href: "shop.html" },
   },
 
   // ── SHOP PAGE ─────────────────────────────────────────────────
@@ -151,7 +146,7 @@ const SITE = {
     licenseNote: "Purchase includes a performance license for one ensemble for one performance season. TBD",
     footerNote:  `All purchases are PDF downloads delivered instantly. Choral scores include
                   a performance license for one ensemble for one performance season.
-                  For bulk or institutional licensing, <a href="contact.html">get in touch</a>.`,
+                  For bulk or institutional licensing, <a href="index.html#contact">get in touch</a>.`,
 
     // Filter categories — edit label/value pairs to add/remove filters.
     // value must match the category field in js/catalog.js (one of the

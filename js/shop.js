@@ -34,9 +34,6 @@ function renderCatalog() {
     const detail   = piece.detail
       ? `<div class="catalog-card__detail">${piece.detail}</div>`
       : '';
-    const license  = piece.group === 'vocal'
-      ? `<div class="catalog-card__license">Purchase includes a performance license for one ensemble for one performance season.</div>`
-      : '';
     const price = piece.price != null
       ? `<div class="catalog-card__price">$${piece.price}</div>`
       : '';
@@ -47,7 +44,7 @@ function renderCatalog() {
   </div>`
       : piece.shopifyEmbed
       ? `<div class="catalog-card__cta">${piece.shopifyEmbed}</div>`
-      : `<div class="catalog-card__cta"><a href="contact.html" class="btn btn--primary btn--sm">Inquire</a></div>`;
+      : `<div class="catalog-card__cta"><a href="index.html#contact" class="btn btn--primary btn--sm">Inquire</a></div>`;
 
     return `<div class="catalog-card reveal${delay}" data-category="${dataCats}">
   <div class="catalog-card__meta">
@@ -58,7 +55,6 @@ function renderCatalog() {
   ${detail}
   ${price}
   ${cta}
-  ${license}
 </div>`;
   }).join('\n');
 }
