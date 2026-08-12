@@ -357,7 +357,8 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 
 .about-strip__image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   filter: var(--image-filter, grayscale(100%));
   transition: filter 0.6s;
