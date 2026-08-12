@@ -89,7 +89,7 @@ function renderCatalog() {
     <span class="label">${label}</span>
     <span class="catalog-card__season">${cap(piece.season)}</span>
   </div>
-  <div class="catalog-card__title">${piece.title}</div>
+  <div class="catalog-card__title">${titleHtml(piece.title)}</div>
   ${detail}
   ${price}
   ${cta}
@@ -195,4 +195,15 @@ function applyFilters() {
 function cap(str) {
   if (!str) return '';
   return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Tune names conventionally render in italics in print. Only used where
+// a title is inserted as visible HTML (catalog cards) -- never in
+// data-title/alt/etc. attributes, where a literal <em> tag would show
+// up as text instead of rendering. Keep in sync with sync_catalog.py's
+// ITALIC_TUNE_NAMES / title_html().
+const ITALIC_TUNE_NAMES = ['Sursum Corda'];
+
+function titleHtml(title) {
+  return ITALIC_TUNE_NAMES.reduce((t, name) => t.split(name).join(`<em>${name}</em>`), title);
 }
