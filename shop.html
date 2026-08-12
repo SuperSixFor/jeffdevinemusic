@@ -43,9 +43,6 @@
   <!-- ── FILTER BAR ─────────────────────────────────────────── -->
   <div class="shop-filters">
     <div class="container">
-      <div class="shop-search reveal">
-        <input type="search" id="shop-search" class="shop-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
-      </div>
       <div class="filter-bar reveal">
         <!-- Repopulated by js/main.js from SITE.shop.filters in config.js -->
         <button class="filter-btn" data-filter="all">All</button>
@@ -55,6 +52,20 @@
         <button class="filter-btn" data-filter="he">Hymn Ensembles</button>
         <button class="filter-btn" data-filter="pha">Piano Hymns and Arrangements</button>
         <button class="filter-btn" data-filter="goa">Guitar Originals and Arrangements</button>
+      </div>
+
+      <!-- Lives outside .filter-bar on purpose -- main.js's populateShop()
+           regenerates .filter-bar's innerHTML from config.js, which would
+           silently wipe this out if it were a child of that element. -->
+      <div class="shop-search-bar reveal">
+        <button type="button" id="shop-search-toggle" class="filter-btn filter-btn--search" aria-expanded="false" aria-controls="shop-search-row">
+          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="10.3" y1="10.3" x2="15" y2="15" stroke="currentColor" stroke-width="1.4"/></svg>
+          Search
+        </button>
+      </div>
+
+      <div class="shop-search" id="shop-search-row">
+        <input type="search" id="shop-search" class="shop-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
       </div>
     </div>
   </div>

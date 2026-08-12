@@ -491,7 +491,25 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   padding-block: 1rem;
 }
 
-.shop-search { max-width: 360px; margin-bottom: 1rem; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.shop-search-bar { margin-top: 0.75rem; }
+.filter-btn--search { display: inline-flex; align-items: center; gap: 0.4rem; }
+.filter-btn--search svg { flex-shrink: 0; }
+
+/* Collapsed by default; .shop-search--open expands it open. Height is
+   animated via grid-template-rows (not max-height) so it doesn't need
+   a guessed pixel cap that clips a taller state (e.g. wrapped error text). */
+.shop-search {
+  max-width: 360px;
+  margin-top: 0;
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.25s ease, opacity 0.2s ease, margin-top 0.25s ease;
+}
+.shop-search--open { grid-template-rows: 1fr; opacity: 1; margin-top: 1rem; }
+.shop-search > * { min-height: 0; overflow: hidden; }
 
 .shop-search__input {
   width: 100%;
@@ -508,8 +526,6 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 .shop-search__input:focus { border-color: var(--color-text); }
 .shop-search__input::placeholder { color: var(--color-text-subtle); }
 .shop-search__input::-webkit-search-cancel-button { appearance: none; -webkit-appearance: none; }
-
-.filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
 .filter-btn {
   font-family: var(--font-body);

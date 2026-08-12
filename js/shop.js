@@ -69,7 +69,9 @@ function renderCatalog() {
 }
 
 function initFilters() {
-  const btns = document.querySelectorAll('.filter-btn');
+  // [data-filter] excludes the search toggle -- it's a .filter-btn too
+  // (same look), but it isn't a category and has no filter value.
+  const btns = document.querySelectorAll('.filter-btn[data-filter]');
   if (!btns.length) return;
 
   btns.forEach(btn => {
@@ -84,11 +86,41 @@ function initFilters() {
 }
 
 function initSearch() {
-  const input = document.getElementById('shop-search');
-  if (!input) return;
+  const toggle = document.getElementById('shop-search-toggle');
+  const row    = document.getElementById('shop-search-row');
+  const input  = document.getElementById('shop-search');
+  if (!toggle || !row || !input) return;
+
+  const closeSearch = () => {
+    row.classList.remove('shop-search--open');
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+    if (activeQuery) {
+      input.value = '';
+      activeQuery = '';
+      applyFilters();
+    }
+  };
+
+  const openSearch = () => {
+    row.classList.add('shop-search--open');
+    toggle.classList.add('active');
+    toggle.setAttribute('aria-expanded', 'true');
+    input.focus();
+  };
+
+  toggle.addEventListener('click', () => {
+    if (row.classList.contains('shop-search--open')) closeSearch();
+    else openSearch();
+  });
+
   input.addEventListener('input', () => {
     activeQuery = input.value.trim().toLowerCase();
     applyFilters();
+  });
+
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeSearch();
   });
 }
 
