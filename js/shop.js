@@ -7,8 +7,37 @@
 let activeFilter = 'all';
 let activeQuery  = '';
 
+// Persists filter + search across navigation (browser back, and our own
+// "← Back to Catalog" link on piece pages) so returning to the catalog
+// doesn't dump the visitor back to an unfiltered grid. sessionStorage
+// (not localStorage) on purpose -- scoped to this browsing session/tab,
+// not a permanent preference that outlives the visit.
+const FILTER_STATE_KEY = 'shopFilterState';
+
+function restoreFilterState() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(FILTER_STATE_KEY));
+    if (saved) {
+      activeFilter = saved.filter || 'all';
+      activeQuery  = saved.query  || '';
+    }
+  } catch {
+    // malformed/unavailable storage -- fall back to defaults
+  }
+}
+
+function saveFilterState() {
+  try {
+    sessionStorage.setItem(FILTER_STATE_KEY, JSON.stringify({ filter: activeFilter, query: activeQuery }));
+  } catch {
+    // storage unavailable (private browsing, quota, etc.) -- filtering
+    // still works for this page load, it just won't persist
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof CATALOG === 'undefined') return;
+  restoreFilterState();
   renderCatalog();
   if (typeof initReveal === 'function') initReveal();
   initFilters();
@@ -74,6 +103,12 @@ function initFilters() {
   const btns = document.querySelectorAll('.filter-btn[data-filter]');
   if (!btns.length) return;
 
+  // main.js's populateShop() regenerates these buttons from config.js and
+  // hardcodes the first one ("All") as active -- clear that unconditionally
+  // before applying the restored filter, or a restored non-"all" filter
+  // ends up with two buttons marked active at once.
+  btns.forEach(btn => btn.classList.remove('active'));
+
   btns.forEach(btn => {
     if (btn.dataset.filter === activeFilter) btn.classList.add('active');
     btn.addEventListener('click', () => {
@@ -102,11 +137,11 @@ function initSearch() {
     }
   };
 
-  const openSearch = () => {
+  const openSearch = (focus = true) => {
     row.classList.add('shop-search--open');
     toggle.classList.add('active');
     toggle.setAttribute('aria-expanded', 'true');
-    input.focus();
+    if (focus) input.focus();
   };
 
   toggle.addEventListener('click', () => {
@@ -122,6 +157,14 @@ function initSearch() {
   input.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeSearch();
   });
+
+  // Reflect a restored query (from a previous visit to the grid this
+  // session) in the UI -- expand the row and fill the field, don't just
+  // filter silently with no visible explanation.
+  if (activeQuery) {
+    input.value = activeQuery;
+    openSearch(false);
+  }
 }
 
 // Category filter and search query narrow the grid together (AND, not
@@ -145,6 +188,8 @@ function applyFilters() {
 
   const empty = document.getElementById('catalog-empty');
   if (empty) empty.style.display = visibleCount === 0 ? '' : 'none';
+
+  saveFilterState();
 }
 
 function cap(str) {
