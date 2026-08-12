@@ -24,8 +24,8 @@
     <div class="nav__right">
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#audio">Audio</a></li>
         <li><a href="shop.html">Catalog</a></li>
+        <li><a href="#recordings">Recordings</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -46,51 +46,6 @@
 
     <div class="hero__scroll" aria-hidden="true">
       <div class="hero__scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ── FEATURED ──────────────────────────────────────────────── -->
-  <section class="featured">
-    <div class="container">
-      <div class="reveal">
-        <div class="label">Selected Works</div>
-        <div class="rule"></div>
-        <h2>From the Catalog</h2>
-        <p style="margin-top:1rem;">
-          Choral scores and solo guitar works — written for the church choir loft,
-          the concert hall, and the rehearsal room.
-        </p>
-      </div>
-
-      <!-- Populated by main.js from config.js → home.featuredPieces -->
-      <div class="featured__grid"></div>
-
-      <div style="margin-top:3rem;" class="reveal">
-        <a href="shop.html" class="btn btn--ghost">View All Works</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── AUDIO ────────────────────────────────────────────────── -->
-  <section class="streaming" id="audio">
-    <div class="container">
-      <div class="reveal">
-        <div class="label music-guitar-subhead"></div>
-        <div class="rule"></div>
-        <h2 class="music-guitar-heading"></h2>
-        <p class="music-guitar-body"></p>
-      </div>
-
-      <div class="streaming__links reveal reveal-delay-1">
-        <!-- Populated by main.js when links are live in config.js -->
-        <a href="#" data-key="spotify"    class="btn btn--ghost" style="opacity:.4;pointer-events:none;">Spotify</a>
-        <a href="#" data-key="appleMusic" class="btn btn--ghost" style="opacity:.4;pointer-events:none;">Apple Music</a>
-      </div>
-
-      <!-- Spotify embed slot — paste URI in config.js -->
-      <div id="spotify-embed" style="margin-top:2.5rem;max-width:480px;" class="reveal reveal-delay-2">
-        <!-- Embed injected here by main.js when spotifyEmbed is set in config -->
-      </div>
     </div>
   </section>
 
@@ -127,6 +82,51 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED (Catalog) ───────────────────────────────────── -->
+  <section class="featured">
+    <div class="container">
+      <div class="reveal">
+        <div class="label">Selected Works</div>
+        <div class="rule"></div>
+        <h2>From the Catalog</h2>
+        <p style="margin-top:1rem;">
+          Choral scores and solo guitar works — written for the church choir loft,
+          the concert hall, and the rehearsal room.
+        </p>
+      </div>
+
+      <!-- Populated by main.js from config.js → home.featuredPieces -->
+      <div class="featured__grid"></div>
+
+      <div style="margin-top:3rem;" class="reveal">
+        <a href="shop.html" class="btn btn--ghost">View All Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RECORDINGS ───────────────────────────────────────────── -->
+  <section class="streaming" id="recordings">
+    <div class="container">
+      <div class="reveal">
+        <div class="label music-guitar-subhead"></div>
+        <div class="rule"></div>
+        <h2 class="music-guitar-heading"></h2>
+        <p class="music-guitar-body"></p>
+      </div>
+
+      <div class="streaming__links reveal reveal-delay-1">
+        <!-- Populated by main.js when links are live in config.js -->
+        <a href="#" data-key="spotify"    class="btn btn--ghost" style="opacity:.4;pointer-events:none;">Spotify</a>
+        <a href="#" data-key="appleMusic" class="btn btn--ghost" style="opacity:.4;pointer-events:none;">Apple Music</a>
+      </div>
+
+      <!-- Spotify embed slot — paste URI in config.js -->
+      <div id="spotify-embed" style="margin-top:2.5rem;max-width:480px;" class="reveal reveal-delay-2">
+        <!-- Embed injected here by main.js when spotifyEmbed is set in config -->
       </div>
     </div>
   </section>
@@ -194,8 +194,8 @@
         </div>
         <ul class="footer__links">
           <li><a href="#about">About</a></li>
-          <li><a href="#audio">Audio</a></li>
           <li><a href="shop.html">Catalog</a></li>
+          <li><a href="#recordings">Recordings</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>

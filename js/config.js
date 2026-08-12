@@ -41,10 +41,10 @@ const SITE = {
   // Kept in sync here for documentation; edit order in all of those
   // places, not just here, until this is made the actual source of truth.
   nav: [
-    { label: "About",   href: "index.html#about" },
-    { label: "Audio",   href: "index.html#audio" },
-    { label: "Catalog", href: "shop.html" },
-    { label: "Contact", href: "index.html#contact" },
+    { label: "About",      href: "index.html#about" },
+    { label: "Catalog",    href: "shop.html" },
+    { label: "Recordings", href: "index.html#recordings" },
+    { label: "Contact",    href: "index.html#contact" },
   ],
 
   // ── STREAMING / SOCIAL LINKS ──────────────────────────────────
@@ -134,7 +134,7 @@ const SITE = {
     ],
   },
 
-  // ── AUDIO SECTION (on index.html, id="audio") ──────────────────
+  // ── RECORDINGS SECTION (on index.html, id="recordings") ────────
   music: {
     guitarHeading:  "Recordings",
     guitarSubhead:  "Solo Classical Guitar",

@@ -16,7 +16,7 @@ html {
 
 /* Offsets in-page anchor jumps (#about/#audio/#contact) so the fixed
    nav doesn't cover the section heading. */
-#about, #audio, #contact { scroll-margin-top: 90px; }
+#about, #recordings, #contact { scroll-margin-top: 90px; }
 
 body {
   background: var(--color-bg);

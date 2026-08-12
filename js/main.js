@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   populateFooter();
 
   // ── PER-PAGE ─────────────────────────────────────────────────
-  // index.html is the single-page site (hero/featured/audio/about/contact,
+  // index.html is the single-page site (hero/about/featured/recordings/contact,
   // all merged in one document) -- only shop.html + shop/*.html are
   // separate pages, so they're the only other entries here.
   const handlers = {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   if (page === 'index' || page === '') initScrollSpy();
 
-  // Re-jump to the URL hash (#about/#audio/#contact) now that the
+  // Re-jump to the URL hash (#about/#recordings/#contact) now that the
   // sections above have been populated -- the browser's own initial
   // anchor-scroll runs against the pre-population (mostly empty)
   // layout, so without this a direct link like index.html#contact
@@ -94,7 +94,7 @@ function initNav() {
   onScroll();
 }
 
-// Highlights the nav link for whichever section (#about/#audio/#contact)
+// Highlights the nav link for whichever section (#about/#recordings/#contact)
 // is currently in view, since index.html is a single scrolling page.
 function initScrollSpy() {
   const links = [...document.querySelectorAll('.nav__links a[href^="#"]')];
@@ -172,7 +172,7 @@ function initReveal() {
   reveals.forEach(el => observer.observe(el));
 }
 
-// ── INDEX (single-page site: hero + featured + audio + about + contact) ──
+// ── INDEX (single-page site: hero + about + featured + recordings + contact) ──
 function populateIndex() {
   const h = SITE.home;
 
@@ -244,7 +244,7 @@ function populateAbout() {
   }
 }
 
-// ── AUDIO (guitar recordings section) ─────────────────────────────
+// ── RECORDINGS (guitar recordings section) ────────────────────────
 function populateMusic() {
   const m = SITE.music;
   setText('.music-guitar-heading', m.guitarHeading);
