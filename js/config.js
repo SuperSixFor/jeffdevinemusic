@@ -152,13 +152,13 @@ const SITE = {
     // value must match the category field in js/catalog.js (one of the
     // 6 canon_archive directories: tds/cha/vco/he/pha/goa).
     filters: [
-      { label: "All",                                value: "all" },
-      { label: "Timothy Dudley-Smith",                value: "tds" },
+      { label: "All",                                 value: "all" },
+      { label: "Timothy Dudley-Smith Hymn Settings",  value: "tds" },
       { label: "Choral Hymns and Arrangements",       value: "cha" },
-      { label: "Vocal and Choral Originals",          value: "vco" },
-      { label: "Hymn Ensembles",                      value: "he" },
-      { label: "Piano Hymns and Arrangements",         value: "pha" },
-      { label: "Guitar Originals and Arrangements",    value: "goa" },
+      { label: "Choral and Vocal Solo Originals",     value: "vco" },
+      { label: "Hymn Instrumental Ensembles",         value: "he" },
+      { label: "Piano Originals and Arrangements",    value: "pha" },
+      { label: "Guitar Originals and Arrangements",   value: "goa" },
     ],
   },
 
