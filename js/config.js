@@ -153,7 +153,7 @@ const SITE = {
     // 6 canon_archive directories: tds/cha/vco/he/pha/goa).
     filters: [
       { label: "All",                                 value: "all" },
-      { label: "Hymn Settings",                       value: "tds" },
+      { label: "Timothy Dudley-Smith Hymn Settings",  value: "tds" },
       { label: "Choral Hymns and Arrangements",       value: "cha" },
       { label: "Choral and Vocal Solo Originals",     value: "vco" },
       { label: "Hymn Instrumental Ensembles",         value: "he" },
