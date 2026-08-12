@@ -43,6 +43,9 @@
   <!-- ── FILTER BAR ─────────────────────────────────────────── -->
   <div class="shop-filters">
     <div class="container">
+      <div class="shop-search reveal">
+        <input type="search" id="shop-search" class="shop-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
+      </div>
       <div class="filter-bar reveal">
         <!-- Repopulated by js/main.js from SITE.shop.filters in config.js -->
         <button class="filter-btn" data-filter="all">All</button>
@@ -63,6 +66,10 @@
       <div class="catalog-grid" id="catalog-grid">
         <!-- Populated by js/catalog.js + js/shop.js -->
       </div>
+
+      <p class="catalog-empty" id="catalog-empty" style="display:none;">
+        No pieces match your search.
+      </p>
 
       <p class="shop-note reveal">
         All purchases are PDF downloads delivered instantly. Choral scores include

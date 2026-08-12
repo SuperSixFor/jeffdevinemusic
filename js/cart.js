@@ -76,6 +76,12 @@ const Cart = (() => {
       badge.style.display = items.length ? 'inline-flex' : 'none';
     });
 
+    // Cart link only earns its place in the nav once there's something
+    // in it -- an empty "Cart" is just noise for a first-time visitor.
+    document.querySelectorAll('#cart-toggle').forEach(link => {
+      link.style.display = items.length ? '' : 'none';
+    });
+
     const list = document.getElementById('cart-panel-items');
     if (list) {
       list.innerHTML = items.length

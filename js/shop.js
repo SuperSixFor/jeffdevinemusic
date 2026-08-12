@@ -4,12 +4,16 @@
    To add/edit pieces: edit js/catalog.js
    ================================================================ */
 
+let activeFilter = 'all';
+let activeQuery  = '';
+
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof CATALOG === 'undefined') return;
   renderCatalog();
   if (typeof initReveal === 'function') initReveal();
   initFilters();
-  applyDefaultFilter('all');
+  initSearch();
+  applyFilters();
 });
 
 // "Add to Cart" clicks are handled globally by cart.js's document-level
@@ -46,7 +50,12 @@ function renderCatalog() {
       ? `<div class="catalog-card__cta">${piece.shopifyEmbed}</div>`
       : `<div class="catalog-card__cta"><a href="index.html#contact" class="btn btn--primary btn--sm">Inquire</a></div>`;
 
-    return `<div class="catalog-card reveal${delay}" data-category="${dataCats}">
+    // Searched against title/voicing/category/season together so a query
+    // like "guitar" or "advent" matches even when it's not in the title.
+    const searchText = [piece.title, piece.voicing, piece.categoryLabel, piece.season]
+      .filter(Boolean).join(' ').toLowerCase().replace(/"/g, '&quot;');
+
+    return `<div class="catalog-card reveal${delay}" data-category="${dataCats}" data-search="${searchText}">
   <div class="catalog-card__meta">
     <span class="label">${label}</span>
     <span class="catalog-card__season">${cap(piece.season)}</span>
@@ -61,27 +70,49 @@ function renderCatalog() {
 
 function initFilters() {
   const btns = document.querySelectorAll('.filter-btn');
-  const grid = document.getElementById('catalog-grid');
-  if (!btns.length || !grid) return;
+  if (!btns.length) return;
 
   btns.forEach(btn => {
+    if (btn.dataset.filter === activeFilter) btn.classList.add('active');
     btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
+      activeFilter = btn.dataset.filter;
       btns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      grid.querySelectorAll('.catalog-card').forEach(card => {
-        const cats = (card.dataset.category || '').split(' ');
-        const show = filter === 'all' || cats.includes(filter);
-        card.style.display = show ? '' : 'none';
-        if (show) setTimeout(() => card.classList.add('visible'), 10);
-      });
+      applyFilters();
     });
   });
 }
 
-function applyDefaultFilter(value) {
-  const btn = document.querySelector(`.filter-btn[data-filter="${value}"]`);
-  if (btn) btn.click();
+function initSearch() {
+  const input = document.getElementById('shop-search');
+  if (!input) return;
+  input.addEventListener('input', () => {
+    activeQuery = input.value.trim().toLowerCase();
+    applyFilters();
+  });
+}
+
+// Category filter and search query narrow the grid together (AND, not
+// either/or) -- so "Guitar Originals" + "advent" is a valid combination.
+function applyFilters() {
+  const grid = document.getElementById('catalog-grid');
+  if (!grid) return;
+
+  let visibleCount = 0;
+  grid.querySelectorAll('.catalog-card').forEach(card => {
+    const cats = (card.dataset.category || '').split(' ');
+    const matchesFilter = activeFilter === 'all' || cats.includes(activeFilter);
+    const matchesQuery  = !activeQuery || (card.dataset.search || '').includes(activeQuery);
+    const show = matchesFilter && matchesQuery;
+    card.style.display = show ? '' : 'none';
+    if (show) {
+      visibleCount++;
+      setTimeout(() => card.classList.add('visible'), 10);
+    }
+  });
+
+  const empty = document.getElementById('catalog-empty');
+  if (empty) empty.style.display = visibleCount === 0 ? '' : 'none';
 }
 
 function cap(str) {
