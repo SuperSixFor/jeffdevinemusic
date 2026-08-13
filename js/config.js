@@ -42,7 +42,7 @@ const SITE = {
   // places, not just here, until this is made the actual source of truth.
   nav: [
     { label: "About",      href: "index.html#about" },
-    { label: "Catalog",    href: "shop.html" },
+    { label: "Catalog",    href: "catalog.html" },
     { label: "Recordings", href: "index.html#recordings" },
     { label: "Contact",    href: "index.html#contact" },
   ],
@@ -57,13 +57,13 @@ const SITE = {
   home: {
     heroHeading: "Jeff Devine",
     heroSub:     "Sacred choral works & solo classical guitar",
-    heroCTA:     { label: "Explore the Catalog", href: "shop.html" },
+    heroCTA:     { label: "Explore the Catalog", href: "catalog.html" },
 
     // Up to 3 featured pieces shown on homepage. href links to shop.
     featuredPieces: [
-      { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "shop.html" },
-      { title: "Holy God, We Praise Your Name",     voicing: "SATB · A Cappella", season: "General",  href: "shop.html" },
-      { title: "It is Well With My Soul",           voicing: "Solo Guitar",       season: "General",  href: "shop.html" },
+      { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "catalog.html" },
+      { title: "Holy God, We Praise Your Name",     voicing: "SATB · A Cappella", season: "General",  href: "catalog.html" },
+      { title: "It is Well With My Soul",           voicing: "Solo Guitar",       season: "General",  href: "catalog.html" },
     ],
 
     spotifyEmbedUri: "", // e.g. "spotify:artist:XXXX" — leave blank until ready

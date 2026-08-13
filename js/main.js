@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── PER-PAGE ─────────────────────────────────────────────────
   // index.html is the single-page site (hero/about/featured/recordings/contact,
-  // all merged in one document) -- only shop.html + shop/*.html are
+  // all merged in one document) -- only catalog.html + shop/*.html are
   // separate pages, so they're the only other entries here.
   const handlers = {
-    'index': populateIndex,
-    '':      populateIndex,
-    'shop':  populateShop,
+    'index':   populateIndex,
+    '':        populateIndex,
+    'catalog': populateShop,
   };
   (handlers[page] || (() => {}))();
 
@@ -191,7 +191,7 @@ function populateIndex() {
     grid.innerHTML = '';
     h.featuredPieces.forEach((piece, i) => {
       const a = document.createElement('a');
-      a.href = piece.href || 'shop.html';
+      a.href = piece.href || 'catalog.html';
       a.className = `featured__card reveal reveal-delay-${i + 1}`;
       a.innerHTML = `
         <div class="label featured__card-label">${piece.season || ''}</div>
