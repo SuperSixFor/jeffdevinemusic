@@ -56,7 +56,7 @@ const SITE = {
   // ── HOMEPAGE ──────────────────────────────────────────────────
   home: {
     heroHeading: "Jeff Devine",
-    heroSub:     "Sacred choral works & solo classical guitar",
+    heroSub:     "Sacred vocal and instrumental music",
     heroCTA:     { label: "Explore the Catalog", href: "catalog.html" },
 
     // Intro line under "From the Catalog" on the homepage.
@@ -64,7 +64,7 @@ const SITE = {
     //   "Choral and instrumental works — for the choir loft, the concert stage, and the practice room."
     //   "Sacred choral scores and solo works — composed for congregations, ensembles, and soloists alike."
     //   "Vocal and instrumental scores — for worship, concert, and classroom."
-    featuredIntro: "Vocal and Instrumental works — written for the church choir, concert hall, and the rehearsal room.",
+    featuredIntro: "Vocal and Instrumental works — written for the church choir, the concert hall, and the rehearsal room.",
 
     // "Selected Works" tiles are no longer a fixed list -- main.js's
     // initFeaturedRotation() picks 3 real pieces at random, always from
@@ -86,7 +86,7 @@ const SITE = {
 
     // Bio paragraphs — each string is one <p>. Edit freely.
     bio: [
-      'Jeff served for many years as Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
+      'Jeff served for many years as the Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
     ],
 
     // Published works — shown on About, Home, and Music pages.
@@ -132,7 +132,7 @@ const SITE = {
     // Credentials list — edit, reorder, add as needed
     credentials: [
       "Biola University - Bachelor of Music",
-      "Cal State Fullerton- Master of Music",
+      "Cal State University at Fullerton - Master of Music",
       "Worship and Music Pastor, Retired",
       "Adjunct College/University Faculty Member, Retired",
       "CCLI Member",
