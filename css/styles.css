@@ -162,8 +162,13 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   position: absolute;
   inset: 0;
   background-image: url('../assets/images/hero-manuscript-bg.png');
-  background-size: cover;
-  background-position: center 35%;
+  /* Fixed size, not cover -- cover ties scale to the section's height
+     (100svh), which on tall/narrow viewports forces the image to blow
+     up far past its natural scale to satisfy that height. A fixed
+     width keeps the notation at a consistent, genuinely faint size
+     regardless of viewport shape. */
+  background-size: 1400px auto;
+  background-position: center 25%;
   background-repeat: no-repeat;
   pointer-events: none;
 }
@@ -188,6 +193,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 
 .hero__eyebrow {
   margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
   opacity: 0;
   transform: translateY(8px);
   animation: fadeUp 0.8s var(--ease-out-expo) 0.2s forwards;
