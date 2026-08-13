@@ -88,7 +88,7 @@ const SITE = {
 
     // Bio paragraphs — each string is one <p>. Edit freely.
     bio: [
-      'Jeff served for many years as Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
+      'Jeff served for many years as the Worship and Music pastor at churches in California and Texas, where his music was written for, and shaped by, active choral programs. He also taught guitar as an adjunct faculty member at several colleges and universities in California. His choral catalog ranges from accessible congregational settings, to extended SATB works, and is distributed directly through this site and other publishers.',
     ],
 
     // Published works — shown on About, Home, and Music pages.
