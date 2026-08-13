@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://jeffdevinemusic.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jeffdevinemusic.com/music.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://jeffdevinemusic.com/shop.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://jeffdevinemusic.com/catalog.html</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
@@ -24,5 +20,980 @@
     <loc>https://jeffdevinemusic.com/contact.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/a-purple-robe.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/a-purple-robe/a-purple-robe-p1.png</image:loc>
+      <image:title>A Purple Robe — Jeff Devine</image:title>
+      <image:caption>A Purple Robe — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/a-purple-robe/a-purple-robe-p2.png</image:loc>
+      <image:title>A Purple Robe — Jeff Devine</image:title>
+      <image:caption>A Purple Robe — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/all-creatures-of-our-god-and-king-lasst-uns-erfreuen.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/all-creatures-of-our-god-and-king-lasst-uns-erfreuen/all-creatures-of-our-god-and-king-lasst-uns-erfreuen-p1.png</image:loc>
+      <image:title>All Creatures of Our God and King (&lt;em&gt;Lasst Uns Erfreuen&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>All Creatures of Our God and King (Lasst Uns Erfreuen) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/all-creatures-of-our-god-and-king-lasst-uns-erfreuen/all-creatures-of-our-god-and-king-lasst-uns-erfreuen-p2.png</image:loc>
+      <image:title>All Creatures of Our God and King (&lt;em&gt;Lasst Uns Erfreuen&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>All Creatures of Our God and King (Lasst Uns Erfreuen) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/all-creatures-of-our-god-and-king-theme-and-variations.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/all-creatures-of-our-god-and-king-theme-and-variations/all-creatures-of-our-god-and-king-theme-and-variations-p1.png</image:loc>
+      <image:title>All Creatures of Our God and King (Theme and Variations) — Jeff Devine</image:title>
+      <image:caption>All Creatures of Our God and King (Theme and Variations) — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/all-creatures-of-our-god-and-king-theme-and-variations/all-creatures-of-our-god-and-king-theme-and-variations-p2.png</image:loc>
+      <image:title>All Creatures of Our God and King (Theme and Variations) — Jeff Devine</image:title>
+      <image:caption>All Creatures of Our God and King (Theme and Variations) — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/amazing-grace-sursum-corda.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace-sursum-corda/amazing-grace-sursum-corda-p1.png</image:loc>
+      <image:title>Amazing Grace (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Amazing Grace (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace-sursum-corda/amazing-grace-sursum-corda-p2.png</image:loc>
+      <image:title>Amazing Grace (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Amazing Grace (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/amazing-grace.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace/amazing-grace-p1.png</image:loc>
+      <image:title>Amazing Grace — Jeff Devine</image:title>
+      <image:caption>Amazing Grace — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace/amazing-grace-p2.png</image:loc>
+      <image:title>Amazing Grace — Jeff Devine</image:title>
+      <image:caption>Amazing Grace — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/and-can-it-be.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/and-can-it-be/and-can-it-be-p1.png</image:loc>
+      <image:title>And Can It Be — Jeff Devine</image:title>
+      <image:caption>And Can It Be — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/and-can-it-be/and-can-it-be-p2.png</image:loc>
+      <image:title>And Can It Be — Jeff Devine</image:title>
+      <image:caption>And Can It Be — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/come-all-christians-be-committed.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/come-all-christians-be-committed/come-all-christians-be-committed-p1.png</image:loc>
+      <image:title>Come, All Christians, Be Committed — Jeff Devine</image:title>
+      <image:caption>Come, All Christians, Be Committed — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/come-all-christians-be-committed/come-all-christians-be-committed-p2.png</image:loc>
+      <image:title>Come, All Christians, Be Committed — Jeff Devine</image:title>
+      <image:caption>Come, All Christians, Be Committed — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/communion.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/communion/communion-p1.png</image:loc>
+      <image:title>Communion — Jeff Devine</image:title>
+      <image:caption>Communion — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/coventry-carol.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/coventry-carol/coventry-carol-p1.png</image:loc>
+      <image:title>Coventry Carol — Jeff Devine</image:title>
+      <image:caption>Coventry Carol — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/cross-of-jesus-cross-of-sorrow-a-cappella-setting.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/cross-of-jesus-cross-of-sorrow-a-cappella-setting/cross-of-jesus-cross-of-sorrow-a-cappella-setting-p1.png</image:loc>
+      <image:title>Cross of Jesus, Cross of Sorrow (A Cappella Setting) — Jeff Devine</image:title>
+      <image:caption>Cross of Jesus, Cross of Sorrow (A Cappella Setting) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/cross-of-jesus-cross-of-sorrow.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/cross-of-jesus-cross-of-sorrow/cross-of-jesus-cross-of-sorrow-p1.png</image:loc>
+      <image:title>Cross of Jesus, Cross of Sorrow — Jeff Devine</image:title>
+      <image:caption>Cross of Jesus, Cross of Sorrow — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/eternal-spirit-of-the-living-christ-sursum-corda.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/eternal-spirit-of-the-living-christ-sursum-corda/eternal-spirit-of-the-living-christ-sursum-corda-p1.png</image:loc>
+      <image:title>Eternal Spirit of the Living Christ (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Eternal Spirit of the Living Christ (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/eternal-spirit-of-the-living-christ-sursum-corda/eternal-spirit-of-the-living-christ-sursum-corda-p2.png</image:loc>
+      <image:title>Eternal Spirit of the Living Christ (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Eternal Spirit of the Living Christ (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/fairest-lord-jesus.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/fairest-lord-jesus/fairest-lord-jesus-p1.png</image:loc>
+      <image:title>Fairest Lord Jesus — Jeff Devine</image:title>
+      <image:caption>Fairest Lord Jesus — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/give-to-our-god-immortal-praise-lasst-uns-erfreuen.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/give-to-our-god-immortal-praise-lasst-uns-erfreuen/give-to-our-god-immortal-praise-lasst-uns-erfreuen-p1.png</image:loc>
+      <image:title>Give to Our God Immortal Praise (&lt;em&gt;Lasst Uns Erfreuen&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Give to Our God Immortal Praise (Lasst Uns Erfreuen) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/give-to-our-god-immortal-praise-lasst-uns-erfreuen/give-to-our-god-immortal-praise-lasst-uns-erfreuen-p2.png</image:loc>
+      <image:title>Give to Our God Immortal Praise (&lt;em&gt;Lasst Uns Erfreuen&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Give to Our God Immortal Praise (Lasst Uns Erfreuen) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/god-rest-ye-merry-gentlemen.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/god-rest-ye-merry-gentlemen/god-rest-ye-merry-gentlemen-p1.png</image:loc>
+      <image:title>God Rest Ye Merry, Gentlemen — Jeff Devine</image:title>
+      <image:caption>God Rest Ye Merry, Gentlemen — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/god-rest-ye-merry-gentlemen/god-rest-ye-merry-gentlemen-p2.png</image:loc>
+      <image:title>God Rest Ye Merry, Gentlemen — Jeff Devine</image:title>
+      <image:caption>God Rest Ye Merry, Gentlemen — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/god-who-made-the-earth-and-heaven.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/god-who-made-the-earth-and-heaven/god-who-made-the-earth-and-heaven-p1.png</image:loc>
+      <image:title>God, Who Made the Earth and Heaven — Jeff Devine</image:title>
+      <image:caption>God, Who Made the Earth and Heaven — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/grace-greater-than-our-sin.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/grace-greater-than-our-sin/grace-greater-than-our-sin-p1.png</image:loc>
+      <image:title>Grace Greater Than Our Sin — Jeff Devine</image:title>
+      <image:caption>Grace Greater Than Our Sin — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/grace-greater-than-our-sin/grace-greater-than-our-sin-p2.png</image:loc>
+      <image:title>Grace Greater Than Our Sin — Jeff Devine</image:title>
+      <image:caption>Grace Greater Than Our Sin — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/great-is-thy-faithfullness.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/great-is-thy-faithfullness/great-is-thy-faithfullness-p1.png</image:loc>
+      <image:title>Great is Thy Faithfullness — Jeff Devine</image:title>
+      <image:caption>Great is Thy Faithfullness — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/great-is-thy-faithfullness/great-is-thy-faithfullness-p2.png</image:loc>
+      <image:title>Great is Thy Faithfullness — Jeff Devine</image:title>
+      <image:caption>Great is Thy Faithfullness — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/his-love-is-everlasting.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/his-love-is-everlasting/his-love-is-everlasting-p1.png</image:loc>
+      <image:title>His Love is Everlasting — Jeff Devine</image:title>
+      <image:caption>His Love is Everlasting — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/his-love-is-everlasting/his-love-is-everlasting-p2.png</image:loc>
+      <image:title>His Love is Everlasting — Jeff Devine</image:title>
+      <image:caption>His Love is Everlasting — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/holy-legacy.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/holy-legacy/holy-legacy-p1.png</image:loc>
+      <image:title>Holy Legacy — Jeff Devine</image:title>
+      <image:caption>Holy Legacy — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/holy-legacy/holy-legacy-p2.png</image:loc>
+      <image:title>Holy Legacy — Jeff Devine</image:title>
+      <image:caption>Holy Legacy — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/i-have-decided-to-follow-jesus.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-have-decided-to-follow-jesus/i-have-decided-to-follow-jesus-p1.png</image:loc>
+      <image:title>I Have Decided to Follow Jesus — Jeff Devine</image:title>
+      <image:caption>I Have Decided to Follow Jesus — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-have-decided-to-follow-jesus/i-have-decided-to-follow-jesus-p2.png</image:loc>
+      <image:title>I Have Decided to Follow Jesus — Jeff Devine</image:title>
+      <image:caption>I Have Decided to Follow Jesus — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives-duke-street.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives-duke-street/i-know-that-my-redeemer-lives-duke-street-p1.png</image:loc>
+      <image:title>I Know That My Redeemer Lives (&lt;em&gt;Duke Street&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives (Duke Street) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives-duke-street/i-know-that-my-redeemer-lives-duke-street-p2.png</image:loc>
+      <image:title>I Know That My Redeemer Lives (&lt;em&gt;Duke Street&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives (Duke Street) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives-lasst-uns-erfreuen.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives-lasst-uns-erfreuen/i-know-that-my-redeemer-lives-lasst-uns-erfreuen-p1.png</image:loc>
+      <image:title>I Know That My Redeemer Lives (&lt;em&gt;Lasst Uns Erfreuen&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives (Lasst Uns Erfreuen) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives-lasst-uns-erfreuen/i-know-that-my-redeemer-lives-lasst-uns-erfreuen-p2.png</image:loc>
+      <image:title>I Know That My Redeemer Lives (&lt;em&gt;Lasst Uns Erfreuen&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives (Lasst Uns Erfreuen) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives/i-know-that-my-redeemer-lives-p1.png</image:loc>
+      <image:title>I Know That My Redeemer Lives — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives/i-know-that-my-redeemer-lives-p2.png</image:loc>
+      <image:title>I Know That My Redeemer Lives — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/i-must-tell-jesus.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-must-tell-jesus/i-must-tell-jesus-p1.png</image:loc>
+      <image:title>I Must Tell Jesus — Jeff Devine</image:title>
+      <image:caption>I Must Tell Jesus — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-must-tell-jesus/i-must-tell-jesus-p2.png</image:loc>
+      <image:title>I Must Tell Jesus — Jeff Devine</image:title>
+      <image:caption>I Must Tell Jesus — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/i-sing-the-mighty-power-of-god.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-sing-the-mighty-power-of-god/i-sing-the-mighty-power-of-god-p1.png</image:loc>
+      <image:title>I Sing the Mighty Power of God — Jeff Devine</image:title>
+      <image:caption>I Sing the Mighty Power of God — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-sing-the-mighty-power-of-god/i-sing-the-mighty-power-of-god-p2.png</image:loc>
+      <image:title>I Sing the Mighty Power of God — Jeff Devine</image:title>
+      <image:caption>I Sing the Mighty Power of God — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/if-you-will-trust-in-god-to-guide-you.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/if-you-will-trust-in-god-to-guide-you-guitar/if-you-will-trust-in-god-to-guide-you-guitar-p1.png</image:loc>
+      <image:title>If You will Trust in God to Guide You — Jeff Devine</image:title>
+      <image:caption>If You will Trust in God to Guide You — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/if-you-will-trust-in-god-to-guide-you-guitar/if-you-will-trust-in-god-to-guide-you-guitar-p2.png</image:loc>
+      <image:title>If You will Trust in God to Guide You — Jeff Devine</image:title>
+      <image:caption>If You will Trust in God to Guide You — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/if-you-will-trust-in-god-to-guide-you.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/if-you-will-trust-in-god-to-guide-you-satb/if-you-will-trust-in-god-to-guide-you-satb-p1.png</image:loc>
+      <image:title>If You will Trust in God to Guide You — Jeff Devine</image:title>
+      <image:caption>If You will Trust in God to Guide You — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/if-you-will-trust-in-god-to-guide-you-satb/if-you-will-trust-in-god-to-guide-you-satb-p2.png</image:loc>
+      <image:title>If You will Trust in God to Guide You — Jeff Devine</image:title>
+      <image:caption>If You will Trust in God to Guide You — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/in-the-bleak-midwinter.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/in-the-bleak-midwinter/in-the-bleak-midwinter-p1.png</image:loc>
+      <image:title>In the Bleak Midwinter — Jeff Devine</image:title>
+      <image:caption>In the Bleak Midwinter — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/interlude.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/interlude/interlude-p1.png</image:loc>
+      <image:title>Interlude — Jeff Devine</image:title>
+      <image:caption>Interlude — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/interlude/interlude-p2.png</image:loc>
+      <image:title>Interlude — Jeff Devine</image:title>
+      <image:caption>Interlude — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/jeremiah-9-23-24.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/jeremiah-9-23-24/jeremiah-9-23-24-p1.png</image:loc>
+      <image:title>Jeremiah 9:23+24 — Jeff Devine</image:title>
+      <image:caption>Jeremiah 9:23+24 — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/jeremiah-9-23-24/jeremiah-9-23-24-p2.png</image:loc>
+      <image:title>Jeremiah 9:23+24 — Jeff Devine</image:title>
+      <image:caption>Jeremiah 9:23+24 — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/jesus-paid-it-all.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/jesus-paid-it-all/jesus-paid-it-all-p1.png</image:loc>
+      <image:title>Jesus Paid it All — Jeff Devine</image:title>
+      <image:caption>Jesus Paid it All — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/jesus-priceless-treasure.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/jesus-priceless-treasure/jesus-priceless-treasure-p1.png</image:loc>
+      <image:title>Jesus, Priceless Treasure — Jeff Devine</image:title>
+      <image:caption>Jesus, Priceless Treasure — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/joys-are-flowing-like-a-river.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/joys-are-flowing-like-a-river/joys-are-flowing-like-a-river-p1.png</image:loc>
+      <image:title>Joys Are Flowing Like a River — Jeff Devine</image:title>
+      <image:caption>Joys Are Flowing Like a River — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/joys-are-flowing-like-a-river/joys-are-flowing-like-a-river-p2.png</image:loc>
+      <image:title>Joys Are Flowing Like a River — Jeff Devine</image:title>
+      <image:caption>Joys Are Flowing Like a River — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/just-say-the-word.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/just-say-the-word/just-say-the-word-p1.png</image:loc>
+      <image:title>Just Say the Word — Jeff Devine</image:title>
+      <image:caption>Just Say the Word — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/just-say-the-word/just-say-the-word-p2.png</image:loc>
+      <image:title>Just Say the Word — Jeff Devine</image:title>
+      <image:caption>Just Say the Word — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/leaning-on-the-everlasting-arms.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/leaning-on-the-everlasting-arms/leaning-on-the-everlasting-arms-p1.png</image:loc>
+      <image:title>Leaning on the Everlasting Arms — Jeff Devine</image:title>
+      <image:caption>Leaning on the Everlasting Arms — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/leaning-on-the-everlasting-arms/leaning-on-the-everlasting-arms-p2.png</image:loc>
+      <image:title>Leaning on the Everlasting Arms — Jeff Devine</image:title>
+      <image:caption>Leaning on the Everlasting Arms — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/marche.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/marche/marche-p1.png</image:loc>
+      <image:title>Marche — Jeff Devine</image:title>
+      <image:caption>Marche — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/marche/marche-p2.png</image:loc>
+      <image:title>Marche — Jeff Devine</image:title>
+      <image:caption>Marche — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/may-jesus-christ-be-praised.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/may-jesus-christ-be-praised/may-jesus-christ-be-praised-p1.png</image:loc>
+      <image:title>May Jesus Christ Be Praised — Jeff Devine</image:title>
+      <image:caption>May Jesus Christ Be Praised — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/may-the-mind-of-christ-my-savior.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/may-the-mind-of-christ-my-savior/may-the-mind-of-christ-my-savior-p1.png</image:loc>
+      <image:title>May the Mind of Christ, My Savior — Jeff Devine</image:title>
+      <image:caption>May the Mind of Christ, My Savior — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/may-the-mind-of-christ-my-saviour-piano.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/may-the-mind-of-christ-my-saviour-piano/may-the-mind-of-christ-my-saviour-piano-p1.png</image:loc>
+      <image:title>May the Mind of Christ, My Saviour (Piano) — Jeff Devine</image:title>
+      <image:caption>May the Mind of Christ, My Saviour (Piano) — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/my-country-tis-of-thee.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/my-country-tis-of-thee/my-country-tis-of-thee-p1.png</image:loc>
+      <image:title>My Country 'tis of Thee — Jeff Devine</image:title>
+      <image:caption>My Country 'tis of Thee — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/my-country-tis-of-thee/my-country-tis-of-thee-p2.png</image:loc>
+      <image:title>My Country 'tis of Thee — Jeff Devine</image:title>
+      <image:caption>My Country 'tis of Thee — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/my-faith-has-found-a-resting-place-sursum-corda.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/my-faith-has-found-a-resting-place-sursum-corda/my-faith-has-found-a-resting-place-sursum-corda-p1.png</image:loc>
+      <image:title>My Faith Has Found a Resting Place (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>My Faith Has Found a Resting Place (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/my-faith-has-found-a-resting-place-sursum-corda/my-faith-has-found-a-resting-place-sursum-corda-p2.png</image:loc>
+      <image:title>My Faith Has Found a Resting Place (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>My Faith Has Found a Resting Place (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/my-soul-finds-rest.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/my-soul-finds-rest/my-soul-finds-rest-p1.png</image:loc>
+      <image:title>My Soul Finds Rest — Jeff Devine</image:title>
+      <image:caption>My Soul Finds Rest — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/my-soul-finds-rest/my-soul-finds-rest-p2.png</image:loc>
+      <image:title>My Soul Finds Rest — Jeff Devine</image:title>
+      <image:caption>My Soul Finds Rest — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/nothin-but-the-blood.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/nothin-but-the-blood/nothin-but-the-blood-p1.png</image:loc>
+      <image:title>Nothin' But the Blood — Jeff Devine</image:title>
+      <image:caption>Nothin' But the Blood — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/nothin-but-the-blood/nothin-but-the-blood-p2.png</image:loc>
+      <image:title>Nothin' But the Blood — Jeff Devine</image:title>
+      <image:caption>Nothin' But the Blood — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/o-come-redeemer-of-the-earth.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-come-redeemer-of-the-earth/o-come-redeemer-of-the-earth-p1.png</image:loc>
+      <image:title>O Come Redeemer of the Earth — Jeff Devine</image:title>
+      <image:caption>O Come Redeemer of the Earth — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-come-redeemer-of-the-earth/o-come-redeemer-of-the-earth-p2.png</image:loc>
+      <image:title>O Come Redeemer of the Earth — Jeff Devine</image:title>
+      <image:caption>O Come Redeemer of the Earth — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/o-little-town-of-bethlehem.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-little-town-of-bethlehem/o-little-town-of-bethlehem-p1.png</image:loc>
+      <image:title>O Little Town of Bethlehem — Jeff Devine</image:title>
+      <image:caption>O Little Town of Bethlehem — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/o-sacred-head-now-wounded.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-sacred-head-now-wounded/o-sacred-head-now-wounded-p1.png</image:loc>
+      <image:title>O Sacred Head, Now Wounded — Jeff Devine</image:title>
+      <image:caption>O Sacred Head, Now Wounded — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/o-sing-a-song-of-bethlehem-kingsfold.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-sing-a-song-of-bethlehem-kingsfold/o-sing-a-song-of-bethlehem-kingsfold-p1.png</image:loc>
+      <image:title>O Sing a Song of Bethlehem (&lt;em&gt;Kingsfold&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>O Sing a Song of Bethlehem (Kingsfold) — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-sing-a-song-of-bethlehem-kingsfold/o-sing-a-song-of-bethlehem-kingsfold-p2.png</image:loc>
+      <image:title>O Sing a Song of Bethlehem (&lt;em&gt;Kingsfold&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>O Sing a Song of Bethlehem (Kingsfold) — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/o-the-deep-deep-love-of-jesus.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-the-deep-deep-love-of-jesus/o-the-deep-deep-love-of-jesus-p1.png</image:loc>
+      <image:title>O the Deep, Deep Love of Jesus — Jeff Devine</image:title>
+      <image:caption>O the Deep, Deep Love of Jesus — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/o-worship-the-king-theme-variation.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-worship-the-king-theme-variation/o-worship-the-king-theme-variation-p1.png</image:loc>
+      <image:title>O Worship the King (Theme &amp; Variation) — Jeff Devine</image:title>
+      <image:caption>O Worship the King (Theme &amp; Variation) — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/o-worship-the-king-theme-variation/o-worship-the-king-theme-variation-p2.png</image:loc>
+      <image:title>O Worship the King (Theme &amp; Variation) — Jeff Devine</image:title>
+      <image:caption>O Worship the King (Theme &amp; Variation) — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/praise-to-the-lord-the-almighty.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/praise-to-the-lord-the-almighty/praise-to-the-lord-the-almighty-p1.png</image:loc>
+      <image:title>Praise to the Lord, the Almighty — Jeff Devine</image:title>
+      <image:caption>Praise to the Lord, the Almighty — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-flute/redeemed-flute-p1.png</image:loc>
+      <image:title>Redeemed! — Jeff Devine</image:title>
+      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-flute/redeemed-flute-p2.png</image:loc>
+      <image:title>Redeemed! — Jeff Devine</image:title>
+      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-trumpet/redeemed-trumpet-p1.png</image:loc>
+      <image:title>Redeemed! — Jeff Devine</image:title>
+      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-trumpet/redeemed-trumpet-p2.png</image:loc>
+      <image:title>Redeemed! — Jeff Devine</image:title>
+      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-vocal-solo/redeemed-vocal-solo-p1.png</image:loc>
+      <image:title>Redeemed! — Jeff Devine</image:title>
+      <image:caption>Redeemed! — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-vocal-solo/redeemed-vocal-solo-p2.png</image:loc>
+      <image:title>Redeemed! — Jeff Devine</image:title>
+      <image:caption>Redeemed! — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/rondeau.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/rondeau/rondeau-p1.png</image:loc>
+      <image:title>Rondeau — Jeff Devine</image:title>
+      <image:caption>Rondeau — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/rondeau/rondeau-p2.png</image:loc>
+      <image:title>Rondeau — Jeff Devine</image:title>
+      <image:caption>Rondeau — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/simple-gifts.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/simple-gifts/simple-gifts-p1.png</image:loc>
+      <image:title>Simple Gifts — Jeff Devine</image:title>
+      <image:caption>Simple Gifts — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/sleepers-awake-wachet-auf.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/sleepers-awake-wachet-auf/sleepers-awake-wachet-auf-p1.png</image:loc>
+      <image:title>Sleepers Awake / Wachet Auf — Jeff Devine</image:title>
+      <image:caption>Sleepers Awake / Wachet Auf — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/sleepers-awake-wachet-auf/sleepers-awake-wachet-auf-p2.png</image:loc>
+      <image:title>Sleepers Awake / Wachet Auf — Jeff Devine</image:title>
+      <image:caption>Sleepers Awake / Wachet Auf — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/spirit-of-god-descend-upon-my-heart.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/spirit-of-god-descend-upon-my-heart/spirit-of-god-descend-upon-my-heart-p1.png</image:loc>
+      <image:title>Spirit of God, Descend Upon My Heart — Jeff Devine</image:title>
+      <image:caption>Spirit of God, Descend Upon My Heart — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/sweet-hour-of-prayer.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/sweet-hour-of-prayer/sweet-hour-of-prayer-p1.png</image:loc>
+      <image:title>Sweet Hour of Prayer — Jeff Devine</image:title>
+      <image:caption>Sweet Hour of Prayer — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/sweet-hour-of-prayer/sweet-hour-of-prayer-p2.png</image:loc>
+      <image:title>Sweet Hour of Prayer — Jeff Devine</image:title>
+      <image:caption>Sweet Hour of Prayer — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/the-lamb.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-lamb/the-lamb-p1.png</image:loc>
+      <image:title>The Lamb — Jeff Devine</image:title>
+      <image:caption>The Lamb — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-lamb/the-lamb-p2.png</image:loc>
+      <image:title>The Lamb — Jeff Devine</image:title>
+      <image:caption>The Lamb — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/there-is-a-fountain.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/there-is-a-fountain/there-is-a-fountain-p1.png</image:loc>
+      <image:title>There is a Fountain — Jeff Devine</image:title>
+      <image:caption>There is a Fountain — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/this-is-my-father-s-world.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/this-is-my-father-s-world/this-is-my-father-s-world-p1.png</image:loc>
+      <image:title>This is My Father's World — Jeff Devine</image:title>
+      <image:caption>This is My Father's World — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/this-is-my-father-s-world/this-is-my-father-s-world-p2.png</image:loc>
+      <image:title>This is My Father's World — Jeff Devine</image:title>
+      <image:caption>This is My Father's World — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/to-a-virgin-meek-and-mild.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/to-a-virgin-meek-and-mild/to-a-virgin-meek-and-mild-p1.png</image:loc>
+      <image:title>To a Virgin Meek and Mild — Jeff Devine</image:title>
+      <image:caption>To a Virgin Meek and Mild — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/to-a-virgin-meek-and-mild/to-a-virgin-meek-and-mild-p2.png</image:loc>
+      <image:title>To a Virgin Meek and Mild — Jeff Devine</image:title>
+      <image:caption>To a Virgin Meek and Mild — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/two-hymns.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/two-hymns/two-hymns-p1.png</image:loc>
+      <image:title>Two Hymns — Jeff Devine</image:title>
+      <image:caption>Two Hymns — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/two-hymns/two-hymns-p2.png</image:loc>
+      <image:title>Two Hymns — Jeff Devine</image:title>
+      <image:caption>Two Hymns — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/veni-redemptor-gentium-o-come-redeemer-of-the-earth.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/veni-redemptor-gentium-o-come-redeemer-of-the-earth/veni-redemptor-gentium-o-come-redeemer-of-the-earth-p1.png</image:loc>
+      <image:title>Veni, Redemptor Gentium (O Come Redeemer of the Earth) — Jeff Devine</image:title>
+      <image:caption>Veni, Redemptor Gentium (O Come Redeemer of the Earth) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/veni-redemptor-gentium-o-come-redeemer-of-the-earth/veni-redemptor-gentium-o-come-redeemer-of-the-earth-p2.png</image:loc>
+      <image:title>Veni, Redemptor Gentium (O Come Redeemer of the Earth) — Jeff Devine</image:title>
+      <image:caption>Veni, Redemptor Gentium (O Come Redeemer of the Earth) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/we-gather-here.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-gather-here/we-gather-here-p1.png</image:loc>
+      <image:title>We Gather Here — Jeff Devine</image:title>
+      <image:caption>We Gather Here — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-gather-here/we-gather-here-p2.png</image:loc>
+      <image:title>We Gather Here — Jeff Devine</image:title>
+      <image:caption>We Gather Here — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/we-sing-praises.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-sing-praises/we-sing-praises-p1.png</image:loc>
+      <image:title>We Sing Praises — Jeff Devine</image:title>
+      <image:caption>We Sing Praises — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-sing-praises/we-sing-praises-p2.png</image:loc>
+      <image:title>We Sing Praises — Jeff Devine</image:title>
+      <image:caption>We Sing Praises — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/we-worship-you-almighty-god.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-worship-you-almighty-god/we-worship-you-almighty-god-p1.png</image:loc>
+      <image:title>We Worship You, Almighty God — Jeff Devine</image:title>
+      <image:caption>We Worship You, Almighty God — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-worship-you-almighty-god/we-worship-you-almighty-god-p2.png</image:loc>
+      <image:title>We Worship You, Almighty God — Jeff Devine</image:title>
+      <image:caption>We Worship You, Almighty God — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/were-you-there.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/were-you-there/were-you-there-p1.png</image:loc>
+      <image:title>Were You There — Jeff Devine</image:title>
+      <image:caption>Were You There — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/when-i-survey-the-wondrous-cross.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/when-i-survey-the-wondrous-cross/when-i-survey-the-wondrous-cross-p1.png</image:loc>
+      <image:title>When I Survey the Wondrous Cross — Jeff Devine</image:title>
+      <image:caption>When I Survey the Wondrous Cross — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/while-the-world-lay-still-in-slumber.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/while-the-world-lay-still-in-slumber/while-the-world-lay-still-in-slumber-p1.png</image:loc>
+      <image:title>While the World Lay Still in Slumber — Jeff Devine</image:title>
+      <image:caption>While the World Lay Still in Slumber — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/while-the-world-lay-still-in-slumber/while-the-world-lay-still-in-slumber-p2.png</image:loc>
+      <image:title>While the World Lay Still in Slumber — Jeff Devine</image:title>
+      <image:caption>While the World Lay Still in Slumber — sheet music by Jeff Devine. Choral and Vocal Solo Originals.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/wonderful-words-of-life.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/wonderful-words-of-life/wonderful-words-of-life-p1.png</image:loc>
+      <image:title>Wonderful Words of Life — Jeff Devine</image:title>
+      <image:caption>Wonderful Words of Life — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/wonderful-words-of-life/wonderful-words-of-life-p2.png</image:loc>
+      <image:title>Wonderful Words of Life — Jeff Devine</image:title>
+      <image:caption>Wonderful Words of Life — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
