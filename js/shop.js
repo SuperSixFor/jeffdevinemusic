@@ -68,9 +68,18 @@ function renderCatalog() {
       ? `<div class="catalog-card__detail">${piece.detail}</div>`
       : '';
     const price = piece.price != null
-      ? `<div class="catalog-card__price">$${piece.price}</div>`
+      ? `<div class="catalog-card__price">${piece.hasVariants ? 'From ' : ''}$${piece.price}</div>`
       : '';
-    const cta = piece.payhipKey
+    // Variant products (multiple keys/instrumentations on one Payhip
+    // listing) skip our cart entirely -- cart_links[] checkout has no way
+    // to specify a variant, so it silently defaults instead of asking.
+    // Send straight to the Payhip product page, where the real picker is.
+    const cta = piece.hasVariants
+      ? `<div class="catalog-card__actions">
+    <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
+    <a href="https://payhip.com/b/${piece.payhipKey}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Choose on Payhip</a>
+  </div>`
+      : piece.payhipKey
       ? `<div class="catalog-card__actions">
     <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
     <button type="button" class="btn btn--primary btn--sm" data-cart-add data-key="${piece.payhipKey}" data-title="${piece.title.replace(/"/g, '&quot;')}" data-price="${piece.price}">Add to Cart</button>
