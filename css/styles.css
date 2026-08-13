@@ -158,6 +158,16 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   overflow: hidden;
 }
 
+.hero__bg-manuscript {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/hero-manuscript-bg.png');
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
 .hero__bg-line {
   position: absolute;
   top: 0; right: 12%;
