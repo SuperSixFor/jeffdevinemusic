@@ -125,6 +125,10 @@ function initFilters() {
       btns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       applyFilters();
+      // Picking a new filter resets which cards show -- if the visitor was
+      // scrolled down into the old results, jump back up so the new set
+      // is visible instead of leaving them stranded past the fold.
+      document.querySelector('.catalog-filters')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 }
