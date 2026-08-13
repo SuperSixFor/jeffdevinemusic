@@ -134,7 +134,7 @@ const SITE = {
     // Credentials list — edit, reorder, add as needed
     credentials: [
       "Biola University - Bachelor of Music",
-      "Cal State Fullerton- Master of Music",
+      "Cal State University at Fullerton - Master of Music",
       "Worship and Music Pastor, Retired",
       "Adjunct College/University Faculty Member, Retired",
       "CCLI Member",
