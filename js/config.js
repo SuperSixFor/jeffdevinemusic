@@ -143,9 +143,8 @@ const SITE = {
 
   // ── CATALOG PAGE ─────────────────────────────────────────────────
   catalog: {
-    licenseNote: "Purchase includes a performance license for one ensemble for one performance season. TBD",
     footerNote:  `All purchases are PDF downloads delivered instantly. Choral scores include
-                  a performance license for one ensemble for one performance season.
+                  a performance license for one ensemble.
                   For bulk or institutional licensing, <a href="index.html#contact">get in touch</a>.`,
 
     // Filter categories — edit label/value pairs to add/remove filters.
