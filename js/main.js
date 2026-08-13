@@ -240,14 +240,20 @@ function initFeaturedRotation() {
   }
 
   function renderSet(pieces) {
-    grid.innerHTML = pieces.map((piece, i) => `
+    grid.innerHTML = pieces.map((piece, i) => {
+      const season = piece.season ? piece.season.charAt(0).toUpperCase() + piece.season.slice(1) : '';
+      return `
       <a href="${piece.pageUrl}" class="featured__card reveal reveal-delay-${i + 1}">
-        <div class="label featured__card-label">${piece.categoryLabel || ''}</div>
+        <div class="featured__card-top">
+          <span class="label featured__card-label">${piece.categoryLabel || ''}</span>
+          ${season ? `<span class="featured__card-season">${season}</span>` : ''}
+        </div>
         <div class="featured__card-title">${piece.title}</div>
         <div class="featured__card-meta">${piece.voicing || ''}</div>
-        <div class="featured__card-price">$${piece.price}</div>
+        <div class="featured__card-link">View Piece &rarr;</div>
       </a>
-    `).join('');
+    `;
+    }).join('');
     grid.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
   }
 

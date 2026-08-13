@@ -292,22 +292,31 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 .featured__card {
   background: var(--color-bg);
   padding: 2.5rem 2rem;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s var(--ease-out-expo);
   position: relative;
   overflow: hidden;
+  border-top: 2px solid var(--color-border);
 }
 
 .featured__card::before {
   content: '';
   position: absolute;
-  bottom: 0; left: 0;
+  top: -2px; left: 0;
   width: 0; height: 2px;
   background: var(--color-accent);
   transition: width 0.4s var(--ease-out-expo);
 }
 
-.featured__card:hover { background: var(--color-bg-raised); }
+.featured__card:hover { background: var(--color-bg-raised); transform: translateY(-3px); }
 .featured__card:hover::before { width: 100%; }
+
+.featured__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.featured__card-season { font-size: 0.75rem; color: var(--color-text-subtle); }
 
 .featured__card-title {
   font-family: var(--font-display);
@@ -319,7 +328,16 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 }
 
 .featured__card-meta { font-size: 0.8125rem; color: var(--color-text-subtle); }
-.featured__card-price { font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.75rem; }
+
+.featured__card-link {
+  font-size: 0.8125rem;
+  color: var(--color-accent);
+  margin-top: 1.25rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.featured__card:hover .featured__card-link { opacity: 1; transform: translateX(0); }
 
 /* ── STREAMING ───────────────────────────────────────────────── */
 .streaming {
