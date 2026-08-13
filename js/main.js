@@ -202,6 +202,16 @@ function populateIndex() {
 const FEATURED_ROTATION_MS = 8000;
 const FEATURED_FADE_MS = 500;
 
+// Tune names conventionally render in italics in print. Keep in sync
+// with catalog-page.js's / sync_catalog.py's ITALIC_TUNE_NAMES --
+// index.html doesn't load catalog-page.js, so this copy is what
+// covers the homepage's featured tiles.
+const ITALIC_TUNE_NAMES = ['Sursum Corda', 'Lasst Uns Erfreuen', 'Kingsfold', 'Duke Street'];
+
+function titleHtml(title) {
+  return ITALIC_TUNE_NAMES.reduce((t, name) => t.split(name).join(`<em>${name}</em>`), title);
+}
+
 function initFeaturedRotation() {
   const grid = document.querySelector('.featured__grid');
   if (!grid || typeof CATALOG === 'undefined') return;
@@ -248,7 +258,7 @@ function initFeaturedRotation() {
           <span class="label featured__card-label">${piece.categoryLabel || ''}</span>
           ${season ? `<span class="featured__card-season">${season}</span>` : ''}
         </div>
-        <div class="featured__card-title">${piece.title}</div>
+        <div class="featured__card-title">${titleHtml(piece.title)}</div>
         <div class="featured__card-meta">${piece.voicing || ''}</div>
         <div class="featured__card-link">View Piece &rarr;</div>
       </a>
