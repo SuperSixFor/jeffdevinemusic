@@ -56,7 +56,7 @@ const SITE = {
   // ── HOMEPAGE ──────────────────────────────────────────────────
   home: {
     heroHeading: "Jeff Devine",
-    heroSub:     "Sacred choral works & solo classical guitar",
+    heroSub:     "Sacred vocal and instrumental music",
     heroCTA:     { label: "Explore the Catalog", href: "catalog.html" },
 
     // Intro line under "From the Catalog" on the homepage.
@@ -64,7 +64,7 @@ const SITE = {
     //   "Choral and instrumental works — for the choir loft, the concert stage, and the practice room."
     //   "Sacred choral scores and solo works — composed for congregations, ensembles, and soloists alike."
     //   "Vocal and instrumental scores — for worship, concert, and classroom."
-    featuredIntro: "Vocal and Instrumental works — written for the church choir, concert hall, and the rehearsal room.",
+    featuredIntro: "Vocal and Instrumental works — written for the church choir, the concert hall, and the rehearsal room.",
 
     // Up to 3 featured pieces shown on homepage. href links to catalog.
     featuredPieces: [
