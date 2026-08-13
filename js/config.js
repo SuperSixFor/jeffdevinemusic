@@ -66,12 +66,10 @@ const SITE = {
     //   "Vocal and instrumental scores — for worship, concert, and classroom."
     featuredIntro: "Vocal and Instrumental works — written for the church choir, concert hall, and the rehearsal room.",
 
-    // Up to 3 featured pieces shown on homepage. href links to catalog.
-    featuredPieces: [
-      { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "catalog.html" },
-      { title: "Holy God, We Praise Your Name",     voicing: "SATB · A Cappella", season: "General",  href: "catalog.html" },
-      { title: "It is Well With My Soul",           voicing: "Solo Guitar",       season: "General",  href: "catalog.html" },
-    ],
+    // "Selected Works" tiles are no longer a fixed list -- main.js's
+    // initFeaturedRotation() picks 3 real pieces at random, always from
+    // 3 different catalog categories, and swaps in a new set on a timer
+    // (see FEATURED_ROTATION_MS / FEATURED_FADE_MS in main.js).
 
     spotifyEmbedUri: "", // e.g. "spotify:artist:XXXX" — leave blank until ready
 

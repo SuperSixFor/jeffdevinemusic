@@ -187,26 +187,83 @@ function populateIndex() {
 
   setText('.featured__intro', h.featuredIntro);
 
-  // Featured pieces
-  const grid = document.querySelector('.featured__grid');
-  if (grid && h.featuredPieces && h.featuredPieces.length) {
-    grid.innerHTML = '';
-    h.featuredPieces.forEach((piece, i) => {
-      const a = document.createElement('a');
-      a.href = piece.href || 'catalog.html';
-      a.className = `featured__card reveal reveal-delay-${i + 1}`;
-      a.innerHTML = `
-        <div class="label featured__card-label">${piece.season || ''}</div>
-        <div class="featured__card-title">${piece.title}</div>
-        <div class="featured__card-meta">${piece.voicing || ''}</div>
-      `;
-      grid.appendChild(a);
-    });
-  }
+  initFeaturedRotation();
 
   populateMusic();
   populateAbout();
   populateContact();
+}
+
+// ── FEATURED WORKS ROTATION ─────────────────────────────────────
+// Homepage "Selected Works" tiles: 3 real pieces, always from 3
+// different catalog categories, swapped for a fresh set on an
+// interval. Reads js/catalog.js's CATALOG global -- index.html must
+// load that script before main.js.
+const FEATURED_ROTATION_MS = 8000;
+const FEATURED_FADE_MS = 500;
+
+function initFeaturedRotation() {
+  const grid = document.querySelector('.featured__grid');
+  if (!grid || typeof CATALOG === 'undefined') return;
+
+  const byCategory = {};
+  CATALOG.forEach(piece => {
+    if (!piece.payhipKey) return; // only real, purchasable pieces
+    (byCategory[piece.category] ||= []).push(piece);
+  });
+  const categories = Object.keys(byCategory);
+  if (categories.length < 1) return;
+
+  let lastKeys = [];
+
+  function pickSet() {
+    const shuffled = [...categories].sort(() => Math.random() - 0.5);
+    const chosenCats = shuffled.slice(0, Math.min(3, categories.length));
+    let set = chosenCats.map(cat => {
+      const options = byCategory[cat];
+      return options[Math.floor(Math.random() * options.length)];
+    });
+    // Avoid re-showing the exact same 3 pieces back to back, when
+    // there's enough variety in the catalog to avoid it.
+    if (categories.length >= 3) {
+      let attempts = 0;
+      while (set.every(p => lastKeys.includes(p.payhipKey)) && attempts < 5) {
+        set = chosenCats.map(cat => {
+          const options = byCategory[cat];
+          return options[Math.floor(Math.random() * options.length)];
+        });
+        attempts++;
+      }
+    }
+    lastKeys = set.map(p => p.payhipKey);
+    return set;
+  }
+
+  function renderSet(pieces) {
+    grid.innerHTML = pieces.map((piece, i) => `
+      <a href="${piece.pageUrl}" class="featured__card reveal reveal-delay-${i + 1}">
+        <div class="label featured__card-label">${piece.categoryLabel || ''}</div>
+        <div class="featured__card-title">${piece.title}</div>
+        <div class="featured__card-meta">${piece.voicing || ''}</div>
+        <div class="featured__card-price">$${piece.price}</div>
+      </a>
+    `).join('');
+    grid.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }
+
+  renderSet(pickSet());
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion || categories.length < 2) return; // static set only
+
+  setInterval(() => {
+    if (document.hidden) return; // don't animate an unseen tab
+    grid.classList.add('featured__grid--fading');
+    setTimeout(() => {
+      renderSet(pickSet());
+      grid.classList.remove('featured__grid--fading');
+    }, FEATURED_FADE_MS);
+  }, FEATURED_ROTATION_MS);
 }
 
 // ── ABOUT ────────────────────────────────────────────────────────

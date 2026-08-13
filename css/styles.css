@@ -285,7 +285,9 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   gap: 1px;
   background: var(--color-border);
   margin-top: 3rem;
+  transition: opacity 0.5s ease;
 }
+.featured__grid--fading { opacity: 0; }
 
 .featured__card {
   background: var(--color-bg);
@@ -317,6 +319,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 }
 
 .featured__card-meta { font-size: 0.8125rem; color: var(--color-text-subtle); }
+.featured__card-price { font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.75rem; }
 
 /* ── STREAMING ───────────────────────────────────────────────── */
 .streaming {
