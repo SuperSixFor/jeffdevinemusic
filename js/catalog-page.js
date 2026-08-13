@@ -137,7 +137,12 @@ function initSearch() {
   const toggle = document.getElementById('catalog-search-toggle');
   const row    = document.getElementById('catalog-search-row');
   const input  = document.getElementById('catalog-search');
+  const clearBtn = document.getElementById('catalog-search-clear');
   if (!toggle || !row || !input) return;
+
+  const updateClearBtn = () => {
+    if (clearBtn) clearBtn.hidden = !input.value;
+  };
 
   const closeSearch = () => {
     row.classList.remove('catalog-search--open');
@@ -148,6 +153,7 @@ function initSearch() {
       activeQuery = '';
       applyFilters();
     }
+    updateClearBtn();
   };
 
   const openSearch = (focus = true) => {
@@ -165,11 +171,24 @@ function initSearch() {
   input.addEventListener('input', () => {
     activeQuery = input.value.trim().toLowerCase();
     applyFilters();
+    updateClearBtn();
   });
 
   input.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeSearch();
   });
+
+  // Clears the text but keeps the search row open -- closeSearch() is for
+  // dismissing the whole search UI, this is just "start the query over."
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      activeQuery = '';
+      applyFilters();
+      updateClearBtn();
+      input.focus();
+    });
+  }
 
   // Reflect a restored query (from a previous visit to the grid this
   // session) in the UI -- expand the row and fill the field, don't just
@@ -178,6 +197,7 @@ function initSearch() {
     input.value = activeQuery;
     openSearch(false);
   }
+  updateClearBtn();
 }
 
 // Category filter and search query narrow the grid together (AND, not

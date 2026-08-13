@@ -65,7 +65,12 @@
       </div>
 
       <div class="catalog-search" id="catalog-search-row">
-        <input type="search" id="catalog-search" class="catalog-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
+        <div class="catalog-search__field">
+          <input type="search" id="catalog-search" class="catalog-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
+          <button type="button" id="catalog-search-clear" class="catalog-search__clear" aria-label="Clear search" hidden>
+            <svg viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><line x1="2" y1="2" x2="14" y2="14" stroke="currentColor" stroke-width="1.6"/><line x1="14" y1="2" x2="2" y2="14" stroke="currentColor" stroke-width="1.6"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
