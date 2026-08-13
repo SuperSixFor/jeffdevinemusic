@@ -77,7 +77,7 @@ function renderCatalog() {
     const cta = piece.hasVariants
       ? `<div class="catalog-card__actions">
     <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
-    <a href="https://payhip.com/b/${piece.payhipKey}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Choose on Payhip</a>
+    <a href="https://payhip.com/b/${piece.payhipKey}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Checkout</a>
   </div>`
       : piece.payhipKey
       ? `<div class="catalog-card__actions">
