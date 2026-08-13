@@ -26,7 +26,7 @@ const SITE = {
   meta: {
     home:    "Sacred choral works and solo classical guitar by Jeff Devine. Sheet music, scores, and recordings.",
     music:   "Stream solo classical guitar recordings by Jeff Devine on Spotify and Apple Music.",
-    shop:    "Sheet music and scores by Jeff Devine. Choral works and solo guitar, instant PDF download.",
+    catalog: "Sheet music and scores by Jeff Devine. Choral works and solo guitar, instant PDF download.",
     about:   "Biography and background of composer and guitarist Jeff Devine.",
     contact: "Contact Jeff Devine for licensing, scores, or general correspondence.",
   },
@@ -59,7 +59,7 @@ const SITE = {
     heroSub:     "Sacred choral works & solo classical guitar",
     heroCTA:     { label: "Explore the Catalog", href: "catalog.html" },
 
-    // Up to 3 featured pieces shown on homepage. href links to shop.
+    // Up to 3 featured pieces shown on homepage. href links to catalog.
     featuredPieces: [
       { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "catalog.html" },
       { title: "Holy God, We Praise Your Name",     voicing: "SATB · A Cappella", season: "General",  href: "catalog.html" },
@@ -141,8 +141,8 @@ const SITE = {
     guitarBody:     "Solo guitar works available on major streaming platforms.",
   },
 
-  // ── SHOP PAGE ─────────────────────────────────────────────────
-  shop: {
+  // ── CATALOG PAGE ─────────────────────────────────────────────────
+  catalog: {
     licenseNote: "Purchase includes a performance license for one ensemble for one performance season. TBD",
     footerNote:  `All purchases are PDF downloads delivered instantly. Choral scores include
                   a performance license for one ensemble for one performance season.

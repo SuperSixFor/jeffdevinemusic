@@ -39,7 +39,7 @@
 
   /* Component-specific */
   --nav-scrolled-bg:      rgba(248, 245, 240, 0.92);
-  --shop-filter-bg:       rgba(248, 245, 240, 0.95);
+  --catalog-filter-bg:       rgba(248, 245, 240, 0.95);
   --input-bg:             transparent;
   --rule-width:           40px;
   --image-filter:         grayscale(100%);

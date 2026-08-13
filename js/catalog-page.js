@@ -1,5 +1,5 @@
 /* ================================================================
-   DEVINE MUSIC — shop.js
+   DEVINE MUSIC — catalog-page.js
    Renders catalog cards from js/catalog.js and handles filter bar.
    To add/edit pieces: edit js/catalog.js
    ================================================================ */
@@ -12,7 +12,7 @@ let activeQuery  = '';
 // doesn't dump the visitor back to an unfiltered grid. sessionStorage
 // (not localStorage) on purpose -- scoped to this browsing session/tab,
 // not a permanent preference that outlives the visit.
-const FILTER_STATE_KEY = 'shopFilterState';
+const FILTER_STATE_KEY = 'catalogFilterState';
 
 function restoreFilterState() {
   try {
@@ -112,7 +112,7 @@ function initFilters() {
   const btns = document.querySelectorAll('.filter-btn[data-filter]');
   if (!btns.length) return;
 
-  // main.js's populateShop() regenerates these buttons from config.js and
+  // main.js's populateCatalog() regenerates these buttons from config.js and
   // hardcodes the first one ("All") as active -- clear that unconditionally
   // before applying the restored filter, or a restored non-"all" filter
   // ends up with two buttons marked active at once.
@@ -130,13 +130,13 @@ function initFilters() {
 }
 
 function initSearch() {
-  const toggle = document.getElementById('shop-search-toggle');
-  const row    = document.getElementById('shop-search-row');
-  const input  = document.getElementById('shop-search');
+  const toggle = document.getElementById('catalog-search-toggle');
+  const row    = document.getElementById('catalog-search-row');
+  const input  = document.getElementById('catalog-search');
   if (!toggle || !row || !input) return;
 
   const closeSearch = () => {
-    row.classList.remove('shop-search--open');
+    row.classList.remove('catalog-search--open');
     toggle.classList.remove('active');
     toggle.setAttribute('aria-expanded', 'false');
     if (activeQuery) {
@@ -147,14 +147,14 @@ function initSearch() {
   };
 
   const openSearch = (focus = true) => {
-    row.classList.add('shop-search--open');
+    row.classList.add('catalog-search--open');
     toggle.classList.add('active');
     toggle.setAttribute('aria-expanded', 'true');
     if (focus) input.focus();
   };
 
   toggle.addEventListener('click', () => {
-    if (row.classList.contains('shop-search--open')) closeSearch();
+    if (row.classList.contains('catalog-search--open')) closeSearch();
     else openSearch();
   });
 

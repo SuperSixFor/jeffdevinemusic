@@ -41,10 +41,10 @@
   </section>
 
   <!-- ── FILTER BAR ─────────────────────────────────────────── -->
-  <div class="shop-filters">
+  <div class="catalog-filters">
     <div class="container">
       <div class="filter-bar reveal">
-        <!-- Repopulated by js/main.js from SITE.shop.filters in config.js -->
+        <!-- Repopulated by js/main.js from SITE.catalog.filters in config.js -->
         <button class="filter-btn" data-filter="all">All</button>
         <button class="filter-btn" data-filter="tds">Timothy Dudley-Smith Hymn Settings</button>
         <button class="filter-btn" data-filter="cha">Choral Hymns and Arrangements</button>
@@ -54,35 +54,35 @@
         <button class="filter-btn" data-filter="goa">Guitar Originals and Arrangements</button>
       </div>
 
-      <!-- Lives outside .filter-bar on purpose -- main.js's populateShop()
+      <!-- Lives outside .filter-bar on purpose -- main.js's populateCatalog()
            regenerates .filter-bar's innerHTML from config.js, which would
            silently wipe this out if it were a child of that element. -->
-      <div class="shop-search-bar reveal">
-        <button type="button" id="shop-search-toggle" class="filter-btn filter-btn--search" aria-expanded="false" aria-controls="shop-search-row">
+      <div class="catalog-search-bar reveal">
+        <button type="button" id="catalog-search-toggle" class="filter-btn filter-btn--search" aria-expanded="false" aria-controls="catalog-search-row">
           <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="10.3" y1="10.3" x2="15" y2="15" stroke="currentColor" stroke-width="1.4"/></svg>
           Search
         </button>
       </div>
 
-      <div class="shop-search" id="shop-search-row">
-        <input type="search" id="shop-search" class="shop-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
+      <div class="catalog-search" id="catalog-search-row">
+        <input type="search" id="catalog-search" class="catalog-search__input" placeholder="Search the catalog…" aria-label="Search the catalog">
       </div>
     </div>
   </div>
 
   <!-- ── CATALOG GRID ───────────────────────────────────────── -->
-  <section class="shop-section">
+  <section class="catalog-section">
     <div class="container">
 
       <div class="catalog-grid" id="catalog-grid">
-        <!-- Populated by js/catalog.js + js/shop.js -->
+        <!-- Populated by js/catalog.js + js/catalog-page.js -->
       </div>
 
       <p class="catalog-empty" id="catalog-empty" style="display:none;">
         No pieces match your search.
       </p>
 
-      <p class="shop-note reveal">
+      <p class="catalog-note reveal">
         All purchases are PDF downloads delivered instantly. Choral scores include
         a performance license for one ensemble for one performance season.
         For bulk or institutional licensing, <a href="index.html#contact">get in touch</a>.
@@ -113,6 +113,6 @@
   <script src="js/catalog.js"></script>
   <script src="js/main.js"></script>
   <script src="js/cart.js"></script>
-  <script src="js/shop.js"></script>
+  <script src="js/catalog-page.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
   const link = document.createElement('link');
   link.rel  = 'stylesheet';
   // Root-relative — must resolve correctly from subdirectory pages
-  // (shop/*.html) too, not just top-level pages. A page-relative path
+  // (catalog/*.html) too, not just top-level pages. A page-relative path
   // here 404s on any page not at the site root, silently leaving every
   // --color-* custom property undefined (transparent panels, invisible
   // badge colors, etc. — exactly the bugs this was tracked down from).
@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── PER-PAGE ─────────────────────────────────────────────────
   // index.html is the single-page site (hero/about/featured/recordings/contact,
-  // all merged in one document) -- only catalog.html + shop/*.html are
+  // all merged in one document) -- only catalog.html + catalog/*.html are
   // separate pages, so they're the only other entries here.
   const handlers = {
     'index':   populateIndex,
     '':        populateIndex,
-    'catalog': populateShop,
+    'catalog': populateCatalog,
   };
   (handlers[page] || (() => {}))();
 
@@ -266,9 +266,9 @@ function renderPublication(p) {
   return `<li>${p.publisher}${titlePart}${notePart}</li>`;
 }
 
-// ── SHOP ─────────────────────────────────────────────────────────
-function populateShop() {
-  const s = SITE.shop;
+// ── CATALOG ──────────────────────────────────────────────────────
+function populateCatalog() {
+  const s = SITE.catalog;
 
   // Filter bar
   const filterBar = document.querySelector('.filter-bar');
@@ -279,7 +279,7 @@ function populateShop() {
   }
 
   // Footer note
-  const note = document.querySelector('.shop-note');
+  const note = document.querySelector('.catalog-note');
   if (note) note.innerHTML = s.footerNote;
 }
 

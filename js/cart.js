@@ -178,7 +178,7 @@ const Cart = (() => {
         return;
       }
 
-      // Generic "Add to Cart" trigger — works on the shop grid, piece
+      // Generic "Add to Cart" trigger — works on the catalog grid, piece
       // pages, anywhere. Needs data-key / data-title / data-price.
       const addBtn = e.target.closest('[data-cart-add]');
       if (addBtn) {

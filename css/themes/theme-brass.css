@@ -35,7 +35,7 @@
   --color-inverse-subtle: rgba(247,244,238,0.3);
 
   --nav-scrolled-bg:      rgba(247, 244, 238, 0.93);
-  --shop-filter-bg:       rgba(247, 244, 238, 0.96);
+  --catalog-filter-bg:       rgba(247, 244, 238, 0.96);
   --input-bg:             transparent;
   --rule-width:           40px;
   --image-filter:         grayscale(100%) contrast(1.05);

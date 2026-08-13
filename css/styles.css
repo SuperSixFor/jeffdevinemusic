@@ -480,11 +480,11 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   color: var(--color-accent);
 }
 
-/* ── SHOP PAGE ───────────────────────────────────────────────── */
-.shop-filters {
+/* ── CATALOG PAGE ────────────────────────────────────────────── */
+.catalog-filters {
   border-bottom: 1px solid var(--color-border);
   position: sticky; top: 60px;
-  background: var(--shop-filter-bg);
+  background: var(--catalog-filter-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 50;
@@ -493,14 +493,14 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 
 .filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
-.shop-search-bar { margin-top: 0.75rem; }
+.catalog-search-bar { margin-top: 0.75rem; }
 .filter-btn--search { display: inline-flex; align-items: center; gap: 0.4rem; }
 .filter-btn--search svg { flex-shrink: 0; }
 
-/* Collapsed by default; .shop-search--open expands it open. Height is
+/* Collapsed by default; .catalog-search--open expands it open. Height is
    animated via grid-template-rows (not max-height) so it doesn't need
    a guessed pixel cap that clips a taller state (e.g. wrapped error text). */
-.shop-search {
+.catalog-search {
   max-width: 360px;
   margin-top: 0;
   display: grid;
@@ -508,10 +508,10 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   opacity: 0;
   transition: grid-template-rows 0.25s ease, opacity 0.2s ease, margin-top 0.25s ease;
 }
-.shop-search--open { grid-template-rows: 1fr; opacity: 1; margin-top: 1rem; }
-.shop-search > * { min-height: 0; overflow: hidden; }
+.catalog-search--open { grid-template-rows: 1fr; opacity: 1; margin-top: 1rem; }
+.catalog-search > * { min-height: 0; overflow: hidden; }
 
-.shop-search__input {
+.catalog-search__input {
   width: 100%;
   font-family: var(--font-body);
   font-size: 0.9375rem; font-weight: 300;
@@ -523,9 +523,9 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   transition: border-color 0.2s;
   appearance: none; -webkit-appearance: none; border-radius: 0;
 }
-.shop-search__input:focus { border-color: var(--color-text); }
-.shop-search__input::placeholder { color: var(--color-text-subtle); }
-.shop-search__input::-webkit-search-cancel-button { appearance: none; -webkit-appearance: none; }
+.catalog-search__input:focus { border-color: var(--color-text); }
+.catalog-search__input::placeholder { color: var(--color-text-subtle); }
+.catalog-search__input::-webkit-search-cancel-button { appearance: none; -webkit-appearance: none; }
 
 .filter-btn {
   font-family: var(--font-body);
@@ -542,7 +542,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 .filter-btn:hover { border-color: var(--color-text); color: var(--color-text); }
 .filter-btn.active { background: var(--color-text); border-color: var(--color-text); color: var(--color-bg); }
 
-.shop-section   { padding-block: clamp(3rem, 6vw, 5rem); }
+.catalog-section   { padding-block: clamp(3rem, 6vw, 5rem); }
 
 .catalog-grid {
   display: grid;
@@ -585,7 +585,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   margin-top: -1rem;
 }
 
-.shop-note {
+.catalog-note {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--color-text);
@@ -595,7 +595,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   background: var(--color-bg-raised);
   border-left: 3px solid var(--color-accent);
 }
-.shop-note a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
+.catalog-note a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── CONTACT PAGE ────────────────────────────────────────────── */
 .contact-section { padding-block: clamp(4rem, 8vw, 7rem); }
@@ -758,7 +758,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   .bio-section__image  { max-width: 280px; }
   .form-row            { grid-template-columns: 1fr; }
   .footer__inner       { flex-direction: column; }
-  .shop-filters        { top: 0; }
+  .catalog-filters        { top: 0; }
 }
 
 /* ── CART ────────────────────────────────────────────────────── */
