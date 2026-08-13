@@ -185,6 +185,8 @@ function populateIndex() {
   const cta = document.querySelector('.hero__cta .btn');
   if (cta) { cta.textContent = h.heroCTA.label; cta.href = h.heroCTA.href; }
 
+  setText('.featured__intro', h.featuredIntro);
+
   // Featured pieces
   const grid = document.querySelector('.featured__grid');
   if (grid && h.featuredPieces && h.featuredPieces.length) {

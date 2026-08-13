@@ -59,6 +59,13 @@ const SITE = {
     heroSub:     "Sacred choral works & solo classical guitar",
     heroCTA:     { label: "Explore the Catalog", href: "catalog.html" },
 
+    // Intro line under "From the Catalog" on the homepage.
+    // Alternate phrasings -- swap the line below to try one:
+    //   "Choral and instrumental works — for the choir loft, the concert stage, and the practice room."
+    //   "Sacred choral scores and solo works — composed for congregations, ensembles, and soloists alike."
+    //   "Vocal and instrumental scores — for worship, concert, and classroom."
+    featuredIntro: "Vocal and Instrumental works — written for the church choir, concert hall, and the rehearsal room.",
+
     // Up to 3 featured pieces shown on homepage. href links to catalog.
     featuredPieces: [
       { title: "Let All Mortal Flesh Keep Silence", voicing: "SATB · A Cappella", season: "Advent",   href: "catalog.html" },
