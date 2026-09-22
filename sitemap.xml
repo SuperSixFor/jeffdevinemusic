@@ -922,51 +922,6 @@
     <priority>0.8</priority>
   </url>
 <url>
-    <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-flute/redeemed-flute-p1.png</image:loc>
-      <image:title>Redeemed! — Jeff Devine</image:title>
-      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-flute/redeemed-flute-p2.png</image:loc>
-      <image:title>Redeemed! — Jeff Devine</image:title>
-      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
-    </image:image>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-<url>
-    <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-trumpet/redeemed-trumpet-p1.png</image:loc>
-      <image:title>Redeemed! — Jeff Devine</image:title>
-      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-trumpet/redeemed-trumpet-p2.png</image:loc>
-      <image:title>Redeemed! — Jeff Devine</image:title>
-      <image:caption>Redeemed! — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
-    </image:image>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-<url>
-    <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-vocal-solo/redeemed-vocal-solo-p1.png</image:loc>
-      <image:title>Redeemed! — Jeff Devine</image:title>
-      <image:caption>Redeemed! — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-vocal-solo/redeemed-vocal-solo-p2.png</image:loc>
-      <image:title>Redeemed! — Jeff Devine</image:title>
-      <image:caption>Redeemed! — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
-    </image:image>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-<url>
     <loc>https://jeffdevinemusic.com/catalog/rondeau.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/rondeau/rondeau-p1.png</image:loc>
