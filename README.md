@@ -91,4 +91,4 @@ After setting up Shopify Starter:
 2. Create button per product → copy embed code
 3. In `js/catalog.js`, add `shopifyEmbed: "<embed code>"` to the matching piece
    — the card CTA switches from "Inquire" to the Buy Button automatically
-4. Or generate embed codes in bulk via `catalog-tool/4_pub_own/publish.py`
+4. ~~Or generate embed codes in bulk via `catalog-tool/4_pub_own/publish.py`~~ (deprecated — Shopify abandoned for Payhip; all `catalog-tool` Python scripts deprecated 2026-09-22)
