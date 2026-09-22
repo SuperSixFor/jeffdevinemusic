@@ -74,7 +74,7 @@ jeffdevinemusic/
 1. Push repo to GitHub
 2. Settings → Pages → Source: Deploy from branch → `main` → `/root`
 3. Custom domain: enter `jeffdevinemusic.com`
-4. DNS: point domain A records to GitHub Pages IPs:
+4. DNS (managed in Cloudflare; domain registered at GoDaddy — keep records DNS-only/grey cloud): point domain A records to GitHub Pages IPs:
    ```
    185.199.108.153
    185.199.109.153
