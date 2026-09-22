@@ -13,7 +13,7 @@ const SITE = {
   dba:      "Devine Music",
   tagline:  "Composer · Guitarist · Publisher",
   location: "Weatherford, TX",
-  email:    "jeff@jeffdevinemusic.com",   // update when domain is live
+  email:    "jeff@jeffdevinemusic.com",
   url:      "https://jeffdevinemusic.com",
 
   // ── THEME ──────────────────────────────────────────────────
@@ -169,7 +169,10 @@ const SITE = {
   // ── CONTACT PAGE ──────────────────────────────────────────────
   contact: {
     intro:       "For licensing inquiries, ensemble scores, bulk orders, or general correspondence. Responses typically within 2–3 business days.",
-    formAction:  "https://formspree.io/f/REPLACE_WITH_YOUR_ID",  // sign up at formspree.io
+    // FormSubmit (no account): delivers submissions to SITE.email. The
+    // very first submission sends an activation email to that address --
+    // click "Activate Form" in it or nothing gets delivered after.
+    formAction:  "https://formsubmit.co/ajax/jeff@jeffdevinemusic.com",
     subjects: [
       "Licensing inquiry",
       "Bulk / institutional order",

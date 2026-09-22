@@ -365,7 +365,11 @@ function populateContact() {
   setText('.contact-intro', c.intro);
 
   const form = document.querySelector('.contact-form form');
-  if (form) form.action = c.formAction;
+  if (form) {
+    // Non-AJAX endpoint is the no-JS fallback; with JS we submit inline.
+    form.action = c.formAction.replace('/ajax/', '/');
+    form.addEventListener('submit', e => submitContactForm(e, form, c.formAction));
+  }
 
   const emailLink = document.querySelector('.contact-email');
   if (emailLink) {
@@ -385,6 +389,35 @@ function populateContact() {
       opt.textContent = s;
       select.appendChild(opt);
     });
+  }
+}
+
+async function submitContactForm(e, form, endpoint) {
+  e.preventDefault();
+  const status = form.querySelector('.form-status');
+  const button = form.querySelector('button[type="submit"]');
+  const data = Object.fromEntries(new FormData(form));
+  if (data._honey) return;
+  // Show the readable topic, not its slug, in the email.
+  const select = form.querySelector('#subject');
+  if (select && select.value) data.subject = select.options[select.selectedIndex].text;
+
+  button.disabled = true;
+  status.textContent = 'Sending…';
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || res.statusText);
+    form.reset();
+    status.textContent = 'Thank you — your message has been sent.';
+  } catch (err) {
+    status.textContent = `Sorry, your message couldn't be sent. Please email ${SITE.email} directly.`;
+  } finally {
+    button.disabled = false;
   }
 }
 
