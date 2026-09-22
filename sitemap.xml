@@ -21,7 +21,37 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+    <url>
+    <loc>https://jeffdevinemusic.com/catalog/a-city-radiant-as-a-bride.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/a-city-radiant-as-a-bride/a-city-radiant-as-a-bride-p1.png</image:loc>
+      <image:title>A City Radiant as a Bride — Jeff Devine</image:title>
+      <image:caption>A City Radiant as a Bride — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/a-city-radiant-as-a-bride/a-city-radiant-as-a-bride-p2.png</image:loc>
+      <image:title>A City Radiant as a Bride — Jeff Devine</image:title>
+      <image:caption>A City Radiant as a Bride — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/a-glory-fills-the-midnight-sky.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/a-glory-fills-the-midnight-sky/a-glory-fills-the-midnight-sky-p1.png</image:loc>
+      <image:title>A Glory Fills the Midnight Sky — Jeff Devine</image:title>
+      <image:caption>A Glory Fills the Midnight Sky — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/a-glory-fills-the-midnight-sky/a-glory-fills-the-midnight-sky-p2.png</image:loc>
+      <image:title>A Glory Fills the Midnight Sky — Jeff Devine</image:title>
+      <image:caption>A Glory Fills the Midnight Sky — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/a-purple-robe.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/a-purple-robe/a-purple-robe-p1.png</image:loc>
@@ -36,7 +66,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/all-creatures-of-our-god-and-king-lasst-uns-erfreuen.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/all-creatures-of-our-god-and-king-lasst-uns-erfreuen/all-creatures-of-our-god-and-king-lasst-uns-erfreuen-p1.png</image:loc>
@@ -51,7 +81,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/all-creatures-of-our-god-and-king-theme-and-variations.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/all-creatures-of-our-god-and-king-theme-and-variations/all-creatures-of-our-god-and-king-theme-and-variations-p1.png</image:loc>
@@ -67,21 +97,36 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jeffdevinemusic.com/catalog/amazing-grace-sursum-corda.html</loc>
+    <loc>https://jeffdevinemusic.com/catalog/all-glory-be-to-god-on-high.html</loc>
     <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace-sursum-corda/amazing-grace-sursum-corda-p1.png</image:loc>
-      <image:title>Amazing Grace (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
-      <image:caption>Amazing Grace (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/all-glory-be-to-god-on-high/all-glory-be-to-god-on-high-p1.png</image:loc>
+      <image:title>All Glory Be to God on High — Jeff Devine</image:title>
+      <image:caption>All Glory Be to God on High — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace-sursum-corda/amazing-grace-sursum-corda-p2.png</image:loc>
-      <image:title>Amazing Grace (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
-      <image:caption>Amazing Grace (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/all-glory-be-to-god-on-high/all-glory-be-to-god-on-high-p2.png</image:loc>
+      <image:title>All Glory Be to God on High — Jeff Devine</image:title>
+      <image:caption>All Glory Be to God on High — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
     </image:image>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/almighty-god-our-prayer-is-still.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/almighty-god-our-prayer-is-still/almighty-god-our-prayer-is-still-p1.png</image:loc>
+      <image:title>Almighty God, Our Prayer is Still — Jeff Devine</image:title>
+      <image:caption>Almighty God, Our Prayer is Still — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/almighty-god-our-prayer-is-still/almighty-god-our-prayer-is-still-p2.png</image:loc>
+      <image:title>Almighty God, Our Prayer is Still — Jeff Devine</image:title>
+      <image:caption>Almighty God, Our Prayer is Still — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/amazing-grace.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace/amazing-grace-p1.png</image:loc>
@@ -96,7 +141,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/amazing-grace-sursum-corda.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace-sursum-corda/amazing-grace-sursum-corda-p1.png</image:loc>
+      <image:title>Amazing Grace (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Amazing Grace (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/amazing-grace-sursum-corda/amazing-grace-sursum-corda-p2.png</image:loc>
+      <image:title>Amazing Grace (&lt;em&gt;Sursum Corda&lt;/em&gt;) — Jeff Devine</image:title>
+      <image:caption>Amazing Grace (Sursum Corda) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/and-can-it-be.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/and-can-it-be/and-can-it-be-p1.png</image:loc>
@@ -112,6 +172,46 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/at-the-throne-of-grace.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/at-the-throne-of-grace/at-the-throne-of-grace-p1.png</image:loc>
+      <image:title>At the Throne of Grace — Jeff Devine</image:title>
+      <image:caption>At the Throne of Grace — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/at-the-throne-of-grace/at-the-throne-of-grace-p2.png</image:loc>
+      <image:title>At the Throne of Grace — Jeff Devine</image:title>
+      <image:caption>At the Throne of Grace — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/child-of-mary-softly-sleeping.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/child-of-mary-softly-sleeping/child-of-mary-softly-sleeping-p1.png</image:loc>
+      <image:title>Child of Mary, Softly Sleeping — Jeff Devine</image:title>
+      <image:caption>Child of Mary, Softly Sleeping — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/child-of-mary-softly-sleeping/child-of-mary-softly-sleeping-p2.png</image:loc>
+      <image:title>Child of Mary, Softly Sleeping — Jeff Devine</image:title>
+      <image:caption>Child of Mary, Softly Sleeping — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/christ-is-come-let-earth-adore-him.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/christ-is-come-let-earth-adore-him/christ-is-come-let-earth-adore-him-p1.png</image:loc>
+      <image:title>Christ is Come! Let Earth Adore Him — Jeff Devine</image:title>
+      <image:caption>Christ is Come! Let Earth Adore Him — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/come-all-christians-be-committed.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/come-all-christians-be-committed/come-all-christians-be-committed-p1.png</image:loc>
@@ -126,7 +226,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/communion.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/communion/communion-p1.png</image:loc>
@@ -136,7 +236,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/coventry-carol.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/coventry-carol/coventry-carol-p1.png</image:loc>
@@ -146,17 +246,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://jeffdevinemusic.com/catalog/cross-of-jesus-cross-of-sorrow-a-cappella-setting.html</loc>
-    <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/cross-of-jesus-cross-of-sorrow-a-cappella-setting/cross-of-jesus-cross-of-sorrow-a-cappella-setting-p1.png</image:loc>
-      <image:title>Cross of Jesus, Cross of Sorrow (A Cappella Setting) — Jeff Devine</image:title>
-      <image:caption>Cross of Jesus, Cross of Sorrow (A Cappella Setting) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
-    </image:image>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/cross-of-jesus-cross-of-sorrow.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/cross-of-jesus-cross-of-sorrow/cross-of-jesus-cross-of-sorrow-p1.png</image:loc>
@@ -166,7 +256,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/cross-of-jesus-cross-of-sorrow-a-cappella-setting.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/cross-of-jesus-cross-of-sorrow-a-cappella-setting/cross-of-jesus-cross-of-sorrow-a-cappella-setting-p1.png</image:loc>
+      <image:title>Cross of Jesus, Cross of Sorrow (A Cappella Setting) — Jeff Devine</image:title>
+      <image:caption>Cross of Jesus, Cross of Sorrow (A Cappella Setting) — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/eternal-spirit-of-the-living-christ-sursum-corda.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/eternal-spirit-of-the-living-christ-sursum-corda/eternal-spirit-of-the-living-christ-sursum-corda-p1.png</image:loc>
@@ -181,7 +281,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/fairest-lord-jesus.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/fairest-lord-jesus/fairest-lord-jesus-p1.png</image:loc>
@@ -191,7 +291,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/give-to-our-god-immortal-praise-lasst-uns-erfreuen.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/give-to-our-god-immortal-praise-lasst-uns-erfreuen/give-to-our-god-immortal-praise-lasst-uns-erfreuen-p1.png</image:loc>
@@ -206,7 +306,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/god-rest-ye-merry-gentlemen.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/god-rest-ye-merry-gentlemen/god-rest-ye-merry-gentlemen-p1.png</image:loc>
@@ -221,7 +321,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/god-who-made-the-earth-and-heaven.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/god-who-made-the-earth-and-heaven/god-who-made-the-earth-and-heaven-p1.png</image:loc>
@@ -231,7 +331,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/grace-greater-than-our-sin.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/grace-greater-than-our-sin/grace-greater-than-our-sin-p1.png</image:loc>
@@ -246,7 +346,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/great-is-thy-faithfullness.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/great-is-thy-faithfullness/great-is-thy-faithfullness-p1.png</image:loc>
@@ -262,6 +362,46 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/had-he-not-loved-us.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/had-he-not-loved-us/had-he-not-loved-us-p1.png</image:loc>
+      <image:title>Had He Not Loved Us — Jeff Devine</image:title>
+      <image:caption>Had He Not Loved Us — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/had-he-not-loved-us/had-he-not-loved-us-p2.png</image:loc>
+      <image:title>Had He Not Loved Us — Jeff Devine</image:title>
+      <image:caption>Had He Not Loved Us — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/had-i-been-there-that-christmas-night.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/had-i-been-there-that-christmas-night/had-i-been-there-that-christmas-night-p1.png</image:loc>
+      <image:title>Had I Been There That Christmas Night — Jeff Devine</image:title>
+      <image:caption>Had I Been There That Christmas Night — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/had-i-been-there-that-christmas-night/had-i-been-there-that-christmas-night-p2.png</image:loc>
+      <image:title>Had I Been There That Christmas Night — Jeff Devine</image:title>
+      <image:caption>Had I Been There That Christmas Night — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/heavenly-hosts-in-ceaseless-worship.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/heavenly-hosts-in-ceaseless-worship/heavenly-hosts-in-ceaseless-worship-p1.png</image:loc>
+      <image:title>Heavenly Hosts in Ceaseless Worship — Jeff Devine</image:title>
+      <image:caption>Heavenly Hosts in Ceaseless Worship — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/his-love-is-everlasting.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/his-love-is-everlasting/his-love-is-everlasting-p1.png</image:loc>
@@ -277,6 +417,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/holy-child-how-still-you-lie.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/holy-child-how-still-you-lie/holy-child-how-still-you-lie-p1.png</image:loc>
+      <image:title>Holy Child, How Still You Lie! — Jeff Devine</image:title>
+      <image:caption>Holy Child, How Still You Lie! — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/holy-child-how-still-you-lie/holy-child-how-still-you-lie-p2.png</image:loc>
+      <image:title>Holy Child, How Still You Lie! — Jeff Devine</image:title>
+      <image:caption>Holy Child, How Still You Lie! — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/holy-legacy.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/holy-legacy/holy-legacy-p1.png</image:loc>
@@ -291,7 +446,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/i-have-decided-to-follow-jesus.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/i-have-decided-to-follow-jesus/i-have-decided-to-follow-jesus-p1.png</image:loc>
@@ -306,7 +461,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives/i-know-that-my-redeemer-lives-p1.png</image:loc>
+      <image:title>I Know That My Redeemer Lives — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives/i-know-that-my-redeemer-lives-p2.png</image:loc>
+      <image:title>I Know That My Redeemer Lives — Jeff Devine</image:title>
+      <image:caption>I Know That My Redeemer Lives — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives-duke-street.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives-duke-street/i-know-that-my-redeemer-lives-duke-street-p1.png</image:loc>
@@ -321,7 +491,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives-lasst-uns-erfreuen.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives-lasst-uns-erfreuen/i-know-that-my-redeemer-lives-lasst-uns-erfreuen-p1.png</image:loc>
@@ -337,21 +507,21 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jeffdevinemusic.com/catalog/i-know-that-my-redeemer-lives.html</loc>
+    <loc>https://jeffdevinemusic.com/catalog/i-lift-my-eyes.html</loc>
     <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives/i-know-that-my-redeemer-lives-p1.png</image:loc>
-      <image:title>I Know That My Redeemer Lives — Jeff Devine</image:title>
-      <image:caption>I Know That My Redeemer Lives — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-lift-my-eyes/i-lift-my-eyes-p1.png</image:loc>
+      <image:title>I Lift My Eyes — Jeff Devine</image:title>
+      <image:caption>I Lift My Eyes — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://jeffdevinemusic.com/assets/previews/i-know-that-my-redeemer-lives/i-know-that-my-redeemer-lives-p2.png</image:loc>
-      <image:title>I Know That My Redeemer Lives — Jeff Devine</image:title>
-      <image:caption>I Know That My Redeemer Lives — sheet music by Jeff Devine. Piano Originals and Arrangements.</image:caption>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/i-lift-my-eyes/i-lift-my-eyes-p2.png</image:loc>
+      <image:title>I Lift My Eyes — Jeff Devine</image:title>
+      <image:caption>I Lift My Eyes — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
     </image:image>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/i-must-tell-jesus.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/i-must-tell-jesus/i-must-tell-jesus-p1.png</image:loc>
@@ -366,7 +536,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/i-sing-the-mighty-power-of-god.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/i-sing-the-mighty-power-of-god/i-sing-the-mighty-power-of-god-p1.png</image:loc>
@@ -381,7 +551,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/if-you-will-trust-in-god-to-guide-you.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/if-you-will-trust-in-god-to-guide-you-guitar/if-you-will-trust-in-god-to-guide-you-guitar-p1.png</image:loc>
@@ -396,7 +566,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/if-you-will-trust-in-god-to-guide-you.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/if-you-will-trust-in-god-to-guide-you-satb/if-you-will-trust-in-god-to-guide-you-satb-p1.png</image:loc>
@@ -411,7 +581,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/in-the-bleak-midwinter.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/in-the-bleak-midwinter/in-the-bleak-midwinter-p1.png</image:loc>
@@ -421,7 +591,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/interlude.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/interlude/interlude-p1.png</image:loc>
@@ -436,7 +606,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/jeremiah-9-23-24.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/jeremiah-9-23-24/jeremiah-9-23-24-p1.png</image:loc>
@@ -451,7 +621,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/jesus-paid-it-all.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/jesus-paid-it-all/jesus-paid-it-all-p1.png</image:loc>
@@ -461,7 +631,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/jesus-priceless-treasure.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/jesus-priceless-treasure/jesus-priceless-treasure-p1.png</image:loc>
@@ -471,7 +641,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/joys-are-flowing-like-a-river.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/joys-are-flowing-like-a-river/joys-are-flowing-like-a-river-p1.png</image:loc>
@@ -486,7 +656,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/just-say-the-word.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/just-say-the-word/just-say-the-word-p1.png</image:loc>
@@ -501,7 +671,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/leaning-on-the-everlasting-arms.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/leaning-on-the-everlasting-arms/leaning-on-the-everlasting-arms-p1.png</image:loc>
@@ -516,7 +686,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/marche.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/marche/marche-p1.png</image:loc>
@@ -531,7 +701,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/may-jesus-christ-be-praised.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/may-jesus-christ-be-praised/may-jesus-christ-be-praised-p1.png</image:loc>
@@ -541,7 +711,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/may-the-mind-of-christ-my-savior.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/may-the-mind-of-christ-my-savior/may-the-mind-of-christ-my-savior-p1.png</image:loc>
@@ -551,7 +721,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/may-the-mind-of-christ-my-saviour-piano.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/may-the-mind-of-christ-my-saviour-piano/may-the-mind-of-christ-my-saviour-piano-p1.png</image:loc>
@@ -561,7 +731,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/my-country-tis-of-thee.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/my-country-tis-of-thee/my-country-tis-of-thee-p1.png</image:loc>
@@ -576,7 +746,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/my-faith-has-found-a-resting-place-sursum-corda.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/my-faith-has-found-a-resting-place-sursum-corda/my-faith-has-found-a-resting-place-sursum-corda-p1.png</image:loc>
@@ -591,7 +761,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/my-soul-finds-rest.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/my-soul-finds-rest/my-soul-finds-rest-p1.png</image:loc>
@@ -607,6 +777,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/not-to-us-be-glory-given.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/not-to-us-be-glory-given/not-to-us-be-glory-given-p1.png</image:loc>
+      <image:title>Not to Us Be Glory Given — Jeff Devine</image:title>
+      <image:caption>Not to Us Be Glory Given — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/not-to-us-be-glory-given/not-to-us-be-glory-given-p2.png</image:loc>
+      <image:title>Not to Us Be Glory Given — Jeff Devine</image:title>
+      <image:caption>Not to Us Be Glory Given — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/nothin-but-the-blood.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/nothin-but-the-blood/nothin-but-the-blood-p1.png</image:loc>
@@ -621,7 +806,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/o-come-redeemer-of-the-earth.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/o-come-redeemer-of-the-earth/o-come-redeemer-of-the-earth-p1.png</image:loc>
@@ -636,7 +821,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/o-little-town-of-bethlehem.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/o-little-town-of-bethlehem/o-little-town-of-bethlehem-p1.png</image:loc>
@@ -646,7 +831,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/o-sacred-head-now-wounded.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/o-sacred-head-now-wounded/o-sacred-head-now-wounded-p1.png</image:loc>
@@ -656,7 +841,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/o-sing-a-song-of-bethlehem-kingsfold.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/o-sing-a-song-of-bethlehem-kingsfold/o-sing-a-song-of-bethlehem-kingsfold-p1.png</image:loc>
@@ -671,7 +856,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/o-the-deep-deep-love-of-jesus.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/o-the-deep-deep-love-of-jesus/o-the-deep-deep-love-of-jesus-p1.png</image:loc>
@@ -681,7 +866,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/o-worship-the-king-theme-variation.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/o-worship-the-king-theme-variation/o-worship-the-king-theme-variation-p1.png</image:loc>
@@ -697,6 +882,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/our-risen-lord-our-king-of-kings.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/our-risen-lord-our-king-of-kings/our-risen-lord-our-king-of-kings-p1.png</image:loc>
+      <image:title>Our Risen Lord, Our King of Kings — Jeff Devine</image:title>
+      <image:caption>Our Risen Lord, Our King of Kings — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/our-risen-lord-our-king-of-kings/our-risen-lord-our-king-of-kings-p2.png</image:loc>
+      <image:title>Our Risen Lord, Our King of Kings — Jeff Devine</image:title>
+      <image:caption>Our Risen Lord, Our King of Kings — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/praise-god-for-his-redeeming-grace.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/praise-god-for-his-redeeming-grace/praise-god-for-his-redeeming-grace-p1.png</image:loc>
+      <image:title>Praise God for His Redeeming Grace — Jeff Devine</image:title>
+      <image:caption>Praise God for His Redeeming Grace — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/praise-god-for-his-redeeming-grace/praise-god-for-his-redeeming-grace-p2.png</image:loc>
+      <image:title>Praise God for His Redeeming Grace — Jeff Devine</image:title>
+      <image:caption>Praise God for His Redeeming Grace — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/praise-to-the-lord-the-almighty.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/praise-to-the-lord-the-almighty/praise-to-the-lord-the-almighty-p1.png</image:loc>
@@ -706,7 +921,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-flute/redeemed-flute-p1.png</image:loc>
@@ -721,7 +936,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-trumpet/redeemed-trumpet-p1.png</image:loc>
@@ -736,7 +951,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/redeemed.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/redeemed-vocal-solo/redeemed-vocal-solo-p1.png</image:loc>
@@ -751,7 +966,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/rondeau.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/rondeau/rondeau-p1.png</image:loc>
@@ -766,7 +981,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/simple-gifts.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/simple-gifts/simple-gifts-p1.png</image:loc>
@@ -776,7 +991,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/sleepers-awake-wachet-auf.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/sleepers-awake-wachet-auf/sleepers-awake-wachet-auf-p1.png</image:loc>
@@ -792,6 +1007,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/songs-in-the-night-at-jesus-birth.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/songs-in-the-night-at-jesus-birth/songs-in-the-night-at-jesus-birth-p1.png</image:loc>
+      <image:title>Songs in the Night at Jesus' Birth — Jeff Devine</image:title>
+      <image:caption>Songs in the Night at Jesus' Birth — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/songs-in-the-night-at-jesus-birth/songs-in-the-night-at-jesus-birth-p2.png</image:loc>
+      <image:title>Songs in the Night at Jesus' Birth — Jeff Devine</image:title>
+      <image:caption>Songs in the Night at Jesus' Birth — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/spirit-of-god-descend-upon-my-heart.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/spirit-of-god-descend-upon-my-heart/spirit-of-god-descend-upon-my-heart-p1.png</image:loc>
@@ -801,7 +1031,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/sweet-hour-of-prayer.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/sweet-hour-of-prayer/sweet-hour-of-prayer-p1.png</image:loc>
@@ -817,6 +1047,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/the-glory-of-our-god-and-king.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-glory-of-our-god-and-king/the-glory-of-our-god-and-king-p1.png</image:loc>
+      <image:title>The Glory of Our God and King — Jeff Devine</image:title>
+      <image:caption>The Glory of Our God and King — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-glory-of-our-god-and-king/the-glory-of-our-god-and-king-p2.png</image:loc>
+      <image:title>The Glory of Our God and King — Jeff Devine</image:title>
+      <image:caption>The Glory of Our God and King — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/the-humble-hold-your-kingdom-s-key.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-humble-hold-your-kingdom-s-key/the-humble-hold-your-kingdom-s-key-p1.png</image:loc>
+      <image:title>The Humble Hold Your Kingdom's Key — Jeff Devine</image:title>
+      <image:caption>The Humble Hold Your Kingdom's Key — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/the-lamb.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/the-lamb/the-lamb-p1.png</image:loc>
@@ -832,6 +1087,51 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/the-lord-is-here.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-lord-is-here/the-lord-is-here-p1.png</image:loc>
+      <image:title>The Lord is Here — Jeff Devine</image:title>
+      <image:caption>The Lord is Here — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-lord-is-here/the-lord-is-here-p2.png</image:loc>
+      <image:title>The Lord is Here — Jeff Devine</image:title>
+      <image:caption>The Lord is Here — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/the-love-of-christ-who-died-for-me.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-love-of-christ-who-died-for-me/the-love-of-christ-who-died-for-me-p1.png</image:loc>
+      <image:title>The Love of Christ Who Died for Me — Jeff Devine</image:title>
+      <image:caption>The Love of Christ Who Died for Me — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-love-of-christ-who-died-for-me/the-love-of-christ-who-died-for-me-p2.png</image:loc>
+      <image:title>The Love of Christ Who Died for Me — Jeff Devine</image:title>
+      <image:caption>The Love of Christ Who Died for Me — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffdevinemusic.com/catalog/the-name-of-the-lord.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-name-of-the-lord/the-name-of-the-lord-p1.png</image:loc>
+      <image:title>The Name of the Lord — Jeff Devine</image:title>
+      <image:caption>The Name of the Lord — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/the-name-of-the-lord/the-name-of-the-lord-p2.png</image:loc>
+      <image:title>The Name of the Lord — Jeff Devine</image:title>
+      <image:caption>The Name of the Lord — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/there-is-a-fountain.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/there-is-a-fountain/there-is-a-fountain-p1.png</image:loc>
@@ -841,7 +1141,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/this-is-my-father-s-world.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/this-is-my-father-s-world/this-is-my-father-s-world-p1.png</image:loc>
@@ -856,7 +1156,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/to-a-virgin-meek-and-mild.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/to-a-virgin-meek-and-mild/to-a-virgin-meek-and-mild-p1.png</image:loc>
@@ -871,7 +1171,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/two-hymns.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/two-hymns/two-hymns-p1.png</image:loc>
@@ -886,7 +1186,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/veni-redemptor-gentium-o-come-redeemer-of-the-earth.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/veni-redemptor-gentium-o-come-redeemer-of-the-earth/veni-redemptor-gentium-o-come-redeemer-of-the-earth-p1.png</image:loc>
@@ -902,6 +1202,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/we-believe.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-believe/we-believe-p1.png</image:loc>
+      <image:title>We Believe — Jeff Devine</image:title>
+      <image:caption>We Believe — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/we-believe/we-believe-p2.png</image:loc>
+      <image:title>We Believe — Jeff Devine</image:title>
+      <image:caption>We Believe — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/we-gather-here.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/we-gather-here/we-gather-here-p1.png</image:loc>
@@ -916,7 +1231,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/we-sing-praises.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/we-sing-praises/we-sing-praises-p1.png</image:loc>
@@ -931,7 +1246,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/we-worship-you-almighty-god.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/we-worship-you-almighty-god/we-worship-you-almighty-god-p1.png</image:loc>
@@ -946,7 +1261,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/were-you-there.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/were-you-there/were-you-there-p1.png</image:loc>
@@ -956,7 +1271,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/when-i-survey-the-wondrous-cross.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/when-i-survey-the-wondrous-cross/when-i-survey-the-wondrous-cross-p1.png</image:loc>
@@ -966,7 +1281,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/while-the-world-lay-still-in-slumber.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/while-the-world-lay-still-in-slumber/while-the-world-lay-still-in-slumber-p1.png</image:loc>
@@ -982,6 +1297,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jeffdevinemusic.com/catalog/within-a-crib-my-saviour-lay.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/within-a-crib-my-saviour-lay/within-a-crib-my-saviour-lay-p1.png</image:loc>
+      <image:title>Within a Crib My Saviour Lay — Jeff Devine</image:title>
+      <image:caption>Within a Crib My Saviour Lay — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/within-a-crib-my-saviour-lay/within-a-crib-my-saviour-lay-p2.png</image:loc>
+      <image:title>Within a Crib My Saviour Lay — Jeff Devine</image:title>
+      <image:caption>Within a Crib My Saviour Lay — sheet music by Jeff Devine. Timothy Dudley-Smith Hymn Settings.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/wonderful-words-of-life.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/wonderful-words-of-life/wonderful-words-of-life-p1.png</image:loc>
