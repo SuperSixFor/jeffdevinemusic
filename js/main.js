@@ -414,7 +414,9 @@ async function submitContactForm(e, form, endpoint) {
     form.reset();
     status.textContent = 'Thank you — your message has been sent.';
   } catch (err) {
-    status.textContent = `Sorry, your message couldn't be sent. Please email ${SITE.email} directly.`;
+    // Surface FormSubmit's reason (e.g. the one-time activation notice).
+    const reason = err && err.message ? ` (${err.message})` : '';
+    status.textContent = `Sorry, your message couldn't be sent. Please email ${SITE.email} directly.${reason}`;
   } finally {
     button.disabled = false;
   }
