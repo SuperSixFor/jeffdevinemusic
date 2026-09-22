@@ -653,7 +653,6 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 /* ── CONTACT PAGE ────────────────────────────────────────────── */
 .contact-section { padding-block: clamp(4rem, 8vw, 7rem); }
 .contact-form    { margin-top: 3rem; }
-.form-honey      { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .form-status     { margin-top: 1rem; min-height: 1.5em; }
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }

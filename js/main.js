@@ -397,7 +397,6 @@ async function submitContactForm(e, form, endpoint) {
   const status = form.querySelector('.form-status');
   const button = form.querySelector('button[type="submit"]');
   const data = Object.fromEntries(new FormData(form));
-  if (data._honey) return;
   // Show the readable topic, not its slug, in the email.
   const select = form.querySelector('#subject');
   if (select && select.value) data.subject = select.options[select.selectedIndex].text;
