@@ -1281,4 +1281,44 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/suonata-12-in-a.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/suonata-12-in-a/suonata-12-in-a-p1.png</image:loc>
+      <image:title>Suonata 12 in A — Jeff Devine</image:title>
+      <image:caption>Suonata 12 in A — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/suonata-12-in-a/suonata-12-in-a-p2.png</image:loc>
+      <image:title>Suonata 12 in A — Jeff Devine</image:title>
+      <image:caption>Suonata 12 in A — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/shall-we-gather-at-the-river.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/shall-we-gather-at-the-river/shall-we-gather-at-the-river-p1.png</image:loc>
+      <image:title>Shall We Gather at the River — Jeff Devine</image:title>
+      <image:caption>Shall We Gather at the River — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/shall-we-gather-at-the-river/shall-we-gather-at-the-river-p2.png</image:loc>
+      <image:title>Shall We Gather at the River — Jeff Devine</image:title>
+      <image:caption>Shall We Gather at the River — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/stille-nacht.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/stille-nacht/stille-nacht-p1.png</image:loc>
+      <image:title>Stille Nacht — Jeff Devine</image:title>
+      <image:caption>Stille Nacht — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
