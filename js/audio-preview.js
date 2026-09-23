@@ -1,70 +1,89 @@
 /* ================================================================
    DEVINE MUSIC — audio-preview.js
    Small play/pause toggle + thin progress bar for a piece's 30-second
-   audio clip, shown under the Add to Cart button. Markup:
+   audio clip. Used under Add to Cart on piece pages and on catalog
+   cards (which are rendered after load, so events are delegated).
+   Markup:
      <div class="audio-preview">
-       <button class="audio-toggle" data-audio="../assets/audio/<slug>.m4a">…</button>
+       <button class="audio-toggle" data-audio="…/assets/audio/<slug>.m4a">…</button>
        <div class="audio-preview__bar"><span class="audio-preview__fill"></span></div>
      </div>
-   The clip isn't downloaded until the first click; only one plays at a time.
+   Nothing is downloaded until play is pressed, and starting another clip
+   unloads the previous one, so at most one clip is ever loaded.
    Clicking the bar seeks.
    ================================================================ */
 
 (function () {
-  let current = null; // the <audio> currently playing
+  const players = new WeakMap(); // .audio-preview element -> player
+  let current = null;            // player currently playing
 
-  document.querySelectorAll('.audio-preview').forEach(wrap => {
+  function playerFor(wrap) {
+    let pl = players.get(wrap);
+    if (pl) return pl;
+
     const btn  = wrap.querySelector('.audio-toggle[data-audio]');
     const bar  = wrap.querySelector('.audio-preview__bar');
     const fill = wrap.querySelector('.audio-preview__fill');
-    if (!btn) return;
-    let audio = null;
+    const audio = new Audio(btn.dataset.audio);
+    audio.preload = 'auto';
     let raf = 0;
 
-    function setState(playing) {
+    const setState = playing => {
       btn.classList.toggle('audio-toggle--playing', playing);
       btn.setAttribute('aria-pressed', String(playing));
       btn.setAttribute('aria-label', playing ? 'Pause preview' : 'Play 30-second preview');
-    }
-
-    function draw() {
-      const pct = audio && audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+    };
+    const draw = () => {
+      const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
       if (fill) fill.style.width = pct + '%';
       if (bar) bar.setAttribute('aria-valuenow', String(Math.round(pct)));
+    };
+    const tick = () => { draw(); raf = requestAnimationFrame(tick); };
+
+    audio.addEventListener('play',  () => { setState(true); cancelAnimationFrame(raf); tick(); });
+    audio.addEventListener('pause', () => { setState(false); cancelAnimationFrame(raf); draw(); });
+    audio.addEventListener('ended', () => { audio.currentTime = 0; draw(); });
+    audio.addEventListener('timeupdate', draw); // fallback when rAF is throttled (background tab)
+
+    pl = {
+      audio, draw, bar,
+      unload() {
+        cancelAnimationFrame(raf);
+        audio.pause();
+        audio.removeAttribute('src');
+        audio.load();          // load() drops the queued 'pause' event, so reset the UI here
+        setState(false);
+        if (fill) fill.style.width = '0%';
+        players.delete(wrap);
+      },
+      play() {
+        if (current && current !== pl) current.unload();
+        current = pl;
+        audio.play().catch(() => setState(false));
+      },
+    };
+    players.set(wrap, pl);
+    return pl;
+  }
+
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.audio-toggle[data-audio]');
+    const bar = e.target.closest('.audio-preview__bar');
+    const wrap = (btn || bar) && (btn || bar).closest('.audio-preview');
+    if (!wrap) return;
+    e.preventDefault();
+    const pl = playerFor(wrap);
+
+    if (btn) {
+      pl.audio.paused ? pl.play() : pl.audio.pause();
+      return;
     }
-
-    function tick() { draw(); raf = requestAnimationFrame(tick); }
-
-    function ensureAudio() {
-      if (audio) return audio;
-      audio = new Audio(btn.dataset.audio);
-      audio.preload = 'auto';
-      audio.addEventListener('play',  () => { setState(true); cancelAnimationFrame(raf); tick(); });
-      audio.addEventListener('pause', () => { setState(false); cancelAnimationFrame(raf); draw(); });
-      audio.addEventListener('ended', () => { audio.currentTime = 0; draw(); });
-      return audio;
-    }
-
-    function play() {
-      if (current && current !== audio) current.pause();
-      current = audio;
-      audio.play().catch(() => setState(false));
-    }
-
-    btn.addEventListener('click', () => {
-      ensureAudio();
-      audio.paused ? play() : audio.pause();
-    });
-
-    if (bar) bar.addEventListener('click', e => {
-      ensureAudio();
-      const seek = () => {
-        const r = bar.getBoundingClientRect();
-        audio.currentTime = Math.min(Math.max((e.clientX - r.left) / r.width, 0), 1) * audio.duration;
-        draw();
-        if (audio.paused) play();
-      };
-      audio.readyState >= 1 ? seek() : audio.addEventListener('loadedmetadata', seek, { once: true });
-    });
+    const seek = () => {
+      const r = pl.bar.getBoundingClientRect();
+      pl.audio.currentTime = Math.min(Math.max((e.clientX - r.left) / r.width, 0), 1) * pl.audio.duration;
+      pl.draw();
+      if (pl.audio.paused) pl.play();
+    };
+    pl.audio.readyState >= 1 ? seek() : pl.audio.addEventListener('loadedmetadata', seek, { once: true });
   });
 })();

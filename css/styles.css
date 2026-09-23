@@ -629,6 +629,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 .catalog-card__cta    { margin-top: 0.25rem; }
 .catalog-card__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
 .catalog-card__actions .payhip-buy-button { text-decoration: none; }
+.catalog-card .audio-preview { margin: 0.25rem 0 0; }
 
 .catalog-empty {
   font-size: 0.9375rem;

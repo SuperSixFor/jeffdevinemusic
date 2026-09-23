@@ -88,6 +88,14 @@ function renderCatalog() {
       ? `<div class="catalog-card__cta">${piece.shopifyEmbed}</div>`
       : `<div class="catalog-card__cta"><a href="index.html#contact" class="btn btn--primary btn--sm">Inquire</a></div>`;
 
+    // Same small toggle + progress bar as the piece pages (js/audio-preview.js).
+    const audio = piece.audio
+      ? `<div class="audio-preview">
+    <button type="button" class="audio-toggle" data-audio="${piece.audio}" aria-label="Play 30-second preview" aria-pressed="false" title="Listen"><svg class="audio-toggle__play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg class="audio-toggle__pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
+    <div class="audio-preview__bar" role="progressbar" aria-label="Preview progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="audio-preview__fill"></span></div>
+  </div>`
+      : '';
+
     // Searched against title/voicing/category/season together so a query
     // like "guitar" or "advent" matches even when it's not in the title.
     const searchText = [piece.title, piece.voicing, piece.categoryLabel, piece.season]
@@ -100,6 +108,7 @@ function renderCatalog() {
   </div>
   <div class="catalog-card__title">${titleHtml(piece.title)}</div>
   ${detail}
+  ${audio}
   ${price}
   ${cta}
 </div>`;
