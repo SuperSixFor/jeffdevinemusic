@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jeffdevinemusic.com/catalog/marche.html">
   <meta name="theme-color" content="#F8F5F0">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css?v=5">
   <noscript><link rel="stylesheet" href="../css/themes/theme-default.css"></noscript>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Jeff Devine Music">
@@ -112,6 +112,10 @@
           <div class="buy-box">
             <div class="buy-box__price">$5</div>
             <button type="button" class="btn btn--primary buy-box__cta" data-cart-add data-key="aQpJ0" data-title="Marche" data-price="5">Add to Cart</button>
+            <div class="audio-preview">
+              <button type="button" class="audio-toggle" data-audio="../assets/audio/marche.m4a" aria-label="Play 30-second preview" aria-pressed="false" title="Listen"><svg class="audio-toggle__play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg class="audio-toggle__pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
+              <div class="audio-preview__bar" role="progressbar" aria-label="Preview progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="audio-preview__fill"></span></div>
+            </div>
             <p class="buy-box__note">Instant PDF download after checkout.</p>
 
           </div>
@@ -148,5 +152,6 @@
   <script src="../js/main.js"></script>
   <script src="../js/cart.js"></script>
   <script src="../js/gallery.js"></script>
+  <script src="../js/audio-preview.js?v=4"></script>
 </body>
 </html>
