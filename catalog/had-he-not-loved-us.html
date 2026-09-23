@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jeffdevinemusic.com/catalog/had-he-not-loved-us.html">
   <meta name="theme-color" content="#F8F5F0">
-  <link rel="stylesheet" href="../css/styles.css?v=3">
+  <link rel="stylesheet" href="../css/styles.css?v=4">
   <noscript><link rel="stylesheet" href="../css/themes/theme-default.css"></noscript>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Jeff Devine Music">
@@ -115,11 +115,12 @@
 
         <aside class="piece-page__sidebar">
           <div class="buy-box">
-            <div class="buy-box__head">
-              <div class="buy-box__price">$10</div>
-              <button type="button" class="audio-toggle" data-audio="../assets/audio/had-he-not-loved-us.m4a" aria-label="Play 30-second preview" aria-pressed="false" title="Listen"><svg class="audio-toggle__play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg class="audio-toggle__pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
-            </div>
+            <div class="buy-box__price">$10</div>
             <button type="button" class="btn btn--primary buy-box__cta" data-cart-add data-key="pyD4b" data-title="Had He Not Loved Us" data-price="10">Add to Cart</button>
+            <div class="audio-preview">
+              <button type="button" class="audio-toggle" data-audio="../assets/audio/had-he-not-loved-us.m4a" aria-label="Play 30-second preview" aria-pressed="false" title="Listen"><svg class="audio-toggle__play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg class="audio-toggle__pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
+              <div class="audio-preview__bar" role="progressbar" aria-label="Preview progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="audio-preview__fill"></span></div>
+            </div>
             <p class="buy-box__note">Instant PDF download after checkout.</p>
             <p class="buy-box__license">Purchase includes 5 performance licenses ($2 each).</p>
           </div>
@@ -156,6 +157,6 @@
   <script src="../js/main.js"></script>
   <script src="../js/cart.js"></script>
   <script src="../js/gallery.js"></script>
-  <script src="../js/audio-preview.js"></script>
+  <script src="../js/audio-preview.js?v=2"></script>
 </body>
 </html>
