@@ -1093,6 +1093,15 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   position: absolute;
   inset: -8px 0;
 }
+.audio-preview + .audio-preview { margin-top: -0.5rem; }   /* stacked clips (e.g. theme + variation) */
+.audio-preview__label {
+  flex: none;
+  min-width: 3.25rem;
+  text-align: right;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-subtle);
+}
 .audio-preview__fill {
   display: block;
   height: 100%;
