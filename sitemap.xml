@@ -452,6 +452,36 @@
     <priority>0.8</priority>
   </url>
 <url>
+    <loc>https://jeffdevinemusic.com/catalog/how-great-thou-art-vocal-solo.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/how-great-thou-art-vocal-solo/how-great-thou-art-vocal-solo-p1.png</image:loc>
+      <image:title>How Great Thou Art — Jeff Devine</image:title>
+      <image:caption>How Great Thou Art — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/how-great-thou-art-vocal-solo/how-great-thou-art-vocal-solo-p2.png</image:loc>
+      <image:title>How Great Thou Art — Jeff Devine</image:title>
+      <image:caption>How Great Thou Art — sheet music by Jeff Devine. Choral Hymns and Arrangements.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://jeffdevinemusic.com/catalog/how-great-thou-art-ensemble.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/how-great-thou-art-ensemble/how-great-thou-art-ensemble-p1.png</image:loc>
+      <image:title>How Great Thou Art — Jeff Devine</image:title>
+      <image:caption>How Great Thou Art — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/how-great-thou-art-ensemble/how-great-thou-art-ensemble-p2.png</image:loc>
+      <image:title>How Great Thou Art — Jeff Devine</image:title>
+      <image:caption>How Great Thou Art — sheet music by Jeff Devine. Hymn Instrumental Ensembles.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/i-have-decided-to-follow-jesus.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/i-have-decided-to-follow-jesus/i-have-decided-to-follow-jesus-p1.png</image:loc>
