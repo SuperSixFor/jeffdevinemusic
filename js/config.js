@@ -148,8 +148,8 @@ const SITE = {
 
   // ── CATALOG PAGE ─────────────────────────────────────────────────
   catalog: {
-    footerNote:  `All purchases are PDF downloads delivered instantly. Choral scores include
-                  a performance license for one ensemble.
+    footerNote:  `All purchases are PDF downloads delivered instantly. Choral and vocal scores include
+                  the number of copies shown on each piece.
                   For bulk or institutional licensing, <a href="index.html#contact">get in touch</a>.`,
 
     // Filter categories — edit label/value pairs to add/remove filters.

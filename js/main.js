@@ -435,11 +435,21 @@ function populateStreamingLinks(selector) {
   // Clear placeholder links first
   container.querySelectorAll('a[data-streaming]').forEach(el => el.remove());
 
+  // Plain https links on purpose: open.spotify.com and music.apple.com are
+  // universal links, so phones open the Spotify / Music app when it's
+  // installed (and macOS offers "Open in Music"), else the web player.
+  // New tab so the site stays open behind them.
   defs.forEach(({ key, label }) => {
     const href = SITE.links[key];
     const existing = container.querySelector(`a[data-key="${key}"]`);
     if (existing) {
-      if (href) { existing.href = href; existing.style.opacity = ''; existing.style.pointerEvents = ''; }
+      if (href) {
+        existing.href = href;
+        existing.target = '_blank';
+        existing.rel = 'noopener noreferrer';
+        existing.style.opacity = '';
+        existing.style.pointerEvents = '';
+      }
       return;
     }
     if (!href) return;

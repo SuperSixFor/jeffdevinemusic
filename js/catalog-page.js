@@ -68,29 +68,32 @@ function renderCatalog() {
     const detail   = piece.detail
       ? `<div class="catalog-card__detail">${piece.detail}</div>`
       : '';
+    // "Keys" when several are offered (e.g. "F, G" or "E♭-A♭").
+    const specs = [
+      piece.keys   && `${/[,-]/.test(piece.keys) ? 'Keys' : 'Key'}: ${piece.keys}`,
+      piece.minQty && `Min. ${piece.minQty} copies`,
+    ].filter(Boolean).join(' · ');
+    const specsHtml = specs ? `<div class="catalog-card__specs">${specs}</div>` : '';
     const price = piece.price != null
-      ? `<div class="catalog-card__price">${piece.hasVariants ? 'From ' : ''}$${piece.price}</div>`
+      ? `<div class="catalog-card__price">${money(piece.price)}${piece.perCopy ? ' <span class="catalog-card__unit">per copy</span>' : ''}</div>`
       : '';
     // Pieces sold by another publisher (buyUrl) link straight to their
     // product page in the same button slot -- no cart, no price.
-    // Variant products (multiple keys/instrumentations on one Payhip
-    // listing) skip our cart entirely -- cart_links[] checkout has no way
-    // to specify a variant, so it silently defaults instead of asking.
-    // Send straight to the Payhip product page, where the real picker is.
+    // Pieces sold in several keys need the key picker on their own page
+    // before they can go in the cart.
     const cta = piece.buyUrl
       ? `<div class="catalog-card__actions">
     <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
     <a href="${piece.buyUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">${piece.buyLabel || 'Buy'}</a>
   </div>`
-      : piece.hasVariants
+      : piece.variants
       ? `<div class="catalog-card__actions">
-    <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
-    <a href="https://payhip.com/b/${piece.payhipKey}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Checkout</a>
+    <a href="${piece.pageUrl}" class="btn btn--primary btn--sm">Choose Key</a>
   </div>`
       : piece.payhipKey
       ? `<div class="catalog-card__actions">
     <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
-    <button type="button" class="btn btn--primary btn--sm" data-cart-add data-key="${piece.payhipKey}" data-title="${piece.title.replace(/"/g, '&quot;')}" data-price="${piece.price}">Add to Cart</button>
+    <button type="button" class="btn btn--primary btn--sm" data-cart-add data-key="${piece.payhipKey}" data-title="${piece.title.replace(/"/g, '&quot;')}" data-price="${piece.price}"${piece.perCopy ? ` data-per-copy data-min-qty="${piece.minQty}"` : ''}>Add to Cart</button>
   </div>`
       : piece.shopifyEmbed
       ? `<div class="catalog-card__cta">${piece.shopifyEmbed}</div>`
@@ -99,7 +102,7 @@ function renderCatalog() {
     // Same small toggle + progress bar as the piece pages (js/audio-preview.js).
     const audio = piece.audio
       ? `<div class="audio-preview">
-    <button type="button" class="audio-toggle" data-audio="${piece.audio}" aria-label="Play 30-second preview" aria-pressed="false" title="Listen"><svg class="audio-toggle__play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg class="audio-toggle__pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
+    <button type="button" class="audio-toggle" data-audio="${piece.audio}" aria-label="Play preview" aria-pressed="false" title="Listen"><svg class="audio-toggle__play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg class="audio-toggle__pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
     <div class="audio-preview__bar" role="progressbar" aria-label="Preview progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="audio-preview__fill"></span></div>
   </div>`
       : '';
@@ -116,6 +119,7 @@ function renderCatalog() {
   </div>
   <div class="catalog-card__title">${titleHtml(piece.title)}</div>
   ${detail}
+  ${specsHtml}
   ${audio}
   ${price}
   ${cta}
@@ -240,6 +244,11 @@ function applyFilters() {
   if (empty) empty.style.display = visibleCount === 0 ? '' : 'none';
 
   saveFilterState();
+}
+
+// Whole dollars stay "$5"; per-copy prices show cents ("$2.50").
+function money(n) {
+  return `$${Number.isInteger(n) ? n : n.toFixed(2)}`;
 }
 
 function cap(str) {

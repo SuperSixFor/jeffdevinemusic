@@ -2,12 +2,19 @@
    DEVINE MUSIC — cart.js
    A lightweight client-side cart backed by Payhip's combined
    checkout link (payhip.com/buy?cart_links[]=A&cart_links[]=B).
+   Quantity and key travel as qty[A]=N and variant_combination[A]=ID --
+   undocumented by Payhip but what its own checkout writes to the URL
+   (tested 2026-11-05). They're keyed by product, so a cart can hold
+   only one key of a given piece; adding another key replaces it.
    Persists in localStorage so it survives across pages/reloads.
    Injects a cart link into every page's nav automatically.
    ================================================================ */
 
 const Cart = (() => {
-  const STORAGE_KEY = 'devineMusicCart';
+  // v2: items carry qty + variant, and prices went per-copy -- a fresh key
+  // so carts saved under the old $10-per-bundle prices don't linger.
+  const STORAGE_KEY = 'devineMusicCart.v2';
+  const MAX_QTY = 299; // Payhip checkout's own quantity limit
 
   function read() {
     try {
@@ -22,15 +29,35 @@ const Cart = (() => {
     render();
   }
 
+  // Per-copy pieces have a minimum order (4 choral / 2 solo copies, i.e.
+  // the old $10 / $6 bundle), Hinshaw-style; above that, any number.
+  const clampQty = (n, min = 1) => Math.min(Math.max(Math.round(Number(n)) || min, min), MAX_QTY);
+
+  // Whole dollars stay "$10"; per-copy prices show cents ("$2.50").
+  const money = n => `$${Number.isInteger(n) ? n : n.toFixed(2)}`;
+
   function add(item) {
     const items = read();
-    if (items.some(i => i.key === item.key)) {
-      openPanel(); // already in there — show them rather than doing nothing visible
-      return;
+    const existing = items.find(i => i.key === item.key);
+    if (existing) {
+      // Same key: top up the copies. Different key: swap it in (see header).
+      existing.qty = clampQty(existing.variant === item.variant ? existing.qty + item.qty : item.qty, item.minQty);
+      existing.minQty = item.minQty;
+      existing.variant = item.variant;
+      existing.variantLabel = item.variantLabel;
+    } else {
+      items.push(item);
     }
-    items.push(item);
     write(items);
     openPanel();
+  }
+
+  function setQty(key, qty) {
+    const items = read();
+    const item = items.find(i => i.key === key);
+    if (!item) return;
+    item.qty = clampQty(qty, item.minQty);
+    write(items);
   }
 
   function remove(key) {
@@ -44,7 +71,12 @@ const Cart = (() => {
   function checkoutUrl() {
     const items = read();
     if (!items.length) return null;
-    const params = items.map(i => `cart_links[]=${encodeURIComponent(i.key)}`).join('&');
+    const enc = encodeURIComponent;
+    const params = items.flatMap(i => [
+      `cart_links[]=${enc(i.key)}`,
+      `qty[${enc(i.key)}]=${clampQty(i.qty, i.minQty)}`,
+      ...(i.variant ? [`variant_combination[${enc(i.key)}]=${enc(i.variant)}`] : []),
+    ]).join('&');
     return `https://payhip.com/buy?${params}`;
   }
 
@@ -71,8 +103,9 @@ const Cart = (() => {
   function render() {
     const items = read();
 
+    const count = items.reduce((sum, i) => sum + (i.qty || 1), 0);
     document.querySelectorAll('.cart-badge').forEach(badge => {
-      badge.textContent = items.length;
+      badge.textContent = count;
       badge.style.display = items.length ? 'inline-flex' : 'none';
     });
 
@@ -85,19 +118,33 @@ const Cart = (() => {
     const list = document.getElementById('cart-panel-items');
     if (list) {
       list.innerHTML = items.length
-        ? items.map(i => `
+        ? items.map(i => {
+            const price = Number(i.price) || 0;
+            const qty = i.qty || 1;
+            const sub = [
+              i.variantLabel,
+              i.perCopy && `${money(price)} per copy`,
+            ].filter(Boolean).join(' · ');
+            // Copies stepper only for per-copy pieces; instrumental pieces
+            // are a single purchase.
+            const qtyCtl = i.perCopy
+              ? `<input class="cart-item__qty" type="number" min="${i.minQty || 1}" max="${MAX_QTY}" step="1" inputmode="numeric" value="${qty}" data-qty-key="${i.key}" aria-label="Copies of ${i.title}">`
+              : '';
+            return `
           <li class="cart-item">
-            <span class="cart-item__title">${i.title}</span>
-            <span class="cart-item__price">$${i.price}</span>
+            <span class="cart-item__title">${i.title}${sub ? `<span class="cart-item__sub">${sub}</span>` : ''}</span>
+            ${qtyCtl}
+            <span class="cart-item__price">${money(price * qty)}</span>
             <button class="cart-item__remove" data-remove="${i.key}" aria-label="Remove">&times;</button>
-          </li>`).join('')
+          </li>`;
+          }).join('')
         : `<li class="cart-item cart-item--empty">Your cart is empty.</li>`;
     }
 
     const totalEl = document.getElementById('cart-panel-total');
     if (totalEl) {
-      const total = items.reduce((sum, i) => sum + (Number(i.price) || 0), 0);
-      totalEl.textContent = `$${total}`;
+      const total = items.reduce((sum, i) => sum + (Number(i.price) || 0) * (i.qty || 1), 0);
+      totalEl.textContent = money(Math.round(total * 100) / 100);
     }
 
     const checkoutBtn = document.getElementById('cart-panel-checkout');
@@ -179,13 +226,25 @@ const Cart = (() => {
       }
 
       // Generic "Add to Cart" trigger — works on the catalog grid, piece
-      // pages, anywhere. Needs data-key / data-title / data-price.
+      // pages, anywhere. Needs data-key / data-title / data-price, plus
+      // data-per-copy for per-copy pieces. On piece pages the buy box's
+      // [data-qty] input and [data-variant] key picker ride along.
       const addBtn = e.target.closest('[data-cart-add]');
       if (addBtn) {
+        const box = addBtn.closest('.buy-box');
+        const qtyInput = box?.querySelector('[data-qty]');
+        const variant = box?.querySelector('[data-variant]');
+        const perCopy = 'perCopy' in addBtn.dataset;
+        const minQty = Number(addBtn.dataset.minQty) || 1;
         add({
           key:   addBtn.dataset.key,
           title: addBtn.dataset.title,
-          price: addBtn.dataset.price,
+          price: Number(addBtn.dataset.price),
+          qty:   clampQty(qtyInput ? qtyInput.value : minQty, minQty),
+          minQty,
+          perCopy,
+          variant:      variant ? variant.value : null,
+          variantLabel: variant ? `${variant.closest('label')?.querySelector('span')?.textContent || 'Key'}: ${variant.selectedOptions[0].textContent}` : null,
         });
         const original = addBtn.textContent;
         addBtn.textContent = 'Added ✓';
@@ -195,13 +254,25 @@ const Cart = (() => {
     });
   }
 
+  // Copies fields: commit on change (not every keystroke, which would
+  // re-render the list and drop focus mid-typing), clamped to 1..MAX_QTY.
+  function bindQtyEvents() {
+    document.addEventListener('change', e => {
+      const cartQty = e.target.closest('[data-qty-key]');
+      if (cartQty) { setQty(cartQty.dataset.qtyKey, cartQty.value); return; }
+      const boxQty = e.target.closest('.buy-box [data-qty]');
+      if (boxQty) boxQty.value = clampQty(boxQty.value, Number(boxQty.min) || 1);
+    });
+  }
+
   function init() {
     buildMarkup();
     bindEvents();
+    bindQtyEvents();
     render();
   }
 
   document.addEventListener('DOMContentLoaded', init);
 
-  return { add, remove, clear, read };
+  return { add, setQty, remove, clear, read };
 })();

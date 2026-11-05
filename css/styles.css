@@ -625,7 +625,9 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 }
 
 .catalog-card__detail { font-size: 0.8rem; color: var(--color-text-subtle); }
+.catalog-card__specs  { font-size: 0.75rem; color: var(--color-text-muted); }
 .catalog-card__price  { font-size: 1rem; font-weight: 500; color: var(--color-text); margin-top: auto; }
+.catalog-card__unit   { font-size: 0.75rem; font-weight: 400; color: var(--color-text-muted); }
 .catalog-card__cta    { margin-top: 0.25rem; }
 .catalog-card__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
 .catalog-card__actions .payhip-buy-button { text-decoration: none; }
@@ -926,6 +928,18 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   border-bottom: 1px solid var(--color-border);
 }
 .cart-item__title { flex: 1; font-size: 0.875rem; }
+.cart-item__sub { display: block; font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.15rem; }
+.cart-item__qty {
+  width: 3.75rem;
+  flex: none;
+  font: inherit;
+  font-size: 0.875rem;
+  text-align: right;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
 .cart-item__price { font-size: 0.875rem; color: var(--color-text-muted); }
 .cart-item__remove {
   background: none; border: none; cursor: pointer;
@@ -1071,6 +1085,29 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
   font-weight: 500;
   margin-bottom: 1.25rem;
 }
+.buy-box__unit { font-size: 0.875rem; font-weight: 400; color: var(--color-text-muted); }
+/* Key picker + copies field, above Add to Cart */
+.buy-box__field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+.buy-box__field select,
+.buy-box__field input {
+  font: inherit;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 0.4rem 0.6rem;
+}
+.buy-box__field select { min-width: 7rem; }
+.buy-box__field input  { width: 5.5rem; text-align: right; }
+.buy-box__field + .buy-box__cta { margin-top: 0.4rem; }
 .buy-box__cta { width: 100%; justify-content: center; margin-bottom: 1rem; }
 
 /* Audio preview — small play/pause toggle + thin progress bar, under Add to Cart */

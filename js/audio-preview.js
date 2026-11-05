@@ -1,7 +1,8 @@
 /* ================================================================
    DEVINE MUSIC — audio-preview.js
-   Small play/pause toggle + thin progress bar for a piece's 30-second
-   audio clip. Used under Add to Cart on piece pages and on catalog
+   Small play/pause toggle + thin progress bar for a piece's audio
+   preview (the first 1:30 of the recording, or all of it if
+   shorter). Used under Add to Cart on piece pages and on catalog
    cards (which are rendered after load, so events are delegated).
    Markup:
      <div class="audio-preview">
@@ -31,19 +32,26 @@
     const setState = playing => {
       btn.classList.toggle('audio-toggle--playing', playing);
       btn.setAttribute('aria-pressed', String(playing));
-      btn.setAttribute('aria-label', playing ? 'Pause preview' : 'Play 30-second preview');
+      btn.setAttribute('aria-label', playing ? 'Pause preview' : 'Play preview');
     };
     const draw = () => {
       const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
       if (fill) fill.style.width = pct + '%';
       if (bar) bar.setAttribute('aria-valuenow', String(Math.round(pct)));
     };
-    const tick = () => { draw(); raf = requestAnimationFrame(tick); };
+    // Previews are hard cuts at 1:30, so fade the last couple of seconds
+    // instead of stopping dead (full-length tracks end on their own).
+    const FADE_S = 2, CUT_S = 89;
+    const fade = () => {
+      const left = audio.duration - audio.currentTime;
+      audio.volume = audio.duration >= CUT_S && left < FADE_S ? Math.max(left / FADE_S, 0) : 1;
+    };
+    const tick = () => { draw(); fade(); raf = requestAnimationFrame(tick); };
 
     audio.addEventListener('play',  () => { setState(true); cancelAnimationFrame(raf); tick(); });
     audio.addEventListener('pause', () => { setState(false); cancelAnimationFrame(raf); draw(); });
     audio.addEventListener('ended', () => { audio.currentTime = 0; draw(); });
-    audio.addEventListener('timeupdate', draw); // fallback when rAF is throttled (background tab)
+    audio.addEventListener('timeupdate', () => { draw(); fade(); }); // fallback when rAF is throttled (background tab)
 
     pl = {
       audio, draw, bar,
