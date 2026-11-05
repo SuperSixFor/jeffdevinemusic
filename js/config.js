@@ -96,7 +96,7 @@ const SITE = {
       {
         publisher: "Hinshaw Music",
         title:     "Cross of Jesus, Cross of Sorrow",
-        url:       "",
+        url:       "https://www.hinshawmusic.com/product/cross-of-jesus-cross-of-sorrow-satb/",
         note:      "October 2026",
       },
       {

@@ -272,6 +272,16 @@
     <priority>0.8</priority>
   </url>
 <url>
+    <loc>https://jeffdevinemusic.com/catalog/cross-of-jesus-cross-of-sorrow-satb.html</loc>
+    <image:image>
+      <image:loc>https://jeffdevinemusic.com/assets/previews/cross-of-jesus-cross-of-sorrow-satb/cross-of-jesus-cross-of-sorrow-satb-cover.jpg</image:loc>
+      <image:title>Cross of Jesus, Cross of Sorrow — Jeff Devine</image:title>
+      <image:caption>Cross of Jesus, Cross of Sorrow — SATB choral setting by Jeff Devine, published by Hinshaw Music.</image:caption>
+    </image:image>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jeffdevinemusic.com/catalog/eternal-spirit-of-the-living-christ-sursum-corda.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/eternal-spirit-of-the-living-christ-sursum-corda/eternal-spirit-of-the-living-christ-sursum-corda-p1.png</image:loc>
@@ -355,8 +365,8 @@
     <loc>https://jeffdevinemusic.com/catalog/great-is-thy-faithfullness.html</loc>
     <image:image>
       <image:loc>https://jeffdevinemusic.com/assets/previews/great-is-thy-faithfullness/great-is-thy-faithfullness-p1.png</image:loc>
-      <image:title>Great is Thy Faithfullness — Jeff Devine</image:title>
-      <image:caption>Great is Thy Faithfullness — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
+      <image:title>Great is Thy Faithfulness — Jeff Devine</image:title>
+      <image:caption>Great is Thy Faithfulness — sheet music by Jeff Devine. Guitar Originals and Arrangements.</image:caption>
     </image:image>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

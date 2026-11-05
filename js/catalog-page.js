@@ -52,9 +52,10 @@ function renderCatalog() {
   const grid = document.getElementById('catalog-grid');
   if (!grid) return;
 
-  // For sale first, then alphabetical within each group.
+  // For sale first (ours or another publisher's), then alphabetical within each group.
+  const isForSale = p => p.payhipKey || p.buyUrl ? 1 : 0;
   const sorted = [...CATALOG].sort((a, b) => {
-    const forSale = (b.payhipKey ? 1 : 0) - (a.payhipKey ? 1 : 0);
+    const forSale = isForSale(b) - isForSale(a);
     return forSale || a.title.localeCompare(b.title);
   });
 
@@ -70,11 +71,18 @@ function renderCatalog() {
     const price = piece.price != null
       ? `<div class="catalog-card__price">${piece.hasVariants ? 'From ' : ''}$${piece.price}</div>`
       : '';
+    // Pieces sold by another publisher (buyUrl) link straight to their
+    // product page in the same button slot -- no cart, no price.
     // Variant products (multiple keys/instrumentations on one Payhip
     // listing) skip our cart entirely -- cart_links[] checkout has no way
     // to specify a variant, so it silently defaults instead of asking.
     // Send straight to the Payhip product page, where the real picker is.
-    const cta = piece.hasVariants
+    const cta = piece.buyUrl
+      ? `<div class="catalog-card__actions">
+    <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
+    <a href="${piece.buyUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">${piece.buyLabel || 'Buy'}</a>
+  </div>`
+      : piece.hasVariants
       ? `<div class="catalog-card__actions">
     <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
     <a href="https://payhip.com/b/${piece.payhipKey}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Checkout</a>
