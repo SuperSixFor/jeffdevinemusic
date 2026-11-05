@@ -68,12 +68,12 @@ function renderCatalog() {
     const detail   = piece.detail
       ? `<div class="catalog-card__detail">${piece.detail}</div>`
       : '';
-    // "Keys" when several are offered (e.g. "F, G" or "E♭-A♭").
-    const specs = [
+    // One line each: key(s), then the minimum order. "Keys" when several
+    // are offered (e.g. "F, G" or "E♭-A♭").
+    const specsHtml = [
       piece.keys   && `${/[,-]/.test(piece.keys) ? 'Keys' : 'Key'}: ${piece.keys}`,
       piece.minQty && `Min. ${piece.minQty} copies`,
-    ].filter(Boolean).join(' · ');
-    const specsHtml = specs ? `<div class="catalog-card__specs">${specs}</div>` : '';
+    ].filter(Boolean).map(s => `<div class="catalog-card__specs">${s}</div>`).join('\n  ');
     const price = piece.price != null
       ? `<div class="catalog-card__price">${money(piece.price)}${piece.perCopy ? ' <span class="catalog-card__unit">per copy</span>' : ''}</div>`
       : '';

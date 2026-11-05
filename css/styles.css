@@ -626,6 +626,7 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 
 .catalog-card__detail { font-size: 0.8rem; color: var(--color-text-subtle); }
 .catalog-card__specs  { font-size: 0.75rem; color: var(--color-text-muted); }
+.catalog-card__specs + .catalog-card__specs { margin-top: -0.5rem; } /* key + min read as one block */
 .catalog-card__price  { font-size: 1rem; font-weight: 500; color: var(--color-text); margin-top: auto; }
 .catalog-card__unit   { font-size: 0.75rem; font-weight: 400; color: var(--color-text-muted); }
 .catalog-card__cta    { margin-top: 0.25rem; }
