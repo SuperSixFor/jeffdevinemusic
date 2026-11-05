@@ -73,6 +73,7 @@ function renderCatalog() {
     const specsHtml = [
       piece.keys   && `${/[,-]/.test(piece.keys) ? 'Keys' : 'Key'}: ${piece.keys}`,
       piece.minQty && `Min. ${piece.minQty} copies`,
+      piece.soldBy && `Sold by ${piece.soldBy}`,
     ].filter(Boolean).map(s => `<div class="catalog-card__specs">${s}</div>`).join('\n  ');
     const price = piece.price != null
       ? `<div class="catalog-card__price">${money(piece.price)}${piece.perCopy ? ' <span class="catalog-card__unit">per copy</span>' : ''}</div>`
@@ -88,6 +89,7 @@ function renderCatalog() {
   </div>`
       : piece.variants
       ? `<div class="catalog-card__actions">
+    <a href="${piece.pageUrl}" class="btn btn--ghost btn--sm">View</a>
     <a href="${piece.pageUrl}" class="btn btn--primary btn--sm">Choose Key</a>
   </div>`
       : piece.payhipKey
