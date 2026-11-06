@@ -72,7 +72,7 @@ function renderCatalog() {
     // are offered (e.g. "F, G" or "E♭-A♭").
     const specsHtml = [
       piece.keys   && `${/[,-]/.test(piece.keys) ? 'Keys' : 'Key'}: ${piece.keys}`,
-      piece.minQty && `Min. ${piece.minQty} copies`,
+      piece.minQty > 1 && `Min. ${piece.minQty} copies`,
       piece.soldBy && `Sold by ${piece.soldBy}`,
     ].filter(Boolean).map(s => `<div class="catalog-card__specs">${s}</div>`).join('\n  ');
     const price = piece.price != null

@@ -11,9 +11,9 @@
    ================================================================ */
 
 const Cart = (() => {
-  // v2: items carry qty + variant, and prices went per-copy -- a fresh key
-  // so carts saved under the old $10-per-bundle prices don't linger.
-  const STORAGE_KEY = 'devineMusicCart.v2';
+  // v3: prices re-set from the canon sheet (2026-11-05) -- a fresh key so
+  // carts saved under earlier prices don't linger.
+  const STORAGE_KEY = 'devineMusicCart.v3';
   const MAX_QTY = 299; // Payhip checkout's own quantity limit
 
   function read() {
@@ -29,8 +29,9 @@ const Cart = (() => {
     render();
   }
 
-  // Per-copy pieces have a minimum order (4 choral / 2 solo copies, i.e.
-  // the old $10 / $6 bundle), Hinshaw-style; above that, any number.
+  // Every piece is priced per copy with a minimum order from the canon
+  // sheet (5 choral/ensemble, 2 solo voice, 1 instrumental solo),
+  // Hinshaw-style; above that, any number.
   const clampQty = (n, min = 1) => Math.min(Math.max(Math.round(Number(n)) || min, min), MAX_QTY);
 
   // Whole dollars stay "$10"; per-copy prices show cents ("$2.50").
