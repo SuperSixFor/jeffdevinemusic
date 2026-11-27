@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── ALWAYS: NAV + FOOTER ────────────────────────────────────
   populateNav(page);
   populateFooter();
+  populateNewsletter();
 
   // ── PER-PAGE ─────────────────────────────────────────────────
   // index.html is the single-page site (hero/about/featured/recordings/contact,
@@ -417,6 +418,67 @@ async function submitContactForm(e, form, endpoint) {
     // Surface FormSubmit's reason (e.g. the one-time activation notice).
     const reason = err && err.message ? ` (${err.message})` : '';
     status.textContent = `Sorry, your message couldn't be sent. Please email ${SITE.email} directly.${reason}`;
+  } finally {
+    button.disabled = false;
+  }
+}
+
+// ── MAILING LIST ─────────────────────────────────────────────────
+// Every .newsletter-section on the page (homepage + catalog). Stays
+// hidden unless SITE.newsletter.endpoint is set.
+function populateNewsletter() {
+  const n = SITE.newsletter;
+  if (!n || !n.endpoint) return;
+
+  document.querySelectorAll('.newsletter-section').forEach(section => {
+    section.hidden = false;
+    const h = section.querySelector('.newsletter-heading');
+    if (h) h.textContent = n.heading;
+    const b = section.querySelector('.newsletter-body');
+    if (b) b.textContent = n.body;
+
+    const select = section.querySelector('select[name="interest"]');
+    if (select && n.interests) {
+      n.interests.forEach(i => {
+        const opt = document.createElement('option');
+        opt.value = i.value;
+        opt.textContent = i.label;
+        select.appendChild(opt);
+      });
+    }
+
+    const form = section.querySelector('.newsletter-form');
+    if (form) form.addEventListener('submit', e => submitNewsletter(e, form, n.endpoint));
+  });
+}
+
+async function submitNewsletter(e, form, endpoint) {
+  e.preventDefault();
+  const status = form.querySelector('.form-status');
+  const button = form.querySelector('button[type="submit"]');
+  const email = form.querySelector('input[name="email"]');
+  if (!email.value || !email.checkValidity()) {
+    status.textContent = 'Please enter a valid email address.';
+    email.focus();
+    return;
+  }
+
+  button.disabled = true;
+  status.textContent = 'Signing you up…';
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form))),
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || !json.ok) throw new Error(json.error || res.statusText);
+    form.reset();
+    status.textContent = json.already
+      ? "You're already on the list. Thank you!"
+      : "Thank you! You're on the list. Check your inbox for a welcome note.";
+  } catch (err) {
+    status.textContent = (err && err.message) || `Sorry, that didn't work. Please email ${SITE.email}.`;
   } finally {
     button.disabled = false;
   }

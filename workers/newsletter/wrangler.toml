@@ -1,0 +1,18 @@
+name = "devine-newsletter"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Served at https://subscribe.jeffdevinemusic.com/subscribe (Cloudflare adds
+# the DNS record itself on first deploy; the zone is already on Cloudflare).
+routes = [{ pattern = "subscribe.jeffdevinemusic.com", custom_domain = true }]
+
+[vars]
+ALLOWED_ORIGINS = "https://jeffdevinemusic.com,https://www.jeffdevinemusic.com,http://localhost:8000"
+FROM_EMAIL = "Jeff Devine <jeff@jeffdevinemusic.com>"
+REPLY_TO = "jeff@jeffdevinemusic.com"
+RESEND_SEGMENT_ID = ""          # optional: paste the "Website signups" segment id
+SEND_WELCOME = "true"
+USE_INTEREST_PROPERTY = "false" # set "true" after creating an "interest" property in Resend
+POSTAL_ADDRESS = ""             # required by CAN-SPAM in marketing email, e.g. a PO box
+
+# Secret (not in this file):  npx wrangler secret put RESEND_API_KEY
