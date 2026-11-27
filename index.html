@@ -10,7 +10,7 @@
   <link rel="canonical" href="https://jeffdevinemusic.com/">
   <meta name="theme-color" content="#F8F5F0">
 
-  <link rel="stylesheet" href="css/styles.css?v=8">
+  <link rel="stylesheet" href="css/styles.css?v=9">
   <!-- Theme injected by js/config.js → SITE.theme -->
   <noscript><link rel="stylesheet" href="css/themes/theme-default.css"></noscript>
 
@@ -133,6 +133,40 @@
     </div>
   </section>
 
+  <!-- ── MAILING LIST ─────────────────────────────────────────── -->
+  <!-- Hidden until SITE.newsletter.endpoint is set (js/config.js) -->
+  <section class="newsletter-section" id="mailing-list" hidden>
+    <div class="container container--sm">
+      <div class="reveal">
+        <div class="label">Mailing List</div>
+        <div class="rule"></div>
+        <h2 class="newsletter-heading"></h2>
+      </div>
+      <p class="newsletter-body reveal" style="margin-top:1.5rem;"></p>
+      <div class="reveal reveal-delay-1" style="margin-top:2rem;">
+        <form class="newsletter-form" novalidate>
+          <input type="text" name="website" class="newsletter-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="newsletter-form__fields">
+            <div class="form-group">
+              <label for="nl-name">First name</label>
+              <input type="text" id="nl-name" name="firstName" autocomplete="given-name" placeholder="Optional">
+            </div>
+            <div class="form-group">
+              <label for="nl-email">Email</label>
+              <input type="email" id="nl-email" name="email" required autocomplete="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="nl-interest">I am…</label>
+              <select id="nl-interest" name="interest"><option value="">Select (optional)</option></select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary">Sign Up</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- ── CONTACT ──────────────────────────────────────────────── -->
   <section class="contact-section" id="contact">
     <div class="container container--sm">
@@ -208,9 +242,9 @@
     </div>
   </footer>
 
-  <script src="js/config.js?v=4"></script>
+  <script src="js/config.js?v=5"></script>
   <script src="js/catalog.js?v=8"></script>
-  <script src="js/main.js?v=4"></script>
+  <script src="js/main.js?v=5"></script>
   <script src="js/cart.js?v=4"></script>
 </body>
 </html>

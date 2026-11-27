@@ -181,6 +181,22 @@ const SITE = {
     ],
   },
 
+  // ── MAILING LIST ──────────────────────────────────────────────
+  // Signup form on the homepage and catalog page. Posts to the Cloudflare
+  // Worker in workers/newsletter/ (Resend). Leave endpoint "" to hide the
+  // form everywhere until the Worker is deployed.
+  newsletter: {
+    endpoint: "",   // e.g. "https://subscribe.jeffdevinemusic.com/subscribe"
+    heading:  "Seasonal Music by Email",
+    body:     "A short note a few times a year with new pieces and music for Advent, Christmas, Lent and Easter. No spam; unsubscribe anytime.",
+    interests: [
+      { label: "I direct a choir",          value: "choir-director" },
+      { label: "Church musician / worship", value: "church-musician" },
+      { label: "Instrumentalist",           value: "instrumentalist" },
+      { label: "Other",                     value: "other" },
+    ],
+  },
+
   // ── FOOTER ────────────────────────────────────────────────────
   footer: {
     ascapNote:  "All compositions registered with ASCAP, CCLI.",

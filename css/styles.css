@@ -700,6 +700,16 @@ section { padding-block: clamp(4rem, 10vw, 8rem); }
 .contact-email { color: var(--color-text); text-decoration: underline; text-underline-offset: 3px; }
 .contact-email:hover { color: var(--color-accent); }
 
+/* ── MAILING LIST ────────────────────────────────────────────── */
+.newsletter-section { padding-block: clamp(4rem, 8vw, 7rem); border-top: 1px solid var(--color-border); }
+.newsletter-section--compact { padding-block: clamp(3rem, 6vw, 4.5rem); }
+.newsletter-section[hidden] { display: none; }
+.newsletter-form__fields { display: grid; grid-template-columns: 1fr 1.4fr 1fr; gap: 1.25rem; }
+.newsletter-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+@media (max-width: 700px) {
+  .newsletter-form__fields { grid-template-columns: 1fr; gap: 0; }
+}
+
 /* ── FOOTER ─────────────────────────────────────────────────── */
 .footer { border-top: 1px solid var(--color-border); padding-block: 3rem; }
 
